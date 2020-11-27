@@ -59,41 +59,40 @@ A 'Facet' groups all the like values that appear in a column, and then allow you
 
 One type of Facet is called a 'Text facet'. This groups all the identical text values in a column and lists each value with the number of records it appears in. The facet information always appears in the left hand panel in the OpenRefine interface.
 
-Here we will use faceting to look for potential errors in data entry in the `village` column.
+Here we will use faceting to look for potential errors in data entry in the `sex` column.
 
-1. Scroll over to the `village` column.
+1. Scroll over to the `sex` column.
 2. Click the down arrow and choose `Facet` > `Text facet`.
-3. In the left panel, you'll now see a box containing every unique value in the `village` column
+3. In the left panel, you'll now see a box containing every unique value in the `sex` column
 along with a number representing how many times that value occurs in the column.
 4. Try sorting this facet by name and by count. Do you notice any problems with the data? What are they?
 5. Hover the mouse over one of the names in the `Facet` list. You should see that you have an `edit` function available.
 6. You could use this to fix an error immediately, and OpenRefine will ask whether you want to make the same correction to every value it finds like that one. But OpenRefine offers even better ways to find and fix these errors, which we'll use instead. We'll learn about these when we talk about clustering.
 
 > ## Solution
-> - `Chirdozo` is likely a mis-entry of `Chirodzo`.
-> - `Ruca` is likely a mis-entry of `Ruaca`.
-> - `Ruaca - Nhamuenda` and `Ruaca-Nhamuenda` refer to the same place (differ only by spaces around the hyphen). You might also wonder if both of these are the same as `Ruaca`. We will see how to correct these misspelled and mistyped entries in a later exercise.
-> - The entry `49` is almost certainly an error but you will not be able to fix it by reference to other data.
+> - 23 entries are missing a value for sex.
+> - `mael` is likely a mis-entry of `male`.
+> - `F`, `f`, `female` and `Female` refer to the same sex. We will see how to correct these misspelled and mistyped entries in a later exercise.
 {: .solution}
 
 > ## Exercise
 >
-> 1. Using faceting, find out how many different `interview_date` values there are in the survey results.
+> 1. Using faceting, find out on how `date` values more than one animal was registered.
 >
 > 2. Is the column formatted as Text or Date?
 >
-> 3. Use faceting to produce a timeline display for `interview_date`. You will need to use `Edit cells` > `Common transforms` > `To date` to convert this column to dates.
+> 3. Use faceting to produce a timeline display for `date`. You will need to use `Edit cells` > `Common transforms` > `To date` to convert this column to dates.
 >
-> 4. During what period were most of the interviews collected?
+> 4. During what period were most of the animals registered?
 >
 > > ## Solution
 > >
-> > For the column `interview_date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 19 unique entries in
+> > For the column `date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 19 unique entries in
 > > this column.
-> > By default, the column `interview_date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
+> > By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
 > > `To date`.  Notice the the values in the column turn green. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date.
 > >
-> > Most of the data was collected in November of 2016.
+> > Five dates had more than one animal registered. Most of the animals were registered in January of 2019 (seen by the tallest bar in the timeline facet).
 > {: .solution}
 {: .challenge}
 
@@ -121,19 +120,17 @@ along with a number representing how many times that value occurs in the column.
 
 In OpenRefine, clustering means "finding groups of different values that might be alternative representations of the same thing". For example, the two strings `New York` and `new york` are very likely to refer to the same concept and just have capitalization differences. Likewise, `Gödel` and `Godel` probably refer to the same person. Clustering is a very powerful tool for cleaning datasets which contain misspelled or mistyped entries. OpenRefine has several clustering algorithms built in. Experiment with them, and learn more about these algorithms and how they work.
 
-1. In the `village` Text Facet we created in the step above, click the `Cluster` button.
+1. In the `sex` Text Facet we created in the step above, click the `Cluster` button.
 2. In the resulting pop-up window, you can change the `Method` and the `Keying Function`. Try different combinations to
  see what different mergers of values are suggested.
-3. Select the `key collision` method and `metaphone3` keying function. It should identify two clusters.
+3. Select the `key collision` method and `metaphone3` keying function. It should identify three clusters.
 4. Click the `Merge?` box beside each cluster, then click `Merge Selected and Recluster` to apply the corrections to the dataset.
 4. Try selecting different `Methods` and `Keying Functions` again, to see what new merges are suggested.
-5. You should find that using the default settings, no more clusters are found, for example to merge `Ruaca-Nhamuenda` with `Ruaca` or `Chirdozo` with `Chirodzo`. (Note that the `nearest neighbor` method with `ppm` distance, `radius` &ge; 4, and `block chars` &le; 4 will find these clusters, as well as other settings with `levenshtein` distance) 
-6. To merge these values we will hover over them in the village text facet, select edit, and manually change the names. Change `Chirdozo` to `Chirodzo` and `Ruaca-Nhamuenda` to `Ruaca`. You should now have four clusters: `Chirodzo`, `God`, `Ruaca` and `49`.
+5. You should find that using the default settings, no more clusters are found. (Note that the `key collision` method with `ngram-fingerprint` keying function will suggest to merge `F` and `M`, which is not desired.)
+6. To merge the remaning values we would like to merge, we will hover over them in the sex text facet, select edit, and manually change the names. Change `M` to `male` and `F` to `female`. You should now have three clusters: `N/A`, `male`, and `female`.
 
 Important: If you `Merge` using a different method or keying function, or more times than described in the instructions above,
-your solutions for later exercises will not be the same as shown in those exercise solutions.
-
-## Different clustering algorithms
+your solutions for later exercises might not be the same as shown in those exercise solutions.
 
 The technical details of how the different clustering algorithms work can be found at the link below.
 
@@ -221,7 +218,7 @@ It's common while exploring and cleaning a dataset to discover after you've made
 
 ## Trim Leading and Trailing Whitespace
 
-Words with spaces at the beginning or end are particularly hard for we humans to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. As of version 3.4 of OpenRefine, the option to trim leading and trailing whitespaces is present at the moment of importing the data (see image at the top of this page). 
+Words with spaces at the beginning or end are particularly hard for we humans to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. As of version 3.4 of OpenRefine, the option to trim leading and trailing whitespaces is present at the moment of importing the data (see image at the top of this page).
 
 If you unchecked that box when importing data, or if leading or trailing whitespaces were introduced while splitting columns, or other operations, OpenRefine also provides a tool to remove blank characters from the beginning and end of any entries that have them.
 
