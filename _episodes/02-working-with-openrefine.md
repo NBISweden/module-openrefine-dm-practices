@@ -142,39 +142,31 @@ The technical details of how the different clustering algorithms work can be fou
 If data in a column needs to be split into multiple columns, and the parts are separated by a common separator (say a comma, or a space), you can use that separator to divide up the pieces into their own columns.
 
 
-1. Let us suppose we want to split the `scientificName` column into separate columns for genus and for species.
-2. Click the down arrow at the top of the `scientificName` column. Choose `Edit Column` > `Split into several columns...`
-3. In the pop-up, in the `Separator` box, replace the comma with a space.
+1. Let us suppose we want to split the `date` column into separate columns for year, month and day.
+2. Click the down arrow at the top of the `date` column. Choose `Edit Column` > `Split into several columns...`
+3. In the pop-up, in the `Separator` box, replace the comma with a hyphen (-).
 4. Uncheck the box that says `Remove this column`.
-5. Click `OK`. You'll get some new columns called `scientificName 1`, `scientificName 2`, and so on.
-6. Notice that in some cases `scientificName 1` and `scientificName 2` are empty. Why is this? What do you think we
-can do to fix this?
-7. Note that the character on which the split is performed could be anything.  The default is a comma, and you changed
-that to a space in this case, but you could make it any letter or number or special character.  The only requirements
+5. Click `OK`. You'll get some new columns called `date 1`, `date 2`, and so on.
+6. Note that the character on which the split is performed could be anything.  The default is a comma, and you changed
+that to a hyphen in this case, but you could make it any letter or number or special character.  The only requirements
 are that A) it appears in every row of the column, and B) it appears consistently in the place where you want the column
 to be split.
 
-> ## Solution
->
-> The entries that have data in `scientificName 3` and `scientificName 4` but not the first two `scientificName` columns
-> had an extra space at the beginning of the entry. Leading white spaces are very difficult to notice when cleaning data
-> manually. This is another advantage of using OpenRefine to clean your data. We'll look at how to
-> fix leading and trailing white spaces in a later exercise.
-{: .solution}
 
 > ## Exercise
 >
-> Try to change the name of the second new column to "species". Are you able to do this?  Or do you encounter a problem?
+>1. Try to change the name of the column "date 1" to "date". Are you able to do this?
+Or do you encounter a problem?
+> Change the name of the first new column to "year" instead, the second to "month" and the third to "day".
 >
 > > ## Solution
 > >
-> > On the `scientificName 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "species" into
-> > the box that appears. A pop-up will appear that says `Another column already named species`. This is because there is another
-> > column where we've recorded the species abbreviation. If you capitalize the S, it will work.  Or you can choose another name  
-> > like `speciesName` for this column or change the other `species` column name to `speciesAbbreviation`.
+> > On the `date 1` column, click the down arrow and then `Edit column` > `Rename this column`. Type "date into
+> > the box that appears. A pop-up will appear that says `Another column already named date`. If you capitalize the D, it will work but in this case we choose "year" as the name instead. (Note: If the pop-up did not appear it means you forgot to uncheck the `Remove this column` box in step 4 above.)
+You should now have the original column called "date", and 3 the new columns "year", "month", "day".  
+> >
 > {: .solution}
 {: .challenge}
-
 
 
 ## Using undo and redo.
