@@ -86,10 +86,10 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 > ## Exercise
 >
-> Sort the data by `plot`. What year(s) were observations recorded for plot 1 in this filtered dataset?
+> Sort the data by `date`. What is the animal ID recorded for on the most recent date in this filtered dataset?
 >
 > > ## Solution
-> > In the `plot` column, select `Sort...` > `numbers` and select `smallest first`. The years represented are 1990 and 1995.
+> > In the `date` column, select `Sort...` > `text` and select `z-a`. The animal ID for 2020-10-08 is 957895.
 > >
 > {: .solution}
 {: .challenge}
@@ -107,11 +107,11 @@ You can sort by multiple columns by performing sort on additional columns. The s
 >
 > > ## Solution
 > >
-> > 1. For the `mo` column, click on `Sort...` and then `numbers`. This will group all entries made in, for example, January,
+> > 1. For the `month` column, click on `Sort...` and then `numbers`. This will group all entries made in, for example, January,
 > > together, regardless of the year that entry was collected.  
-> > 2. For the `yr` column, click on `Sort` > `Sort...` > `numbers` and select `sort by this column alone`. This will undo the
-> > sorting by month step. Once you've sorted by `yr` you can then apply another sorting step to sort by month within year. To do this
-> > for the `mo` column, click on `Sort` > `numbers` but do not select `sort by this column alone`. To ensure that all entries are shown
+> > 2. For the `year` column, click on `Sort` > `Sort...` > `numbers` and select `sort by this column alone`. This will undo the
+> > sorting by month step. Once you've sorted by `year` you can then apply another sorting step to sort by month within year. To do this
+> > for the `month` column, click on `Sort` > `numbers` but do not select `sort by this column alone`. To ensure that all entries are shown
 > > chronologically, you will need to add a third sorting step by day within month.
 > >
 > {: .solution}  
