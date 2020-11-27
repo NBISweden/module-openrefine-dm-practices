@@ -19,19 +19,19 @@ keypoints:
 
 There are many entries in our data table. We can filter it to work on a subset of the data in the list for the next set of operations. Please ensure you perform this step to save time during the class.
 
-1. Click the down arrow next to `respondent_roof_type` > `Text filter`. A `respondent_roof_type` facet will appear on the left margin.
-2. Type in `mabat` and press return. There are 58 matching rows of the original 131 rows (and these rows are selected for the subsequent steps).
+1. Click the down arrow next to `mouse line` > `Text filter`. A `mouse line` facet will appear on the left margin.
+2. Type in `alk` and press return. There are 52 matching rows of the original 100 rows (and these rows are selected for the subsequent steps).
 3. At the top, change the view to `Show` 50 `rows`. This way you will see most of the matching rows.
 
 > ## Exercise
 >
-> 1. What roof types are selected by this procedure?  
+> 1. What mouse lines are selected by this procedure?  
 > 2. How would you restrict this to only one of the roof types?  
 >
 > > ## Solution
-> > 1. Do `Facet` > `Text facet` on the `respondent_roof_type` column after filtering. This will show that
-> > two names match your filter criteria. They are `mabatipitched` and `mabatisloping`.   
-> > 2. To restrict to only one of these two roof types, you could include more letters in your filter.
+> > 1. Do `Facet` > `Text facet` on the `mouse line` column after filtering. This will show that
+> > two names match your filter criteria. They are `Alk3` and `alk6`.   
+> > 2. To restrict to only one of these two mouse lines, you could include more letters in your filter.
 > >
 > {: .solution}
 {: .challenge}
@@ -41,7 +41,7 @@ There are many entries in our data table. We can filter it to work on a subset o
 
 In addition to the simple text filtering we used above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. You will see the `include` or `exclude` options if you hover over the name in the facet window.
 
-If you still have your facet for `respondent_roof_type`, you can use it, or use drop-down menu > `Facet` > `Text facet` to create a new facet. Only the entries with names that agree with your `Text filter` will be included in this facet.
+If you still have your facet for `mouse line`, you can use it, or use drop-down menu > `Facet` > `Text facet` to create a new facet. Only the entries with names that agree with your `Text filter` will be included in this facet. If you used the filter to select one of the mouse lines, reset it to `alk`.
 
 Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all of the data that
 is currently selected, while filtering allows you to select a subset of your data for analysis.
