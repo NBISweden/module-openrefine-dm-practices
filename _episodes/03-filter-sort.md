@@ -67,48 +67,61 @@ Remove the filter before moving on so that you again have the full dataset of 13
 
 ## Sort
 
-You can sort the data by a column by using the drop-down menu in that column.
+You can sort the data in a column by using the drop-down menu available in that column.
 There you can sort by `text`, `numbers`, `dates` or `booleans` (`TRUE` or `FALSE` values). You can also specify what order to put `Blanks` and `Errors` in the sorted results.
 
 If this is your first time sorting this table, then the drop-down menu for the selected column shows `Sort...`. Select what you would like to sort by (such as `numbers`). Additional options will then appear for you to fine-tune your sorting.
 
+
 > ## Exercise
 >
-> Sort the data by `gps_Altitude`. Do you think the first few entries may have incorrect altitudes?.
+> Sort by month. How can you ensure that months are in order?
+{: .challenge}
+
+If you try to re-sort a column that you have already used, the drop-down menu changes slightly, to > `Sort` without the `...`, to remind you that you have already used this column. It will give you additional options:
+
+* > `Sort` > `Sort...` - This option enables you to modify your original sort.
+* > `Sort` > `Reverse` - This option allows you to reverse the order of the sort.
+* > `Sort` > `Remove sort` - This option allows you to undo your sort.
+
+> ## Exercise
+>
+> Sort the data by `plot`. What year(s) were observations recorded for plot 1 in this filtered dataset?
 >
 > > ## Solution
-> > In the `gps:Altitude` column, select `Sort...` > `numbers` and select `smallest first`. The first few values are all 0. The altitudes are more likely 'missing' than incorrect. The survey is delivered by Smartphone with the gps information added automatically by the app. The lack of an altitude value suggests that the smartphone was unable to provide it and it defaulted to 0.
+> > In the `plot` column, select `Sort...` > `numbers` and select `smallest first`. The years represented are 1990 and 1995.
+> >
 > {: .solution}
 {: .challenge}
 
 
-If you try to re-sort a column that you have already used, the drop-down menu changes slightly, to > `Sort` without the `...`, to remind you that you have already used this column. It will give you additional options:
-
-* `Sort` > `Sort...` - This option enables you to modify your original sort.
-* `Sort` > `Reverse` - This option allows you to reverse the order of the sort.
-* `Sort` > `Remove sort` - This option allows you to undo your sort.
-
-### Sorting by multiple columns.
+### Sorting by multiple columns
 
 You can sort by multiple columns by performing sort on additional columns. The sort will depend on the order in which you select columns to sort. To restart the sorting process with a particular column, check the `sort by this column alone` box in the `Sort` pop-up menu.
+
+> ## Exercise
+>
+> You might like to look for trends in your data by month of collection across years.     
+> 1. How do you sort your data by month?   
+> 2. How would you do this differently if you were instead trying to see all of your entries in chronological order?  
+>
+> > ## Solution
+> >
+> > 1. For the `mo` column, click on `Sort...` and then `numbers`. This will group all entries made in, for example, January,
+> > together, regardless of the year that entry was collected.  
+> > 2. For the `yr` column, click on `Sort` > `Sort...` > `numbers` and select `sort by this column alone`. This will undo the
+> > sorting by month step. Once you've sorted by `yr` you can then apply another sorting step to sort by month within year. To do this
+> > for the `mo` column, click on `Sort` > `numbers` but do not select `sort by this column alone`. To ensure that all entries are shown
+> > chronologically, you will need to add a third sorting step by day within month.
+> >
+> {: .solution}  
+{: .challenge}
 
 If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sort. If it is the only column sorted, then data reverts to its original order.
 
 > ## Exercise
 >
-> We discovered in an earlier lesson that the value for one of the `village` entries was given as 49. This is clearly wrong. By looking at the GPS coordinates for the entries of the other villages can we decide what village the data in that column was collected from?   
-> 1. Sort on `gps_Latitude` as a number with the smallest first.   
-> 2. Add a sort on `gps_Longitude` as a number with the smallest first. 
-> 3. Using the drop down arrow on the `village` column, select `Edit column` > `Move column to end`. This will allow you to compare village names with GPS coordinates. 
-> 4. Scroll through the entries until you find village `49`. Can you tell from it's GPS coordinates which village it belong to?
-> 5. Now sort only by `interview_date` as date. Move the `village` column to the start of the table. Does the row where village is `49` group with one particular village? Is it the same village as when comparing GPS coordinates?
+> Sort by `year`, `month` and `day` in some order. Be creative: try sorting as `numbers` or `text`, and in reverse order (`largest to smallest` or `z to a`).
 >
-> > ## Solution
-> >
-> > The interview data for that row is in a small cluster of Chirodzo interviews when sorting by GPS coordinates. When sorting by interview date, it is also with Chirodzo interviews. In fact, only Chirodzo had interviews conducted on that date. 
-> {: .solution}  
+> Use > `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
 {: .challenge}
-
-Perform a text facet on the `village` column and change `49` to the village name that was determined in the previous exercise. You should now have only three village names. 
-
-{% include links.md %}
