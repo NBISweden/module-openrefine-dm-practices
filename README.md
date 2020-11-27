@@ -4,4 +4,4 @@
 
 # openrefine-dm-practices
 
-This lesson is under development and modified from the Carpentries lesson on OpenRefine for social scientists.
+This lesson is under development and modified from the Carpentries lessons on OpenRefine for social scientists and OpenRefine ecology lesson.
