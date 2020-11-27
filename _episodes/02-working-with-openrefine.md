@@ -136,72 +136,46 @@ The technical details of how the different clustering algorithms work can be fou
 
 [More on clustering](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth)
 
-## Transforming data
+## Split
 
-The data in the `items_owned` column is a set of items in a list. The list is in square brackets and each item is in single quotes. Before we split the list into individual items in the next section, we first want to remove the brackets and the quotes.
 
-1. Click the down arrow at the top of the `items_owned` column. Choose `Edit Cells` > `Transform...`
-2. This will open up a window into which you can type a GREL expression. GREL stands for General Refine Expression Language.
-![OR_Transform](../fig/OR_02_Transform.png)
+If data in a column needs to be split into multiple columns, and the parts are separated by a common separator (say a comma, or a space), you can use that separator to divide up the pieces into their own columns.
 
-3. First we will remove all of the left square brackets (`[`). In the Expression box type `value.replace("[", "")` and click `OK`.
 
-4. What the expression means is this: Take the `value` in each cell in the selected column and replace all of the "[" with "" (i.e. nothing - delete).
+1. Let us suppose we want to split the `scientificName` column into separate columns for genus and for species.
+2. Click the down arrow at the top of the `scientificName` column. Choose `Edit Column` > `Split into several columns...`
+3. In the pop-up, in the `Separator` box, replace the comma with a space.
+4. Uncheck the box that says `Remove this column`.
+5. Click `OK`. You'll get some new columns called `scientificName 1`, `scientificName 2`, and so on.
+6. Notice that in some cases `scientificName 1` and `scientificName 2` are empty. Why is this? What do you think we
+can do to fix this?
+7. Note that the character on which the split is performed could be anything.  The default is a comma, and you changed
+that to a space in this case, but you could make it any letter or number or special character.  The only requirements
+are that A) it appears in every row of the column, and B) it appears consistently in the place where you want the column
+to be split.
 
-5. Click `OK`. You should see in the `items_owned` column that there are no longer any left square brackets.
+> ## Solution
+>
+> The entries that have data in `scientificName 3` and `scientificName 4` but not the first two `scientificName` columns
+> had an extra space at the beginning of the entry. Leading white spaces are very difficult to notice when cleaning data
+> manually. This is another advantage of using OpenRefine to clean your data. We'll look at how to
+> fix leading and trailing white spaces in a later exercise.
+{: .solution}
 
 > ## Exercise
 >
-> Use this same strategy to remove the single quote marks (`'`), the
-> right square brackets (`]`), and spaces from the `items_owned` column.
+> Try to change the name of the second new column to "species". Are you able to do this?  Or do you encounter a problem?
 >
 > > ## Solution
-> > 1. `value.replace("'", "")`
-> > 2. `value.replace("]", "")`
-> > 3. `value.replace(" ", "")`
-> > You should now have a list of items separated by semi-colons (`;`).
+> >
+> > On the `scientificName 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "species" into
+> > the box that appears. A pop-up will appear that says `Another column already named species`. This is because there is another
+> > column where we've recorded the species abbreviation. If you capitalize the S, it will work.  Or you can choose another name  
+> > like `speciesName` for this column or change the other `species` column name to `speciesAbbreviation`.
 > {: .solution}
 {: .challenge}
 
-Now that we have cleaned out extraneous characters from our `items_owned` column, we can use a text facet to see which items
-were commonly owned or rarely owned by the interview respondents.
 
-1. Click the down arrow at the top of the `items_owned` column. Choose `Facet` > `Custom text facet...`
-2. In the `Expression` box, type `value.split(";")`.
-3. Click `OK`.
-
-You should now see a new text facet box in the left-hand pane.
-
-> ## Exercise
-> Which two items are the most commonly owned? Which are the two
-> least commonly owned?
->
-> > ## Solution
-> > Select `Sort by:` `count`. The most commonly owned items are
-> > mobile phone and radio, the least commonly owned are cars and computers.
-> {: .solution}
-{: .challenge}
-
-> ## Exercise
-> Perform the same clean up steps and customized text faceting for
-> the `months_lack_food` column. Which month(s) were farmers
-> more likely to lack food?
->
-> > ## Solution
-> > All four cleaning steps can be performed by combining `.replace`
-> > statements. The command is:
-> > `value.replace("[", "").replace("]", "").replace(" ", "").replace("'", "")`
-> > This can also be done in four separate steps if preferred.
-> > November was the most common month for respondents to lack food.
-> {: .solution}
-{: .challenge}
-
-> ## Exercise
-> Perform the same clean up steps for the `months_no_water`, `liv_owned`, `res_change`, and `no_food_mitigation` columns.
-> Hint: To reuse a GREL command, click the `History` tab and then
-> click `Reuse` next to the command you would like to apply to that
-> column.
-{: .challenge}
 
 ## Using undo and redo.
 
