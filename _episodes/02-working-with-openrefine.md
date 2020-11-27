@@ -188,9 +188,9 @@ Words with spaces at the beginning or end are particularly hard for we humans to
 
 If you unchecked that box when importing data, or if leading or trailing whitespaces were introduced while splitting columns, or other operations, OpenRefine also provides a tool to remove blank characters from the beginning and end of any entries that have them.
 
-1. Edit the `village` on the first row to introduce a space at the end, set to `God `.
-2. Create a new text facet for the `village` column `respondent_wall_type`. You should now see two different entries for `God`, one of those has a trailing whitespace.
+1. Edit the `sex` on the first row to introduce a space at the end, set to `female `.
+2. Create a new text facet for the `sex` column. You should now see two different entries for `female`, one of those has a trailing whitespace.
 3. To remove the whitespace, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
-4. You should now see only four choices in your text facet again.
+4. You should now see only three choices in your text facet again.
 
 {% include links.md %}
