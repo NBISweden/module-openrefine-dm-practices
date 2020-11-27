@@ -26,7 +26,7 @@ There are many entries in our data table. We can filter it to work on a subset o
 > ## Exercise
 >
 > 1. What mouse lines are selected by this procedure?  
-> 2. How would you restrict this to only one of the roof types?  
+> 2. How would you restrict this to only one of the mouse lines?  
 >
 > > ## Solution
 > > 1. Do `Facet` > `Text facet` on the `mouse line` column after filtering. This will show that
@@ -49,21 +49,21 @@ is currently selected, while filtering allows you to select a subset of your dat
 
 > ## Exercise
 >
-> Use `include / exclude` to select only entries from one of these two roof types.
+> Use `include / exclude` to select only entries from one of these mouse lines.
 >
 > > ## Solution
 > >
-> > 1. In the facet (left margin), click on one of the names, such as `mabatisloping`. Notice that when you click on the name, or hover
-> > over it, there are entries to the right for `edit` and `include`.
-> > 2. Click `include`. This will explicitly include this roof type, and exclude others that are not explicitly included. Notice that the
+> > 1. In the facet (left margin), hover on one of the names, such as `Alk3`. Notice that there are entries to the right for `edit` and `include`.
+> > 2. Click `include`. This will explicitly include this mouse line, and exclude others that are not explicitly included. Notice that the
 > option now changes to `exclude`.
-> > 3. Click `include` and `exclude` on the other roof type and notice how the two entries appear and disappear
+> > 3. Another way to include entries is to click the name directly.
+> > 4. Click `include` and `exclude` to notice how the two entries appear and disappear
 > >  from the table.
 > >
 > {: .solution}
 {: .challenge}
 
-Remove the filter before moving on so that you again have the full dataset of 131 records.
+Remove the filter before moving on so that you again have the full dataset of 100 records.
 
 ## Sort
 
