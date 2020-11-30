@@ -24,13 +24,14 @@ To transform cells in the `animal ID` column to numbers, click the down arrow fo
 
 > ## Exercise
 >
-> Transform three more columns, `no_members`, `yrs_liv`, and `buildings_in_compound`, from text to numbers. Can all columns be transformed to numbers? - Try it with `village` for example.
+> Try to transform the columns, `date` and `age`, from text to numbers. Can all columns be transformed to numbers?
 >
 > > ## Solution
 > >
 > > Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to
-> > a column that doesn't meet this criteria, and then click the `Undo / Redo` tab, you will see a step that starts with
-> > `Text transform on 0 cells`. This means that the data in that column was not transformed.
+> > a column where the observations don't meet this criteria a yellow square will appear at the top starting with `Text transform on 0 cells`. If you click the `Undo / Redo` tab, you will see a step that starts with the same text, meaning
+> > that the data in that column was not transformed. This is the case for `date` column.
+For the `age` column, some observations but not all, meet the criteria for being transformed into a number and will result in 43 cells being transformed. Having several formats in the same column is not recommended.
 > {: .solution}
 {: .challenge}
 
