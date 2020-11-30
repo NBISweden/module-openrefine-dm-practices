@@ -5,6 +5,7 @@ title: Setup
 
 > ## Data
 > FIX ME!
+>
 > <!---The data for this lesson is a part of the Data Carpentry Social Sciences
 > workshop. It is a teaching version of the Studying African Farmer-Led
 > Irrigation (SAFI) database. The SAFI dataset represents interviews of farmers
@@ -12,14 +13,17 @@ title: Setup
 > These interviews were conducted between November 2016 and June 2017 and probed
 > household features (e.g. construction materials used, number of household
 > members), agricultural practices (e.g. water usage), and assets (e.g. number
-> and types of livestock).
+> and types of livestock).--->
 >
 > The data used in this lesson
 > is a subset of the teaching version that has been intentionally 'messed up'
 > for this lesson.
 >
-> **Download** the data file to your computer by [clicking this link](https://ndownloader.figshare.com/files/11502815). (direct link: <https://ndownloader.figshare.com/files/11502815>)
-{: .prereq}--->
+> **Download**
+FIX ME!
+><!---the data file to your computer by [clicking this link](https://ndownloader.figshare.com/files/11502815). (direct link: <https://ndownloader.figshare.com/files/11502815>)--->
+>
+{: .prereq}
 
 
 > ## Software
