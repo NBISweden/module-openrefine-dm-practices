@@ -86,7 +86,7 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 > ## Exercise
 >
-> Sort the data by `date`. What is the animal ID recorded for on the most recent date in this filtered dataset?
+> Sort the data by `date`. What is the animal ID recorded on the most recent date in this dataset?
 >
 > > ## Solution
 > > In the `date` column, select `Sort...` > `text` and select `z-a`. The animal ID for 2020-10-08 is 957895.
