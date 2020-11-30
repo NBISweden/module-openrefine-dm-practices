@@ -41,4 +41,4 @@ edits by hand.
 > <!--- ## For Instructors
 > If you are teaching this lesson in a workshop, please see the
 > [Instructor notes](guide/).
-{: .prereq} --->
+{: .prereq}--->
