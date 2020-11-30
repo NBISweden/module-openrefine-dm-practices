@@ -13,6 +13,7 @@ objectives:
 - "Use clustering to detect possible typing errors."
 - "Understand that there are different clustering algorithms which might give different results."
 - "Employ drop-downs to remove white spaces from cells."
+- "Employ drop-downs to split values from one column into several columns."
 - "Manipulate data using previous steps with undo/redo."
 keypoints:
 - "OpenRefine can import a variety of file types."
@@ -77,17 +78,17 @@ along with a number representing how many times that value occurs in the column.
 
 > ## Exercise
 >
-> 1. Using faceting, find out on how `date` values more than one animal was registered.
+> 1. Using faceting, find out for how many `date` values more than one animal was registered.
 >
 > 2. Is the column formatted as Text or Date?
 >
 > 3. Use faceting to produce a timeline display for `date`. You will need to use `Edit cells` > `Common transforms` > `To date` to convert this column to dates.
 >
-> 4. During what period were most of the animals registered?
+> 4. During which month were most of the animals registered?
 >
 > > ## Solution
 > >
-> > For the column `date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 19 unique entries in
+> > For the column `date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 95 unique entries in
 > > this column.
 > > By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
 > > `To date`.  Notice the the values in the column turn green. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date.
@@ -99,7 +100,7 @@ along with a number representing how many times that value occurs in the column.
 > ## More on Facets
 > [OpenRefine Wiki: Faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
 >
-> As well as 'Text facets' Refine also supports a range of other types of facet. These include:
+> As well as 'Text facets' OpenRefine also supports a range of other types of facet. These include:
 >
 > * Numeric facets
 > * Timeline facets (for dates)
@@ -116,6 +117,19 @@ along with a number representing how many times that value occurs in the column.
 > * Facet by blank - a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if they have no data present in that column. This is useful when looking for rows missing key data.
 {: .callout}
 
+## Using undo and redo
+
+It's common while exploring and cleaning a dataset to discover after you've made a change that you really should have done something else first. OpenRefine provides `Undo` and `Redo` operations to make this easy.
+
+> ## Exercise
+>
+> 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
+> 2. Click on the step that you want to go back to, in this case go back one step to before you had done the text to date transformation.
+> 3. Visually confirm that the date column now only contains the date and no timestamp i.e. 2018-01-06
+> 3. Notice that you can still click on the later steps to `Redo` the actions.
+{: .challenge}
+
+
 ## Using clustering to detect possible typing errors
 
 In OpenRefine, clustering means "finding groups of different values that might be alternative representations of the same thing". For example, the two strings `New York` and `new york` are very likely to refer to the same concept and just have capitalization differences. Likewise, `Gödel` and `Godel` probably refer to the same person. Clustering is a very powerful tool for cleaning datasets which contain misspelled or mistyped entries. OpenRefine has several clustering algorithms built in. Experiment with them, and learn more about these algorithms and how they work.
@@ -124,7 +138,7 @@ In OpenRefine, clustering means "finding groups of different values that might b
 2. In the resulting pop-up window, you can change the `Method` and the `Keying Function`. Try different combinations to
  see what different mergers of values are suggested.
 3. Select the `key collision` method and `metaphone3` keying function. It should identify three clusters.
-4. Click the `Merge?` box beside each cluster, then click `Merge Selected and Recluster` to apply the corrections to the dataset.
+4. Tick the `Merge?` box beside each cluster, then click `Merge Selected and Re-cluster` to apply the corrections to the dataset.
 4. Try selecting different `Methods` and `Keying Functions` again, to see what new merges are suggested.
 5. You should find that using the default settings, no more clusters are found. (Note that the `key collision` method with `ngram-fingerprint` keying function will suggest to merge `F` and `M`, which is not desired.)
 6. To merge the remaning values we would like to merge, we will hover over them in the sex text facet, select edit, and manually change the names. Change `M` to `male` and `F` to `female`. You should now have three clusters: `N/A`, `male`, and `female`.
@@ -148,7 +162,7 @@ If data in a column needs to be split into multiple columns, and the parts are s
 4. Uncheck the box that says `Remove this column`.
 5. Click `OK`. You'll get some new columns called `date 1`, `date 2`, and so on.
 6. Note that the character on which the split is performed could be anything.  The default is a comma, and you changed
-that to a hyphen in this case, but you could make it any letter or number or special character.  The only requirements
+that to a hyphen in this case, but you could make it any letter, number or special character.  The only requirements
 are that A) it appears in every row of the column, and B) it appears consistently in the place where you want the column
 to be split.
 
@@ -166,19 +180,6 @@ Or do you encounter a problem?
 You should now have the original column called "date", and 3 the new columns "year", "month", "day".  
 > >
 > {: .solution}
-{: .challenge}
-
-
-## Using undo and redo.
-
-It's common while exploring and cleaning a dataset to discover after you've made a change that you really should have done something else first. OpenRefine provides `Undo` and `Redo` operations to make this easy.
-
-> ## Exercise
->
-> 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
-> 2. Click on the step that you want to go back to, in this case go back several steps to before you had done any text transformation.
-> 3. Visually confirm that those columns now contain the special characters that we had removed previously.
-> 3. Notice that you can still click on the later steps to `Redo` the actions. Before moving on to the next lesson, redo all the steps in your analysis so that all of the columns you modified are lacking in square brackets, spaces, and single quotes.
 {: .challenge}
 
 
