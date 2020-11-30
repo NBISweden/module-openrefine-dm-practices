@@ -19,7 +19,7 @@ title: Setup
 > for this lesson.
 >
 > **Download** the data file to your computer by [clicking this link](https://ndownloader.figshare.com/files/11502815). (direct link: <https://ndownloader.figshare.com/files/11502815>)
-{: .prereq} --->
+{: .prereq}--->
 
 
 > ## Software
