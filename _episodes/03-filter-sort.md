@@ -119,7 +119,7 @@ You can sort by multiple columns by performing sort on additional columns. The s
 
 If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sort. If it is the only column sorted, then data reverts to its original order.
 
-> ## Exercise
+> ## Exercise (optional)
 >
 > Sort by `year`, `month` and `day` in some order. Be creative: try sorting as `numbers` or `text`, and in reverse order (`largest to smallest` or `z to a`).
 >
