@@ -23,7 +23,7 @@ There are many entries in our data table. We can filter it to work on a subset o
 2. Type in `alk` and press return. There are 52 matching rows of the original 100 rows (and these rows are selected for the subsequent steps).
 3. At the top, change the view to `Show` 50 `rows`. This way you will see most of the matching rows.
 
-> ## Exercise
+> ## Exercise 2.1
 >
 > 1. What mouse lines are selected by this procedure?  
 > 2. How would you restrict this to only one of the mouse lines?  
@@ -47,7 +47,7 @@ Faceting and filtering look very similar. A good distinction is that faceting gi
 is currently selected, while filtering allows you to select a subset of your data for analysis.
 
 
-> ## Exercise
+> ## Exercise 2.2
 >
 > Use `include / exclude` to select only entries from one of these mouse lines.
 >
@@ -73,7 +73,7 @@ There you can sort by `text`, `numbers`, `dates` or `booleans` (`TRUE` or `FALSE
 If this is your first time sorting this table, then the drop-down menu for the selected column shows `Sort...`. Select what you would like to sort by (such as `numbers`). Additional options will then appear for you to fine-tune your sorting.
 
 
-> ## Exercise
+> ## Exercise 2.3
 >
 > Sort by month. How can you ensure that months are in order?
 {: .challenge}
@@ -84,7 +84,7 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 * > `Sort` > `Reverse` - This option allows you to reverse the order of the sort.
 * > `Sort` > `Remove sort` - This option allows you to undo your sort.
 
-> ## Exercise
+> ## Exercise 2.4
 >
 > Sort the data by `date`. What is the animal ID recorded on the most recent date in this dataset?
 >
@@ -99,7 +99,7 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 You can sort by multiple columns by performing sort on additional columns. The sort will depend on the order in which you select columns to sort. To restart the sorting process with a particular column, check the `sort by this column alone` box in the `Sort` pop-up menu.
 
-> ## Exercise
+> ## Exercise 2.5
 >
 > You might like to look for trends in your data by month of collection across years.     
 > 1. How do you sort your data by month?   
@@ -119,7 +119,7 @@ You can sort by multiple columns by performing sort on additional columns. The s
 
 If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sort. If it is the only column sorted, then data reverts to its original order.
 
-> ## Exercise (optional)
+> ## Exercise 2.6 (optional)
 >
 > Sort by `year`, `month` and `day` in some order. Be creative: try sorting as `numbers` or `text`, and in reverse order (`largest to smallest` or `z to a`).
 >

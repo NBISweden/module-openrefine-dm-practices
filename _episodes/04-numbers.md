@@ -22,7 +22,7 @@ Be sure to remove any `Text filter` facets you have enabled from the left panel 
 
 To transform cells in the `animal ID` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `animal ID` values change from left-justified to right-justified, and black to green in color.
 
-> ## Exercise
+> ## Exercise 3.1
 >
 > Try to transform the columns, `date` and `age`, from text to numbers. Can all columns be transformed to numbers?
 >
@@ -39,7 +39,7 @@ For the `age` column, some observations but not all, meet the criteria for being
 Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them.
 We can do that with a `Numeric facet`.
 
-> ## Exercise
+> ## Exercise 3.2
 > 1. For the column `animal ID` you just transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text). You can hover over the cell and click the blue `edit` that appears, change the `Data type` to `text` at the top of the pop-up window.
 > 2. Use the column pulldown menu to apply a numeric facet to the column you edited. The facet will appear in the left panel.
 > 3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.

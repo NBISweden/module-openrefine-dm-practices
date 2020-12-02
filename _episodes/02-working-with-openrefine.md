@@ -76,7 +76,7 @@ along with a number representing how many times that value occurs in the column.
 > - `F`, `f`, `female` and `Female` refer to the same sex. We will see how to correct these misspelled and mistyped entries in a later exercise.
 {: .solution}
 
-> ## Exercise
+> ## Exercise 1.1
 >
 > 1. Using faceting, find out for how many `date` values more than one animal was registered.
 >
@@ -121,7 +121,7 @@ along with a number representing how many times that value occurs in the column.
 
 It's common while exploring and cleaning a dataset to discover after you've made a change that you really should have done something else first. OpenRefine provides `Undo` and `Redo` operations to make this easy.
 
-> ## Exercise
+> ## Exercise 1.2
 >
 > 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
 > 2. Click on the step that you want to go back to, in this case go back one step to before you had done the text to date transformation.
@@ -167,7 +167,7 @@ are that A) it appears in every row of the column, and B) it appears consistentl
 to be split.
 
 
-> ## Exercise
+> ## Exercise 1.3
 >
 >1. Try to change the name of the column "date 1" to "date". Are you able to do this?
 Or do you encounter a problem?
