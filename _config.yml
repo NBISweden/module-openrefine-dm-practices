@@ -7,7 +7,7 @@
 # dc: Data Carpentry
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
-carpentry: "dc"
+carpentry: "nbis"
 
 # Overall title for pages.
 title: "Cleaning tabular data with OpenRefine"
@@ -32,6 +32,7 @@ repository: <USERNAME>/<PROJECT>
 email: "team@carpentries.org"
 
 # Sites.
+nbis_site: "https://nbis.se/"
 amy_site: "https://amy.software-carpentry.org/workshops"
 carpentries_github: "https://github.com/carpentries"
 carpentries_pages: "https://carpentries.github.io"
