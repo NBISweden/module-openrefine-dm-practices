@@ -93,7 +93,8 @@ along with a number representing how many times that value occurs in the column.
 > > By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
 > > `To date`.  Notice the the values in the column turn green. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date.
 > >
-> > Five dates had more than one animal registered. Most of the animals were registered in January of 2019 (seen by the tallest bar in the timeline facet).
+> > Five dates had more than one animal registered.
+> > Most of the animals were registered in January of 2019 (seen by the tallest bar in the timeline facet).
 > {: .solution}
 {: .challenge}
 
