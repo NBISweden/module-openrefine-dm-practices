@@ -76,6 +76,11 @@ If this is your first time sorting this table, then the drop-down menu for the s
 > ## Exercise 2.3
 >
 > Sort by month. How can you ensure that months are in order?
+> > ## Solution
+> > 1. In the `month` column, select `Sort...`
+> > 2. In the pop-up that appears, tick `numbers` and select `smallest first`.
+> >
+> {: .solution}
 {: .challenge}
 
 If you try to re-sort a column that you have already used, the drop-down menu changes slightly, to > `Sort` without the `...`, to remind you that you have already used this column. It will give you additional options:
@@ -89,7 +94,9 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 > Sort the data by `date`. What is the animal ID recorded on the most recent date in this dataset?
 >
 > > ## Solution
-> > In the `date` column, select `Sort...` > `text` and select `z-a`. The animal ID for 2020-10-08 is 957895.
+> > In the `date` column, select `Sort...` > `text` and select `z-a`.
+> >
+> > The animal ID for 2020-10-08 is 957895.
 > >
 > {: .solution}
 {: .challenge}
