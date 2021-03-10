@@ -1,4 +1,3 @@
-,,,,,,,,,,,,,
 animal ID,researcher,experiment reference,sample,genotype,tax_id,date,mouse line,strain,age,developmental stage,sex,organism part,experiment type
 834217,Kim,up_235_1,A,Kdr Y949F/Y949F,10900,2020-02-18,Alk3,BALB/cJ,4,adult,male,lung,sequencing assay
 836507,Sam,up_201_4,D_hom,Kdr Y949F/Y949F,10900,2020-02-23,Kdr,C57BL/6,9,adult,male,lung,sequencing assay

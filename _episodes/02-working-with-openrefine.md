@@ -41,7 +41,7 @@ Once OpenRefine is launched in your browser, the left margin has options to `Cre
 2. Click `Choose Files` and select the file `samples_openrefine_lesson.csv` that you downloaded in the [setup step]({{site.baseurl}}/setup.html). Click `Open` or double-click on the filename.
 3. Click `Next>>` under the browse button to upload the data into OpenRefine.
 4. OpenRefine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange. You would then choose the correct separator in the box shown and click `Update Preview` (middle right). If this is the wrong file, click `<<Start Over` (upper left).  There are also options to indicate whether the dataset has column headers included and whether OpenRefine should skip a number of rows before reading the data.
-![Parse Options](../fig/OR_01_parse_options.png)
+![Parse Options](../fig/OR_01_parse.png)
 
 5. If all looks well, click `Create Project>>` (upper right).
 
@@ -93,13 +93,14 @@ along with a number representing how many times that value occurs in the column.
 > > By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
 > > `To date`.  Notice the the values in the column turn green. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date.
 > >
-> > Five dates had more than one animal registered.
-> > Most of the animals were registered in January of 2019 (seen by the tallest bar in the timeline facet).
+> > - Five dates had more than one animal registered.
+> > - The `date` column was formatted as Text.
+> > - Most of the animals were registered in January of 2019 (seen by narrowing the window around the tallest bar in the timeline facet).
 > {: .solution}
 {: .challenge}
 
 > ## More on Facets
-> [OpenRefine Wiki: Faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
+> [OpenRefine Wiki: Faceting](https://docs.openrefine.org/manual/facets/)
 >
 > As well as 'Text facets' OpenRefine also supports a range of other types of facet. These include:
 >
@@ -142,7 +143,7 @@ In OpenRefine, clustering means "finding groups of different values that might b
 4. Tick the `Merge?` box beside each cluster, then click `Merge Selected and Re-cluster` to apply the corrections to the dataset.
 4. Try selecting different `Methods` and `Keying Functions` again, to see what new merges are suggested.
 5. You should find that using the default settings, no more clusters are found. (Note that the `key collision` method with `ngram-fingerprint` keying function will suggest to merge `F` and `M`, which is not desired.)
-6. To merge the remaning values we would like to merge, we will hover over them in the sex text facet, select edit, and manually change the names. Change `M` to `male` and `F` to `female`. You should now have three clusters: `N/A`, `male`, and `female`.
+6. To merge the remaning values we would like to merge, we will hover over them in the sex text facet, select edit, and manually change the names. In previous lesson we had identified `male`, `female` and unknown as `allowed values`. Change `M` to `male` and `F` to `female` and `N/A` to `unknown`. You should now have three clusters: `female`, `male`, and `unknown`.
 
 Important: If you `Merge` using a different method or keying function, or more times than described in the instructions above,
 your solutions for later exercises might not be the same as shown in those exercise solutions.
@@ -170,15 +171,17 @@ to be split.
 
 > ## Exercise 1.3
 >
->1. Try to change the name of the column "date 1" to "date". Are you able to do this?
-Or do you encounter a problem?
-> Change the name of the first new column to "year" instead, the second to "month" and the third to "day".
+> Try to change the name of the column `date 1` to `date`. Are you able to do this? Or do you encounter a problem?
+>
+> Change the name of the first new column to `year` instead, the second to `month` and the third to `day`.
 >
 > > ## Solution
 > >
-> > On the `date 1` column, click the down arrow and then `Edit column` > `Rename this column`. Type "date into
-> > the box that appears. A pop-up will appear that says `Another column already named date`. If you capitalize the D, it will work but in this case we choose "year" as the name instead. (Note: If the pop-up did not appear it means you forgot to uncheck the `Remove this column` box in step 4 above.)
-You should now have the original column called "date", and 3 the new columns "year", "month", "day".  
+> > 1. On the `date 1` column, click the down arrow and then `Edit column` > `Rename this column`.
+> > 2. Type `date` into the box that appears. A pop-up will appear that says `Another column already named date`. If you capitalize the D, it will work but in this case we choose `year` as the name instead.
+(Note: If the pop-up did not appear it means you forgot to uncheck the `Remove this column` box in step 4 above.)
+> >
+> > You should now have the original column called `date`, and the 3 new columns `year`, `month`, `day`.  
 > >
 > {: .solution}
 {: .challenge}
