@@ -71,6 +71,11 @@ To the right, there are several options for the join.
 5. Tick the option `Delete joined columns.`
 
 
+#Add column
+To add a column `scientific_name`
+1. Click the down arrow next to `sample` > `Edit column` > `Add column based on this column...`. A pop-up window will appear.
+
+
 ## Exporting Cleaned Data
 
 You can also export just your cleaned data, rather than the entire project.
