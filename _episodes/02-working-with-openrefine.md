@@ -17,9 +17,10 @@ objectives:
 - "Manipulate data using previous steps with undo/redo."
 keypoints:
 - "OpenRefine can import a variety of file types."
-- "OpenRefine can be used to explore data using filters."
-- "Clustering in OpenRefine can help to identify different values that might mean the same thing."
+- "Faceting and clustering approaches can identify errors or outliers in data."
 - "OpenRefine can transform the values of a column."
+
+
 ---
 
 # Lesson
