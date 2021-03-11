@@ -6,7 +6,7 @@ root: .
 {% include links.md %}
 ## Instructional Material
 The instructional content of this lesson an adaptation of previous works and is made available under [CC-BY 4.0][cc-by-human]
-by [NBIS - National Bioinformatics Infrastructure Sweden][nbis-site] 2020–{{ 'now' | date: "%Y"}}.
+by [NBIS - National Bioinformatics Infrastructure Sweden](nbis_site) 2020–{{ 'now' | date: "%Y"}}.
 
 Adaptation of lesson [Data Cleaning with OpenRefine for Ecologists](https://datacarpentry.org/OpenRefine-ecology-lesson/)<br>
 Licensed under [CC-BY 4.0][cc-by-human] 2018–{{ 'now' | date: "%Y"}}
