@@ -4,35 +4,34 @@ title: Setup
 ---
 
 > ## Data
-> FIX ME!
 >
-> <!---The data for this lesson is a part of the Data Carpentry Social Sciences
-> workshop. It is a teaching version of the Studying African Farmer-Led
-> Irrigation (SAFI) database. The SAFI dataset represents interviews of farmers
-> in two countries in eastern sub-Saharan Africa (Mozambique and Tanzania).
-> These interviews were conducted between November 2016 and June 2017 and probed
-> household features (e.g. construction materials used, number of household
-> members), agricultural practices (e.g. water usage), and assets (e.g. number
-> and types of livestock).--->
+> The data for this lesson is part of the Introduction to Data Management
+> practices workshop materials. It is a teaching dataset compiled for this workshop.
+> It contains research data from the public domain as well as data created
+> specifically for this workshop with inspiration from real data.
 >
-> The data used in this lesson
-> is a subset of the teaching version that has been intentionally 'messed up'
-> for this lesson.
+> The `samples_openrefine_lesson.csv` used in this lesson is mimicking a
+> spreadsheet file used by a research
+> lab working with genetically modified mice to study biomedical questions.
+> Each researcher is responsible to record every animal used for an experiment in this
+> spreadsheet. Little or no instructions on how to use it is provided and
+> each researcher has their own way of working.
 >
 > **Download**
-FIX ME!
-><!---the data file to your computer by [clicking this link](https://ndownloader.figshare.com/files/11502815). (direct link: <https://ndownloader.figshare.com/files/11502815>)--->
->
+>FIX ME!  
+>The entire dataset for the Introduction to Data Management practices Workshop
+>to your computer by [clicking this link](DOI or downloader). (direct link: <https://ndownloader.figshare.com/files/11502815>)  
+>**or**  
+>The starting file for this lesson only [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
 {: .prereq}
 
 
 > ## Software
 >
-> For this lesson you will need **OpenRefine** (formerly Google Refine) and a
-> web browser.
->
+> For this lesson you will need **OpenRefine** and a web browser.  
 > Note: this is a Java program that runs on your machine (not in the cloud). It runs inside your browser, but no web connection is needed.
 >
+> A text editor (like NotePad or TextEdit) is also needed.
 {: .prereq}
 
 #### Windows
