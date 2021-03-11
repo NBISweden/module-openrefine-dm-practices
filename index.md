@@ -18,6 +18,7 @@ that this tool saves them literally months of work trying to make these
 edits by hand.
 
 
+
 > ## Getting Started
 >
 > Data Carpentry's teaching is hands-on, so participants are encouraged to use
@@ -36,8 +37,3 @@ edits by hand.
 > To most effectively use these materials, please make sure to install
 > everything *before* working through this lesson.
 {: .prereq}
-
-> <!--- ## For Instructors
-> If you are teaching this lesson in a workshop, please see the
-> [Instructor notes](guide/).
-{: .prereq}--->
