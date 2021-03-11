@@ -23,17 +23,12 @@ edits by hand.
 >
 > Data Carpentry's teaching is hands-on, so participants are encouraged to use
 > their own computers to ensure the proper setup of tools for an efficient
-> workflow.
+> workflow.  
+> **These lessons assume no prior knowledge of the skills or tools.**  
 >
-> **These lessons assume no prior knowledge of the skills or tools.**
->
+> **Prerequisites:**  
+>This lesson requires a working copy of OpenRefine.  
 > To get started, follow the directions in the "[Setup](setup.html)" tab to
-> download data to your computer and follow any installation instructions.
->
-> #### Prerequisites
->
-> This lesson requires a working copy of OpenRefine.
->
-> To most effectively use these materials, please make sure to install
-> everything *before* working through this lesson.
+> download data to your computer and follow any installation instructions. To most effectively use these materials, please make sure to install
+> everything **_before_** working through this lesson.
 {: .prereq}
