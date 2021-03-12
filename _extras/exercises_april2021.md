@@ -9,7 +9,7 @@ title: "Exercises"
 ### [Working with OpenRefine](../02-working-with-openrefine/exercise 1.1)
 
 
-> ## Facets (exercise 1.1)
+> ## Using Facets (Exercise 1.1)
 >
 > 1. Using faceting, find out for how many `date` values more than one animal was registered.
 >
@@ -26,8 +26,9 @@ title: "Exercises"
 > > By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
 > > `To date`.  Notice the the values in the column turn green. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date.
 > >
-- Five dates had more than one animal registered.
-- Most of the animals were registered in January of 2019 (seen by the tallest bar in the timeline facet).
+> > - Five dates had more than one animal registered.
+> > - The `date` column was formatted as Text.
+> > - Most of the animals were registered in January of 2019 (seen by narrowing the window around the tallest bar in the timeline facet).
 > {: .solution}
 {: .challenge}
 >
@@ -35,15 +36,17 @@ title: "Exercises"
 >
 > ## Splitting Columns (exercise 1.3)
 >
->1. Try to change the name of the column "date 1" to "date". Are you able to do this?
-Or do you encounter a problem?
-> 2. Change the name of the first new column to "year" instead, the second to "month" and the third to "day".
+> Try to change the name of the column `date 1` to `date`. Are you able to do this? Or do you encounter a problem?
+>
+> Change the name of the first new column to `year` instead, the second to `month` and the third to `day`.
 >
 > > ## Solution
 > >
-> > On the `date 1` column, click the down arrow and then `Edit column` > `Rename this column`. Type "date into
-> > the box that appears. A pop-up will appear that says `Another column already named date`. If you capitalize the D, it will work but in this case we choose "year" as the name instead. (Note: If the pop-up did not appear it means you forgot to uncheck the `Remove this column` box in step 4 above.)
-You should now have the original column called "date", and 3 the new columns "year", "month", "day".  
+> > 1. On the `date 1` column, click the down arrow and then `Edit column` > `Rename this column`.
+> > 2. Type `date` into the box that appears. A pop-up will appear that says `Another column already named date`. If you capitalize the D, it will work but in this case we choose `year` as the name instead.
+(Note: If the pop-up did not appear it means you forgot to uncheck the `Remove this column` box in step 4 above.)
+> >
+> > You should now have the original column called `date`, and the 3 new columns `year`, `month`, `day`.  
 > >
 > {: .solution}
 {: .challenge}
@@ -81,18 +84,20 @@ You should now have the original column called "date", and 3 the new columns "ye
 {: .challenge}
 >
 >
-> ## Sort (exercise 2.4)
+> ## Sorting (exercise 2.4)
 >
 > Sort the data by `date`. What is the animal ID recorded on the most recent date in this dataset?
 >
 > > ## Solution
-> > In the `date` column, select `Sort...` > `text` and select `z-a`. The animal ID for 2020-10-08 is 957895.
+> > In the `date` column, select `Sort...` > `text` and select `z-a`.
+> >
+> > The animal ID for 2020-10-08 is 957895.
 > >
 > {: .solution}
 {: .challenge}
 
 
-> ## Sorting by multiple columns (exercise 2.5)
+> ## Sorting by multiple columns - optional (exercise 2.5)
 >
 > You might like to look for trends in your data by month of collection across years.     
 > 1. How do you sort your data by month?   
@@ -127,8 +132,9 @@ You should now have the original column called "date", and 3 the new columns "ye
 > >
 > > Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to
 > > a column where the observations don't meet this criteria a yellow square will appear at the top starting with `Text transform on 0 cells`. If you click the `Undo / Redo` tab, you will see a step that starts with the same text, meaning
-> > that the data in that column was not transformed. This is the case for `date` column.
-For the `age` column, some observations but not all, meet the criteria for being transformed into a number and will result in 43 cells being transformed. Having several formats in the same column is not recommended.
+> > that the data in that column was not transformed. This is the case for the `date` column.
+For the `age` column, some observations but not all, meet the criteria for being transformed into a number and will result in 43 cells being transformed.   
+> Having several formats in the same column is not recommended.
 > {: .solution}
 {: .challenge}
 
