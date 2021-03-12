@@ -36,7 +36,7 @@ title: Setup
 
 > ## Presentation
 >
-> Slides for this module are available [here](files/module-openrefine-dm-practices.pdf)
+> Slides for this module are available [here](data/module-openrefine-dm-practices.pdf)
 {: .prereq}
 
 #### Windows
