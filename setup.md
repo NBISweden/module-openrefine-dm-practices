@@ -34,6 +34,11 @@ title: Setup
 > A text editor (like NotePad or TextEdit) is also needed.
 {: .prereq}
 
+> ## Presentation
+>
+> Slides for this module are available [here](files/module-openrefine-dm-practices.pdf)
+{: .prereq}
+
 #### Windows
 
 - Check that you have Firefox or Chrome browsers installed and set as your
