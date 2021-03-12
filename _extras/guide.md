@@ -6,7 +6,7 @@ permalink: /guide/
 
 ## Lesson
 
-This time allotted for the teaching and exercises in lessons one through eight in this episode totals 135 minutes. This does not include time for installing OpenRefine, which could take an extra 10-30 minutes depending on how many different platforms and how many computers need OpenRefine installed.
+This time allotted for the teaching and exercises in lessons one through seven in this episode totals 135 minutes. This does not include time for installing OpenRefine, which could take an extra 10-30 minutes depending on how many different platforms and how many computers need OpenRefine installed.
 
 ## Setup
 

@@ -77,7 +77,7 @@ If this is your first time sorting this table, then the drop-down menu for the s
 >
 > Sort by month. How can you ensure that months are in order?
 > > ## Solution
-> > 1. In the `month` column, select `Sort...`
+> > 1. Press the down arrow in the `month` column, select `Sort...`
 > > 2. In the pop-up that appears, tick `numbers` and select `smallest first`.
 > >
 > {: .solution}
