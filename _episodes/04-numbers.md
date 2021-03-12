@@ -20,7 +20,7 @@ When a table is imported into OpenRefine, all columns are treated as having text
 
 Be sure to remove any `Text filter` facets you have enabled from the left panel so that we can examine our whole dataset. You can remove an existing facet by clicking the `x` in the upper left of that facet window.
 
-To transform cells in the `animal ID` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `animal ID` values change from left-justified to right-justified, and black to green in color.
+To transform cells in the `animal ID` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `animal ID` values change from left-justified to right-justified, and from black to green in color.
 
 > ## Exercise 3.1
 >
@@ -30,8 +30,9 @@ To transform cells in the `animal ID` column to numbers, click the down arrow fo
 > >
 > > Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to
 > > a column where the observations don't meet this criteria a yellow square will appear at the top starting with `Text transform on 0 cells`. If you click the `Undo / Redo` tab, you will see a step that starts with the same text, meaning
-> > that the data in that column was not transformed. This is the case for `date` column.
-For the `age` column, some observations but not all, meet the criteria for being transformed into a number and will result in 43 cells being transformed. Having several formats in the same column is not recommended.
+> > that the data in that column was not transformed. This is the case for the `date` column.
+For the `age` column, some observations but not all, meet the criteria for being transformed into a number and will result in 43 cells being transformed.   
+> Having several formats in the same column is not recommended.
 > {: .solution}
 {: .challenge}
 

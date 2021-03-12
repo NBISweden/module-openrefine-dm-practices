@@ -144,7 +144,7 @@ In OpenRefine, clustering means "finding groups of different values that might b
 4. Tick the `Merge?` box beside each cluster, then click `Merge Selected and Re-cluster` to apply the corrections to the dataset.
 4. Try selecting different `Methods` and `Keying Functions` again, to see what new merges are suggested.
 5. You should find that using the default settings, no more clusters are found. (Note that the `key collision` method with `ngram-fingerprint` keying function will suggest to merge `F` and `M`, which is not desired.)
-6. To merge the remaning values we would like to merge, we will hover over them in the sex text facet, select edit, and manually change the names. In previous lesson we had identified `male`, `female` and unknown as `allowed values`. Change `M` to `male` and `F` to `female` and `N/A` to `unknown`. You should now have three clusters: `female`, `male`, and `unknown`.
+6. To merge the remaning values we would like to merge, we will hover over them in the `sex` text facet, select edit, and manually change the names. In a previous lesson we had identified `male`, `female` and `unknown` as allowed values. Change `M` to `male` and `F` to `female` and `N/A` to `unknown`. You should now have 3 clusters corresponding to the allowed values.
 
 Important: If you `Merge` using a different method or keying function, or more times than described in the instructions above,
 your solutions for later exercises might not be the same as shown in those exercise solutions.
@@ -194,8 +194,8 @@ Words with spaces at the beginning or end are particularly hard for we humans to
 
 If you unchecked that box when importing data, or if leading or trailing whitespaces were introduced while splitting columns, or other operations, OpenRefine also provides a tool to remove blank characters from the beginning and end of any entries that have them.
 
-1. Edit the `sex` on the first row to introduce a space at the end, set to `female `.
-2. Create a new text facet for the `sex` column. You should now see two different entries for `female`, one of those has a trailing whitespace.
+1. Edit the `sex` on the first row to introduce a space at the end, set to `male `.
+2. Create a new text facet for the `sex` column. You should now see two different entries for `male`, one of those has a trailing whitespace.
 3. To remove the whitespace, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
 4. You should now see only three choices in your text facet again.
 
