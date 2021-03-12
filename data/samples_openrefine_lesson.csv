@@ -41,9 +41,9 @@ animal ID,researcher,experiment reference,sample,genotype,tax_id,date,mouse line
 985280,Kim,Nov2119_B,,mt,10900,2019-11-21,Alk3,BALB/cJ,10,adult,F,,behaviour
 986267,Kim,Dec2019_B,,mt,10900,2019-12-20,Alk3,BALB/cJ,10,adult,F,,behaviour
 996829,Kim,Dec2019_B,,mt,10900,2019-12-20,Alk3,BALB/cJ,10,adult,M,,behaviour
-804396,Sam,up_201_2,B_wt,wild type genotype,10900,2019-01-07,Kdr,C57BL/6,6,adult,mael,lung,sequencing assay
+804396,Sam,up_201_2,B_wt,wild type genotype,10900,2019-01-07,Kdr,C57BL/6,6,adult,Male,lung,sequencing assay
 805431,Sam,Jan1218_IHC,A,wild type genotype,10900,2018-01-12,Kdr,C57BL/6,P9,pup,female,lung,IHC
-805992,Sam,Jan1319_IHC,B,wild type genotype,10900,2019-01-13,Kdr,C57BL/6,P10,pup,male,lung,IHC
+805992,Sam,Jan1319_IHC,B,wild type genotype,10900,2019-01-13,Kdr,C57BL/6,P10,pup,mael,lung,IHC
 814334,Sam,Jan1919_IHC,C,wild type genotype,10900,2019-01-19,Kdr,C57BL/6,P9,pup,mael,lung,IHC
 816649,Sam,Jan2018_IHC,D,wild type genotype,10900,2018-01-20,Kdr,C57BL/6,P10,pup,female,lung,IHC
 819947,Alex,up_432_1,A,wild type genotype,10900,2019-01-24,Kdr,C57BL/6,6,adult,male,lung,sequencing assay
