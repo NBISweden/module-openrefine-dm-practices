@@ -17,12 +17,17 @@ title: Setup
 > spreadsheet. Little or no instructions on how to use it is provided and
 > each researcher has their own way of working.
 >
+>
 > **Download**
 >FIX ME!  
 >The entire dataset for the Introduction to Data Management practices Workshop
 >to your computer by [clicking this link](DOI or downloader). (direct link: <https://ndownloader.figshare.com/files/11502815>)  
->**or**  
->The starting file for this lesson only [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
+>The three files needed for this lesson is found in dm-practices/6-openrefine
+**or**  
+>The files for this lesson only
+> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
+> - [data_cleaning_script_openrefine_lesson.txt](data/data_cleaning_script_openrefine_lesson.txt)
+> - [ENA_sample_metadata_script](data/ENA_sample_metadata_script.txt)
 {: .prereq}
 
 
