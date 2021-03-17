@@ -1,0 +1,208 @@
+[
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "researcher",
+          "columnName": "researcher",
+          "query": "Sam",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "experiment reference",
+    "newColumnName": "sample_alias",
+    "description": "Rename column experiment reference to sample_alias"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "genotype",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "wild type genotype"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lung tissue from adult wildtype mouse."
+      }
+    ],
+    "description": "Mass edit cells in column genotype"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "genotype",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Kdr Y949F/Y949F"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lung tissue from adult Kdr(Y949F/Y949F) mouse."
+      }
+    ],
+    "description": "Mass edit cells in column genotype"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "sample",
+    "expression": "join ([coalesce(cells['sample'].value,''),coalesce(cells['genotype'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "sample_title",
+    "columnInsertIndex": 4,
+    "description": "Create column sample_title at index 4 based on column sample using expression join ([coalesce(cells['sample'].value,''),coalesce(cells['genotype'].value,'')],' ')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "animal ID",
+      "researcher",
+      "sample_alias",
+      "sample_title",
+      "tax_id",
+      "date",
+      "year",
+      "month",
+      "day",
+      "mouse line",
+      "strain",
+      "age",
+      "developmental stage",
+      "sex",
+      "organism part",
+      "experiment type"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tax_id",
+    "expression": "grel:\"Mus musculus\"",
+    "onError": "set-to-blank",
+    "newColumnName": "scientific_name",
+    "columnInsertIndex": 5,
+    "description": "Create column scientific_name at index 5 based on column tax_id using expression grel:\"Mus musculus\""
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "mouse line",
+    "newColumnName": "sub_strain",
+    "description": "Rename column mouse line to sub_strain"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "developmental stage",
+    "newColumnName": "dev_stage",
+    "description": "Rename column developmental stage to dev_stage"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "organism part",
+    "newColumnName": "tissue_type",
+    "description": "Rename column organism part to tissue_type"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "tissue_type",
+    "expression": "grel:if(value == 'lung', 'MA:0000415', if(value == 'brain', 'MA:0000168', null)))",
+    "onError": "set-to-blank",
+    "newColumnName": "tissue_type_ID",
+    "columnInsertIndex": 13,
+    "description": "Create column tissue_type_ID at index 13 based on column tissue_type using expression grel:if(value == 'lung', 'MA:0000415', if(value == 'brain', 'MA:0000168', null)))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "strain",
+    "expression": "grel:if(value == 'C57BL/6', 'NCIT:C14424', if(value == 'BALB/cJ', 'NCIT:C14657', null)))",
+    "onError": "set-to-blank",
+    "newColumnName": "strain_ID",
+    "columnInsertIndex": 12,
+    "description": "Create column strain_ID at index 12 based on column strain using expression grel:if(value == 'C57BL/6', 'NCIT:C14424', if(value == 'BALB/cJ', 'NCIT:C14657', null)))"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "dev_stage",
+    "expression": "grel:if(value == 'adult', 'BTO:0001043',\n    if(value == 'pup', 'BTO:0004377',\n    if(value == 'embryo', 'BTO:0000379',\nnull)))",
+    "onError": "set-to-blank",
+    "newColumnName": "dev_stage_ID",
+    "columnInsertIndex": 15,
+    "description": "Create column dev_stage_ID at index 15 based on column dev_stage using expression grel:if(value == 'adult', 'BTO:0001043',\n    if(value == 'pup', 'BTO:0004377',\n    if(value == 'embryo', 'BTO:0000379',\nnull)))"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "experiment type",
+          "columnName": "experiment type",
+          "query": "sequencing",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "sample_alias",
+      "tax_id",
+      "scientific_name",
+      "sample_title",
+      "dev_stage",
+      "tissue_type",
+      "sex",
+      "sub_strain",
+      "strain",
+      "strain_ID",
+      "dev_stage_ID",
+      "tissue_type_ID"
+    ],
+    "description": "Reorder columns"
+  }
+]
+

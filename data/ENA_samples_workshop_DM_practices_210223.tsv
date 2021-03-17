@@ -1,9 +1,0 @@
-#checklist_accession	ERC000011
-#unique_name_prefix
-sample_alias	tax_id	scientific_name	sample_title	dev_stage	tissue_type	sex	sub_strain	strain	strain_id	dev_stage_id	tissue_type_id
-up_201_1	10090	Mus musculus	A_wt Lung tissue from adult wildtype mouse.	adult	lung	female	Kdr	C56BL/6 	NCIT:C14424	BTO:0001043	MA:0000415
-up_201_2	10090	Mus musculus	B_wt Lung tissue from adult wildtype mouse.	adult	lung	male	Kdr	C56BL/6 	NCIT:C14424	BTO:0001043	MA:0000415
-up_201_3	10090	Mus musculus	C_wt Lung tissue from adult wildtype mouse.	adult	lung	male	Kdr	C56BL/6 	NCIT:C14424	BTO:0001043	MA:0000415
-up_201_4	10090	Mus musculus	D_hom Lung tissue from adult Kdr(Y949F/Y949F) mouse.	adult	lung	male	Kdr	C56BL/6 	NCIT:C14424	BTO:0001043	MA:0000415
-up_201_5	10090	Mus musculus	E_hom Lung tissue from adult Kdr(Y949F/Y949F) mouse. 	adult	lung	male	Kdr	C56BL/6 	NCIT:C14424	BTO:0001043	MA:0000415
-up_201_6	10090	Mus musculus	F_hom Lung tissue from adult Kdr(Y949F/Y949F) mouse. 	adult	lung	male	Kdr	C56BL/6 	NCIT:C14424	BTO:0001043	MA:0000415

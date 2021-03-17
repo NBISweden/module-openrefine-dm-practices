@@ -1,0 +1,181 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "F",
+          "f"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "F"
+      },
+      {
+        "from": [
+          "female",
+          "Female"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "female"
+      },
+      {
+        "from": [
+          "male",
+          "Male"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "male"
+      }
+    ],
+    "description": "Mass edit cells in column sex"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "male",
+          "mael"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "male"
+      }
+    ],
+    "description": "Mass edit cells in column sex"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "F"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "female"
+      }
+    ],
+    "description": "Mass edit cells in column sex"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "M"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "male"
+      }
+    ],
+    "description": "Mass edit cells in column sex"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "N/A"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "unknown"
+      }
+    ],
+    "description": "Mass edit cells in column sex"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "guessCellType": true,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": "-",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column date by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "date 1",
+    "newColumnName": "year",
+    "description": "Rename column date 1 to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "date 2",
+    "newColumnName": "month",
+    "description": "Rename column date 2 to month"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "date 3",
+    "newColumnName": "day",
+    "description": "Rename column date 3 to day"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sex",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column sex using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "animal ID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column animal ID using expression value.toNumber()"
+  }
+]
