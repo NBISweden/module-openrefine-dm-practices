@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Exercises"
+title: "Exercises for April 2021"
 
 ---
 
@@ -144,4 +144,28 @@ For the `age` column, some observations but not all, meet the criteria for being
 > 2. Use the column pulldown menu to apply a numeric facet to the column you edited. The facet will appear in the left panel.
 > 3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.
 > 4. Experiment with checking or unchecking these boxes to select subsets of your data.
+{: .challenge}
+
+
+### Preparing for the next Lesson on repository submission
+> ## Create a new project in OpenRefine (exercise 3.1)
+>
+> 1. Create a new project in OpenRefine named 'ENA sample metadata` by loading the same data as before `samples_openrefine_lesson.csv`
+> 2. Open the file `ENA_sample_metadata_script.txt` found in the project folder. Copy the JSON script and apply it to the project.
+> 3. Export the cleaned data as a tab separated file (.tsv)
+> 4. Open the file in a text editor and add the following two lines at the beginning of the file:
+> #checklist_accession  ERC000011  
+> #unique_name_prefix
+> Make sure that you have a tab between `#checklist_accession` and `ERC000011`
+> 5. Save the file in your course folder.
+>
+> > ## Solution
+> > 1. Click `Create Project` and select `Get data from` `This Computer`.
+> > 2. Click `Choose Files` and select the file `samples_openrefine_lesson.csv` that you downloaded in the [setup step]({{site.baseurl}}/setup.html). Click `Open` or double-click on the filename.
+> > 3. Click `Next>>` under the browse button to upload the data into OpenRefine.
+> > 4. In the upper right, type 'ENA sample metadata` as the project name and click `Create Project>>`
+> > 5. On the left, click the `Undo/Redo` tab > `Apply...` A pop-up will appear. Paste the content of the `ENA_sample_metadata_script.txt` file and click `Perform operations`
+> > 6. On top right, click `Export` > `Tab-separated value`. A .tsv file will be exported to your default downloads folder.
+> >
+> {: .solution}
 {: .challenge}
