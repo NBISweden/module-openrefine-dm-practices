@@ -147,8 +147,8 @@ For the `age` column, some observations but not all, meet the criteria for being
 {: .challenge}
 
 
-### Preparing for the next Lesson on repository submission
-> ## Create a new project in OpenRefine (exercise 3.1)
+### [Preparing for the next Lesson](../07-subsetting-the-data)
+> ## Create a new project in OpenRefine
 >
 > 1. Create a new project in OpenRefine named 'ENA sample metadata` by loading the same data as before `samples_openrefine_lesson.csv`
 > 2. Open the file `ENA_sample_metadata_script.txt` found in the project folder. Copy the JSON script and apply it to the project.
@@ -167,5 +167,6 @@ For the `age` column, some observations but not all, meet the criteria for being
 > > 5. On the left, click the `Undo/Redo` tab > `Apply...` A pop-up will appear. Paste the content of the `ENA_sample_metadata_script.txt` file and click `Perform operations`
 > > 6. On top right, click `Export` > `Tab-separated value`. A .tsv file will be exported to your default downloads folder.
 > >
+> > Detailed instructions of all the steps in the script can be found in episode 7 [Transforming and Selecting a Subset of the Data](../07-subsetting-the-data)
 > {: .solution}
 {: .challenge}
