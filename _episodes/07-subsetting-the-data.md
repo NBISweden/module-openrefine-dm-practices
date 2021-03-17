@@ -72,12 +72,12 @@ scientific_name - _based on tax_id_
 To rename the column `experiment reference`
 1. Click the down arrow next to `experiment reference` > `Edit column` > `Rename this column`. A pop-up window will appear on top.
 2. Type in `sample_alias` and press return.
-
+<BR>
 #### Join columns
 First we want to edit the information in the `genotype` column.
 1. Hover the first cell containing `wild type genotype` and click `edit`. A pop-window will appear.
 2. Type `Lung tissue from adult wildtype mouse.` and then click `Apply to all identical cells`. Three cells should have been edited.
-3. Repeat the steps for a cell containig the value `Kdr Y949F/Y949F` but type `Lung tissue from adult Kdr(Y949F/Y949F) mouse.` in the pop-up window.
+3. Repeat the steps for a cell containig the value `Kdr Y949F/Y949F`  (note the space between Kdr and Y949...) but type `Lung tissue from adult Kdr(Y949F/Y949F) mouse.` in the pop-up window.
 
 Now we will join the sample column with the genotype column
 1. Click the down arrow next to `sample` > `Edit column` > `Join columns...`. A pop-up window will appear.
@@ -86,11 +86,11 @@ To the right, there are several options for the join.
 3. In the separator field, enter a blank space.
 4. Click ` Write result in new column named… ` and enter `sample_title`
 5. Tick the option `Delete joined columns.`
-
+<BR>
 #### Add a new column
 To add a column `scientific_name`
-1. Click the down arrow next to `sample` > `Edit column` > `Add column based on this column...`. A pop-up window will appear.
-2. On top, type `scientific name` in the `New column name` field
+1. Click the down arrow next to `tax_id` > `Edit column` > `Add column based on this column...`. A pop-up window will appear.
+2. On top, type `scientific_name` in the `New column name` field
 3. In the big text field where it now says `value` type `"Mus musculus"`. Make sure to include the quotation marks (`"`).
 Note that the values of the new column can be previewed at the bottom.
 
@@ -119,8 +119,8 @@ Now let's have a look at the data dictionary from the metadata lesson. Which var
 > >
 > > Renaming columns:
 > > 1. Click the down arrow next to `mouse line` > `Edit column` > `Rename this column`. A pop-up window will appear on top.
-> > 2. Type in `sub_strain` and press return.
-> > Repeat the steps to rename `developmental stage` to `dev_stage` and `organism part` to `tissue_type`
+> > 2. Type in `sub_strain` and press return.  
+> > 3. Repeat the steps to rename `developmental stage` to `dev_stage` and `organism part` to `tissue_type`
 > {: .solution}
 {: .challenge}
 
@@ -140,7 +140,7 @@ First we will add a `tissue_type_ID` column. There are two allowed values `brain
 `if(value == 'lung', 'MA:0000415',
     if(value == 'brain', 'MA:0000168',
 null)))`
-4. In the preview at the bottom, verify that everything looks correct and press `OK`
+4. In the preview at the bottom, verify that everything looks correct and press `OK`.  
 A new column called `tissue_type_ID` should have been added to the table.
 
 > ## Exercise
@@ -162,8 +162,9 @@ null)))`
 > > appear.
 > > 2. On top, type `dev_stage_ID` in the `New column name` field
 > > 3. In the big text field where it now says `value` copy and paste
-`if(value == 'lung', 'MA:0000415',
-    if(value == 'brain', 'MA:0000168',
+`if(value == 'adult', 'BTO:0001043',
+    if(value == 'pup', 'BTO:0004377',
+    if(value == 'embryo', 'BTO:0000379',
 null)))`
 > > 4. In the preview at the bottom, verify that everything looks correct and press `OK`
 > >A new column called `dev_stage_ID` should have been added to the table.
@@ -192,6 +193,7 @@ the column header > `Filter` > `Text filter`
 - tax_id
 - scientific_name
 - strain
+- sub_strain
 - dev_stage
 - tissue_type
 - strain_ID
@@ -204,11 +206,11 @@ the column header > `Filter` > `Text filter`
 ### Creating a tsv-file compatible with the ENA
 
 1. Click `Export` in the top right and select the file type you want to export the data in. In this case we will choose `Tab-separated values` (`tsv`).
-2. Save the file as `ENA_samples_openrefine_lesson.tsv`
+2. The file will be saved in your default downloads folder. Move the file to your course folder and save it as `ENA_samples_openrefine_lesson.tsv`
 3. Open the file in a text editor such as NotePad or TextEdit.
-4. Copy and paste the two following lines at the beginning of the file and `save`.
+4. Add the two following lines at the beginning of the file and `save`. Make sure that you have a tab between `#checklist_accession` and `ERC000011`
 
-#checklist_accession	ERC000011  
+#checklist_accession  ERC000011  
 #unique_name_prefix
 
 
