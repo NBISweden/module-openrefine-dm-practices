@@ -27,7 +27,7 @@ title: Setup
 >The files for this lesson only
 > - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
 > - [data_cleaning_script_openrefine_lesson.txt](data/data_cleaning_script_openrefine_lesson.txt)
-> - [ENA_sample_metadata_script](data/ENA_sample_metadata_script.txt)
+> - [ENA_sample_metadata_script.txt](data/ENA_sample_metadata_script.txt)
 {: .prereq}
 
 
