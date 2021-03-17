@@ -6,7 +6,7 @@ permalink: /guide/
 
 ## Lesson
 
-This time allotted for the teaching and exercises in lessons one through seven in this episode totals 135 minutes. This does not include time for installing OpenRefine, which could take an extra 10-30 minutes depending on how many different platforms and how many computers need OpenRefine installed.
+This time allotted for the teaching and exercises in lessons one through eight in this episode totals 155 minutes. This does not include time for installing OpenRefine, which could take an extra 10-30 minutes depending on how many different platforms and how many computers need OpenRefine installed.
 
 ## Setup
 
@@ -19,7 +19,7 @@ This time allotted for the teaching and exercises in lessons one through seven i
 - The dataset used in this lesson can be downloaded from Figshare through
  the link on the ([setup page](../setup.html)).
 - It will need to be downloaded to the local machine before it can be loaded into OpenRefine.
-- A general description of the dataset used in the Social Sciences lessons can be found [in the workshop data home page](http://www.datacarpentry.org/socialsci-workshop/data/)
+- A general description of the dataset used in the can be found [in the setup page](../setup.html)
 
 ## The Lessons
 

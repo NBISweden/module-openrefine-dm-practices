@@ -1,7 +1,7 @@
 ---
 title: "Transforming and Selecting a Subset of the Data"
-teaching: 5
-exercises: 10
+teaching: 10
+exercises: 15
 questions:
 - "How do I create a metadata file compatible with the repository of choice?"
 objectives:
