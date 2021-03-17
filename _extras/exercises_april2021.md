@@ -148,7 +148,7 @@ For the `age` column, some observations but not all, meet the criteria for being
 
 
 ### [Preparing for the next Lesson](../07-subsetting-the-data)
-> ## Create a new project in OpenRefine
+> ## Apply a script to subset and transform data for ENA submission
 >
 > 1. Create a new project in OpenRefine named 'ENA sample metadata` by loading the same data as before `samples_openrefine_lesson.csv`
 > 2. Open the file `ENA_sample_metadata_script.txt` found in the project folder. Copy the JSON script and apply it to the project.
