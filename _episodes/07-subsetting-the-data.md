@@ -6,9 +6,8 @@ questions:
 - "How do I create a metadata file compatible with the repository of choice?"
 objectives:
 - "Export a file from OpenRefine with a subset of columns needed for submitting the data to the repository ENA."
-- ""
 keypoints:
-- ""
+- "OpenRefine can be used to structure your data into a file suitable for a repository submission."
 ---
 
 # Lesson
@@ -29,7 +28,7 @@ We need to consider the following questions:
 <BR>
 First, we will only keep samples registered by `Sam`
 
-1. Create a filter for the column `researcher` by clicking the down arrow in the column header > `Filter` > `Text filter`
+1. Create a filter for the column `researcher` by clicking the down arrow in the column header and select `Text filter`.
 2. A researcher filter box will appear to the on the left side. Type `Sam` in the text field and press return. 29 matching rows will be displayed.
 3. In the same box, press `invert` in the top right to select all the rows from researchers other than Sam. Note that the box header will turn orange to indicate inverted results.
 4. Confirm that there are 71 matching rows.
@@ -85,7 +84,7 @@ Now we will join the sample column with the genotype column
 To the right, there are several options for the join.
 3. In the separator field, enter a blank space.
 4. Click ` Write result in new column named… ` and enter `sample_title`
-5. Tick the option `Delete joined columns.`
+5. Tick the option `Delete joined columns.` and click `OK`.
 <BR>
 #### Add a new column
 To add a column `scientific_name`
@@ -179,9 +178,9 @@ We have identified and correctly named the columns we want to include for the EN
 > 2. Remove all irrelevant columns by clicking the down arrow next to `All` > `Edit columns` > `Re-order / remove columns...`
 >
 > > ## Solution
-> >To exclude all rows that from other researchers than `Sam`
+> >To exclude all rows from other experiment types than `sequencing`
 1. Create a filter for the column `experiment type` by clicking the down arrow in
-the column header > `Filter` > `Text filter`
+the column header > `Text filter`
 2. Type `sequencing` in the text field and press return. 6 matching rows will be displayed.
 3. In the same box, press `invert` in the top right.
 4. Click the down arrow next to `All` in the left-most column header > `Edit rows` > `Remove matching rows`

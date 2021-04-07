@@ -27,7 +27,7 @@ you'll see a list of your projects. You can click on any one of them to open it 
 
 ### Exporting
 
-You can also export a project. This is helpful, for instance, if you wanted to send your raw data and cleaning steps to a collaborator,
+You can also export a project. This is helpful, for instance, if you want to send your raw data and cleaning steps to a collaborator,
 or share this information as a supplement to a publication.
 
 1. Click the `Export` button in the top right and select `OpenRefine project archive to file`.
@@ -50,10 +50,10 @@ project file. This project will include all of the raw data and cleaning steps t
 
 You can also export just your cleaned data, rather than the entire project.
 
-1. Click `Export` in the top right and select the file type you want to export the data in. In this case we will choose `Comma-separated values` (`csv`).
-2. That file will be exported to your default `Download` directory. That file can then be opened in a spreadsheet program or imported
+1. Click `Export` in the top right and select the file type you want to export the data in. In this case we will choose `Comma-separated value` (`csv`).
+2. The file will be exported to your default `Download` directory. That file can then be opened in a spreadsheet program or imported
 into programs like RStudio which we'll be discussing later in our workshop.
 
-Remember from our lesson on data organisation practices that using widely-supported, non-proprietary file formats like `tsv` or `csv` improves the ability of yourself and others to use your data.
+Remember from our lesson on data organisation practices that using widely-supported, non-proprietary file formats like `tsv` or `csv` improves the ability for yourself and others to use your data.
 
 {% include links.md %}
