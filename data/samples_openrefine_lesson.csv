@@ -47,7 +47,7 @@ animal ID,researcher,experiment reference,sample,genotype,tax_id,date,mouse line
 814334,Sam,Jan1919_IHC,C,wt,10900,2019-01-19,Kdr,C57BL/6,P9,pup,mael,lung,IHC
 816649,Sam,Jan2018_IHC,D,wt,10900,2018-01-20,Kdr,C57BL/6,P10,pup,female,lung,IHC
 819947,Alex,up_432_1,A,wild type genotype,10900,2019-01-24,Kdr,C57BL/6,6,adult,male,lung,sequencing assay
-820421,Sam,Jan3119_IHC,E,wt,10900,2019-01-31,Kdr,C57BL/8,P9,pup,female,lung,IHC
+820421,Sam,Jan3119_IHC,E,wt,10900,2019-01-31,Kdr,C57BL/6,P9,pup,female,lung,IHC
 821756,Alex,Feb0418_IHC,,wild type genotype,10900,2018-02-04,Kdr,C57BL/6,P9,pup,male,lung,IHC
 877817,Alex,up_432_2,B,wild type genotype,10900,2019-04-13,Kdr,C57BL/6,6,adult,male,lung,sequencing assay
 821844,Sam,Feb0718_IHC,F,wt,10900,2018-02-07,Kdr,C57BL/6,P10,pup,female,lung,IHC
@@ -71,8 +71,8 @@ animal ID,researcher,experiment reference,sample,genotype,tax_id,date,mouse line
 899372,Alex,May1818_IHC,,wild type genotype,10900,2018-05-18,Kdr,C57BL/6,P9,pup,Female,lung,IHC
 904417,Kim,up_235_6,F,wild type genotype,10900,2019-05-28,Alk3,BALB/cJ,5,adult,female,lung,sequencing assay
 920574,Sam,Jul0720_IHC,2,wt,10900,2020-07-07,Kdr,C57BL/6,P10,pup,male,lung,IHC
-925791,Sam,Jul1518_C,3,wt,10900,2018-07-15,Kdr,C57BL/7,E16,embryo,N/A,brain,culture
-928254,Sam,Jul2320_C,4,wt,10900,2020-07-23,Kdr,C57BL/8,E16,embryo,N/A,brain,culture
+925791,Sam,Jul1518_C,3,wt,10900,2018-07-15,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
+928254,Sam,Jul2320_C,4,wt,10900,2020-07-23,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
 928944,Sam,Jul2519_C,5,wt,10900,2019-07-25,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
 939519,Sam,Aug1020_C,6,wt,10900,2020-08-10,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
 941646,Alex,Aug2320_IHC,,wild type genotype,10900,2020-08-23,Kdr,C57BL/6,P9,pup,female,lung,IHC
