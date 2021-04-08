@@ -12,9 +12,9 @@ carpentry: "nbis"
 # Overall title for pages.
 title: "Cleaning tabular data with OpenRefine"
 
-# Life cycle stage of the lesson
+#  cycle stage of the lesson
 # possible values: "pre-alpha", "alpha", "beta", "stable"
-life_cycle: "stable"
+life_cycle: "beta"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
