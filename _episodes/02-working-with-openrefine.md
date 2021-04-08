@@ -32,7 +32,7 @@ In Windows, you can start the OpenRefine program by double-clicking on the openr
 OpenRefine can import a variety of file types, including tab separated (`tsv`), comma separated (`csv`), Excel (`xls`, `xlsx`), JSON, XML, RDF as XML, and Google Spreadsheets. See the [OpenRefine Importers page](https://github.com/OpenRefine/OpenRefine/wiki/Importers) for more information.
 
 In this first step, we'll browse our computer to the sample data file for this lesson.
-In this case, we will be using data obtained from interviews of farmers in two countries in eastern sub-Saharan Africa (Mozambique and Tanzania).
+In this case, we will be using data obtained from a research lab working with genetically modified mice to study biomedical questions.
 Instructions on downloading the data are available
 [here]({{site.baseurl}}/setup.html).
 
@@ -52,7 +52,7 @@ Note that at step 1, you could upload data in a standard form from a web address
 
 *Exploring data by applying multiple filters*
 
-Facets are one of the most useful features of OpenRefine and can help both get an overview of the data in a project as well as helping you bring more consistency to the data. OpenRefine supports faceted browsing as a mechanism for
+Facets are one of the most useful features of OpenRefine and can help both to get an overview of the data in a project as well as helping you bring more consistency to the data. OpenRefine supports faceted browsing as a mechanism for
 
 * seeing a big picture of your data, and
 * filtering down to just the subset of rows that you want to change in bulk.
@@ -92,7 +92,7 @@ along with a number representing how many times that value occurs in the column.
 > > For the column `date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 95 unique entries in
 > > this column.
 > > By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
-> > `To date`.  Notice the the values in the column turn green. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date.
+> > `To date`.  Notice that the values in the column turn green. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date.
 > >
 > > - Five dates had more than one animal registered.
 > > - The `date` column was formatted as Text.
@@ -190,7 +190,7 @@ to be split.
 
 ## Trim Leading and Trailing Whitespace
 
-Words with spaces at the beginning or end are particularly hard for we humans to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. As of version 3.4 of OpenRefine, the option to trim leading and trailing whitespaces is present at the moment of importing the data (see image at the top of this page).
+Words with spaces at the beginning or end are particularly hard for us humans to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. As of version 3.4 of OpenRefine, the option to trim leading and trailing whitespaces is present at the moment of importing the data (see image at the top of this page).
 
 If you unchecked that box when importing data, or if leading or trailing whitespaces were introduced while splitting columns, or other operations, OpenRefine also provides a tool to remove blank characters from the beginning and end of any entries that have them.
 

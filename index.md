@@ -4,13 +4,9 @@ root: .
 ---
 
 A part of the data workflow is preparing the data for analysis. Some of this
-involves data cleaning, where errors in the data are identified and corrected or
-formatting made consistent. This step must be taken with the same care and
-attention to reproducibility as the analysis.
+involves data cleaning, where errors in the data are identified and corrected, or formatting made consistent. This step must be taken with the same care and attention to reproducibility as the analysis.
 
-OpenRefine is a powerful free and open source tool for
-working with messy data: cleaning it and transforming it from one format into
-another.
+OpenRefine is a powerful free and open source tool for working with messy data: cleaning it and transforming it from one format into another.
 
 This lesson will teach you to use OpenRefine to effectively clean and format
 data and automatically track any changes that you make. Many people comment
