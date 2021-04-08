@@ -19,9 +19,8 @@ title: Setup
 >
 >
 > **Download**
->FIX ME!  
->The entire dataset for the Introduction to Data Management practices Workshop
->to your computer by [clicking this link](DOI or downloader). (direct link: <https://ndownloader.figshare.com/files/11502815>)  
+> The entire dataset for the Introduction to Data Management practices Workshop
+>can be downloaded to your computer by [clicking this link](https://doi.org/10.17044/scilifelab.14301317) 
 >The three files needed for this lesson is found in dm-practices/6-openrefine
 **or**  
 >The files for this lesson only
