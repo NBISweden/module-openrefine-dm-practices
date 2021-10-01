@@ -35,7 +35,7 @@ title: Setup
 > For this lesson you will need **OpenRefine** and a web browser.  
 > Note: this is a Java program that runs on your machine (not in the cloud). It runs inside your browser, but no web connection is needed.
 >
-> A text editor (like NotePad or TextEdit) is also required.
+> A text editor (like NotePad or TextEdit) is also needed.
 {: .prereq}
 
 > ## Presentation
