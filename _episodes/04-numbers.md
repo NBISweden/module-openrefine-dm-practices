@@ -20,33 +20,53 @@ When a table is imported into OpenRefine, all columns are treated as having text
 
 Be sure to remove any `Text filter` facets you have enabled from the left panel so that we can examine our whole dataset. You can remove an existing facet by clicking the `x` in the upper left of that facet window.
 
-To transform cells in the `animal ID` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `animal ID` values change from left-justified to right-justified, and from black to green in color.
+To transform cells in the `host age` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `host age` values change from left-justified to right-justified, and from black to green in color.
 
 > ## Exercise 3.1
 >
-> Try to transform the columns, `date` and `age`, from text to numbers. Can all columns be transformed to numbers?
+> Try to transform the columns `ENA-CHECKLIST` and `host subject id`, from text to numbers. Can all columns be transformed to numbers?
 >
 > > ## Solution
 > >
-> > Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to
-> > a column where the observations don't meet this criteria a yellow square will appear at the top starting with `Text transform on 0 cells`. If you click the `Undo / Redo` tab, you will see a step that starts with the same text, meaning
-> > that the data in that column was not transformed. This is the case for the `date` column.
-For the `age` column, some observations but not all, meet the criteria for being transformed into a number and will result in 43 cells being transformed.   
+> > - Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to
+> > a column where the observations don't meet this criteria a yellow square will appear at the top starting with `Text transform on 0 cells in column [...]`. If you click the `Undo / Redo` tab, you will see a step that starts with the same text, meaning
+> > that the data in that column was not transformed. This is the case for both the `host subject id` and `ENA-CHECKLIST` columns.
+Note that for some columns, some observations, but not all, can meet the criteria for being transformed into a number. This will result in a mix of transformed and non-transformed cells in the column.   
 > Having several formats in the same column is not recommended.
 > {: .solution}
 {: .challenge}
-
-### Numeric facet
+<BR> 
+## Numeric facet
 Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them.
 We can do that with a `Numeric facet`.
 
 > ## Exercise 3.2
-> 1. For the column `animal ID` you just transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text). You can hover over the cell and click the blue `edit` that appears, change the `Data type` to `text` at the top of the pop-up window.
-> 2. Use the column pulldown menu to apply a numeric facet to the column you edited. The facet will appear in the left panel.
+> 1. For the column `host age` you just transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number nor text). You can hover over the cell and click the blue `edit` that appears, and change the `Data type` to `text` at the top in the scroll-down window.
+> 2. Use the column pulldown menu to apply a `numeric facet` to the column you edited. The facet will appear in the left panel.
 > 3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.
 > 4. Experiment with checking or unchecking these boxes to select subsets of your data.
 {: .challenge}
 
 When done examining the numeric data, remove this facet by clicking the `x` in the upper left corner of its panel. Note that this does not undo the edits you made to the cells in this column. Use the `Undo / Redo` function to reverse these changes.
+<BR>
+<BR>
+## Missing values
+More than often we lack certain data for a variable. It may be an unknown origin of a sample, lacking information on age and sex, missing part of a date (only YYMM), or even encountering a value going to infinity. Regardless of origin we need to consider how we code them to avoid downstream analyses issues.
+
+A rule of thumb is to never replace missing values with a zero (0). Even if a zero may be a representation of something not present, it is per definition not a missing value, but a zero value. Using zero for missing may cause severe issues and should be avoided.
+
+Different software may be equipped with different interpretors for missing values. For example, valid input in R include `NULL`, `NA`, `NaN`, and `Inf`, while MatLab uses more context dependent options, e.g. `missing`, or `NaN`. The main point is that you need to consider how to code missing values in your data depending on what kind of software you plan on using further downstream. Also, for projects where more than one person is involved in managing the data, make sure you agree on a single format and stick to it.
+
+> ## Exercise 3.3
+>
+> Find, identify and transform missing data in all columns of the dataset. What formats for missing data are approriate in this dataset?
+>
+> > ## Solution
+> >
+> > - The only missing values in the dataset are nine states in the column `host disease outcome`. Since the values are not numerical, and indicate one of the two possible outcomes `recovered`, or `dead`, a good choice could be to use the option `NA` (Not available).
+> {: .solution}
+{: .challenge}
+
+
 
 {% include links.md %}
