@@ -14,8 +14,8 @@ keypoints:
 
 Sometimes you would like to export a file that only contains a subset of the data in your project that conforms to a specific standard.  
 
-In the next lesson of the _Introduction to Data Management Practices Workshop_ we will act as the researcher **Sam**
-who wants to submit data to the repository [ENA](https://www.ebi.ac.uk/ena/browser/home) (European Nucleotide Archive).
+In the next lesson of the _Introduction to Data Management Practices Workshop_ we will 
+act as a researcher who wants to submit a subset of the data to the repository [ENA](https://www.ebi.ac.uk/ena/browser/home) (European Nucleotide Archive).
 To do so we need to prepare sample metadata to conform to the metadata standards
 of the repository.
 
@@ -26,14 +26,16 @@ We need to consider the following questions:
 - **Are there additional columns that need to be added?**
 
 <BR>
-First, we will only keep samples registered by `Sam`
+First, we know the data contain three samples per individual, i.e. every individual are represented by three rows in the data. Now, we want to extract one of those samples for submission, namely the ones produced by the Illumina NEBNext prep kit. We identify these as "NebNext" in the column `configuration`. 
 
-1. Create a filter for the column `researcher` by clicking the down arrow in the column header and select `Text filter`.
-2. A researcher filter box will appear to the on the left side. Type `Sam` in the text field and press return. 29 matching rows will be displayed.
+1. Create a filter for the column `configuration` by clicking the down arrow in the column header and select `Text filter`.
+2. A filter box will appear to the on the left side. Type `NEB` in the text field and press return. 29 matching rows will be displayed.
 3. In the same box, press `invert` in the top right to select all the rows from researchers other than Sam. Note that the box header will turn orange to indicate inverted results.
-4. Confirm that there are 71 matching rows.
+4. Confirm that there are 62 matching rows.
 5. Click the down arrow next to `All` in the left-most column header > `Edit rows` > `Remove matching rows`
-6. Remove or reset the filter. Now, all remaining 29 rows should be Sam's.
+6. Remove or reset the filter. Now, all remaining 29 rows should be `NEBNext` samples.
+
+<!--
 
 ## ENA sample metadata
 ENA sample metadata can be divided in three groups.
@@ -65,33 +67,71 @@ scientific_name - _based on tax_id_
 > > 4. A column `scientific_name` needs to be added
 > {: .solution}
 {: .challenge}
-
-
-### Renaming and creating new columns
-To rename the column `experiment reference`
-1. Click the down arrow next to `experiment reference` > `Edit column` > `Rename this column`. A pop-up window will appear on top.
-2. Type in `sample_alias` and press return.
+-->
 <BR>
-#### Join columns
-First we want to edit the information in the `genotype` column.
-1. Hover the first cell containing `wild type genotype` and click `edit`. A pop-window will appear.
-2. Type `Lung tissue from adult wildtype mouse.` and then click `Apply to all identical cells`. Three cells should have been edited.
-3. Repeat the steps for a cell containig the value `Kdr Y949F/Y949F`  (note the space between Kdr and Y949...) but type `Lung tissue from adult Kdr(Y949F/Y949F) mouse.` in the pop-up window.
+## Creating new columns
 
-Now we will join the sample column with the genotype column
-1. Click the down arrow next to `sample` > `Edit column` > `Join columns...`. A pop-up window will appear.
-2. On the left side, choose which columns to join. Verify that `sample` is already ticked and tick `genotype` as well.
+Sometimes a new variable needs to be added to a dataset, a new set of data input, or a transfer of information from another data source. So far we have only covered editing already existant columns and cells, but how do we create space for new data in an already open project?
+
+For example, in our opened dataset we are missing a column for naming the institute responsible for collecting the listed samples. To create such a column, we select a column juxtaposed to where we want to create a new, and in that column select `Edit column` > `Add column based on this column...`. In the new window, in `New column name`, type `collector name`, but leave the input `value` unedited. Clicking `OK` now creates a new column to the right of the one we just used, with identical values in all rows. Repeating what we did earlier in the lesson, `edit` the contents to the input `Valeria Ghiselli` and select `Apply to All Identical Cells`.     
+<BR>
+
+> ## Exercise 6.1
+>
+> Add a new column called `collecting entity`, and fill all cells with the input `Amedeo di Savoia`. Can you generate the column to the left of the column `collector name`?
+>
+> > ## Solution
+> >
+> > 1. On the `Description` column, select `Edit column` > `Add column based on this column...`.
+> > 2. Type `collecting entity` in `New column name`, keep the input `value` as before.
+> > 3. `edit` the contents of the cells to `Amedeo di Savoia` and select `Apply to All Identical Cells`.
+> > Note that the values of the new column can be previewed at the bottom
+> {: .solution}
+{: .challenge}
+<BR>
+
+**We made a mistake!** 
+The column name `collecting entity` was an incorrect input. The ENA checklist suggests it as better named `collecting institution`. We need to rename the column, but how do we do it? 
+
+To rename the column `collecting institution`
+1. Click the down arrow next to `collecting entity` > `Edit column` > `Rename this column`. A pop-up window will appear on top.
+2. Type in `collecting institution` and press return.
+<BR>
+
+## Join columns
+We still lack working aliases for the samples. Aliases are only used as communicative references in a project, but can help in identify, separate, and cluster individual samples in downstream analyses.
+
+To create aliases for our samples we can combine cell information from the columns `configuration` and `host subject id` to create unique combinations.
+
+1. First we click the down arrow next to `configuration` and select `Edit column` > `Join columns...`. A pop-up window will appear. 
+2. On the left side, choose which columns to join. Verify that `configuration` is already ticked and tick `host subject id` as well. (Notice that you can change the order of the information to combine by drag-and-drop the order of ticked columns in the list).
 To the right, there are several options for the join.
-3. In the separator field, enter a blank space.
-4. Click ` Write result in new column named… ` and enter `sample_title`
-5. Tick the option `Delete joined columns.` and click `OK`.
+3. In the separator field, enter an underscore `_`.
+4. Click ` Write result in new column named… ` and enter `alias`
+5. If ticked, untick the option `Delete joined columns.` (we wish to keep the originating columns) and click `OK`.
 <BR>
-#### Add a new column
-To add a column `scientific_name`
-1. Click the down arrow next to `tax_id` > `Edit column` > `Add column based on this column...`. A pop-up window will appear.
-2. On top, type `scientific_name` in the `New column name` field
-3. In the big text field where it now says `value` type `"Mus musculus"`. Make sure to include the quotation marks (`"`).
-Note that the values of the new column can be previewed at the bottom.
+
+#### Generate infomation by joining multiple columns
+Our dataset still lack information for the mandatory ENA checklist field `isolate`, which is defined as the "individal isolate from which the sample was obtained". Such information can be generated in a number of formats, but here we will use [organism/host/location/isolate/date]. 
+
+> ## Exercise 6.2
+>
+> Add a new column with empty cells called `isolate`, and populate the cells with information for **[organism/host/location/isolate/date]** present in other columns.
+> > ## Solution
+> >
+> > 1. On the `host_subject_id` column, select `Edit column` > `Add column based on this column...`.
+> > 2. Type `isolate` in `New column name`, but add the input `null`. This creates a new column named `isolate` populated with empty cells.
+> > 3. Select `Edit column` > `Join columns...` and mark the corresponding column names for; 
+- `organism` -> `virus identifier`
+- `host` -> `host common name`
+- `location` -> `geographic location (country)`
+- `isolate` -> `alias`
+- `date` -> `collection date`.  
+> > 4. Add a slash `/` as separator, and make sure not to tick `Delete joined columns`. Once you are confident your selection is correct, make sure to drag-and-drop the columns to appear in the above order.
+> > 5. Select `OK`. All cells should now be populated with isolate information. 
+> {: .solution}
+{: .challenge}
+<!--
 
 ### Checklist-based and user defined metadata
 Now let's have a look at the data dictionary from the metadata lesson. Which variables did you identify an ENA variable name for based on the ENA checklist? Rename the columns where necessary.
@@ -169,13 +209,15 @@ null)))`
 > >A new column called `dev_stage_ID` should have been added to the table.
 > {: .solution}
 {: .challenge}
+-->
+<BR>
 
 ### Removing and reordering data
-We have identified and correctly named the columns we want to include for the ENA submission. The next step is to remove all of the remaining data that is not needed.
+We have now identified and correctly named the columns we want to include for the ENA submission. The next step is to validate the dataset prior to submission, and that it conforms with a controlled vocabulary (ENA Checklist).
 
 > ## Exercise
-> 1. Use the same strategy as above to only keep samples used for sequencing experiments.
-> 2. Remove all irrelevant columns by clicking the down arrow next to `All` > `Edit columns` > `Re-order / remove columns...`
+> 1. Using your knowledge from the previous exercises, make sure all required variables are in order and all eventual typos are corrected.
+> 2. Export the dataset in `csv` format.
 >
 > > ## Solution
 > >To exclude all rows from other experiment types than `sequencing`
