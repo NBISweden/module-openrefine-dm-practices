@@ -7,15 +7,12 @@ title: Setup
 >
 > The data for this lesson is part of the Introduction to Data Management
 > practices workshop materials. It is a teaching dataset compiled for this workshop.
-> It contains research data from the public domain as well as data created
+> It contains research data from the public domain as well as minor data created
 > specifically for this workshop with inspiration from real data.
 >
 > The `samples_openrefine_lesson.csv` used in this lesson is mimicking a
-> spreadsheet file used by a research
-> lab working with genetically modified mice to study biomedical questions.
-> Each researcher is responsible to record every animal used for an experiment in this
-> spreadsheet. Little or no instructions on how to use it is provided and
-> each researcher has their own way of working.
+> spreadsheet file used by a research lab working with Covid-19 data, with samples taken from
+> hospitalised and diagnosed patients.
 >
 >
 > **Download**  
@@ -35,7 +32,7 @@ title: Setup
 > For this lesson you will need **OpenRefine** and a web browser.  
 > Note: this is a Java program that runs on your machine (not in the cloud). It runs inside your browser, but no web connection is needed.
 >
-> A text editor (like NotePad or TextEdit) is also needed.
+> A text editor (like NotePad or TextEdit) is also required.
 {: .prereq}
 
 > ## Presentation
