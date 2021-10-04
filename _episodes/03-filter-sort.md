@@ -19,19 +19,18 @@ keypoints:
 
 There are many entries in our data table. We can filter it to work on a subset of the data in the list for the next set of operations. Please ensure you perform this step to save time during the class.
 
-1. Click the down arrow next to `mouse line` > `Text filter`. A `mouse line` facet will appear on the left margin.
-2. Type in `alk` and press return. There are 52 matching rows of the original 100 rows (and these rows are selected for the subsequent steps).
-3. At the top, change the view to `Show` 50 `rows`. This way you will see most of the matching rows.
+1. Click the down arrow next to `host disease outcome` > `Text filter`. A `host disease outcome` facet will appear on the left margin.
+2. Type in `recovered`. There are 33 matching rows of the original 91 rows (and these rows are selected for the subsequent steps).
+3. At the top, change the view to `Show` 50 rows. This way you will see all of the matching.
 
 > ## Exercise 2.1
 >
-> 1. What mouse lines are selected by this procedure?  
-> 2. How would you restrict this to only one of the mouse lines?  
+> 1. How can you filter the data to only include persons with state `dead`?
+> 2. How would you further restrict this to only include females or males?  
 >
 > > ## Solution
-> > 1. Do `Facet` > `Text facet` on the `mouse line` column after filtering. This will show that
-> > two names match your filter criteria. They are `Alk3` and `alk6`.   
-> > 2. To restrict to only one of these two mouse lines, you could include more letters in your filter.
+> > 1. Do `Facet` > `Text filter` on the `host disease outcome` column after filtering. Type `dead` to limit your selection to a single category.   
+> > 2. To restrict to only one of the sexes, in the `host sex` column, run another `Text Filter`and type either `male` or `female`.
 > >
 > {: .solution}
 {: .challenge}
@@ -41,29 +40,29 @@ There are many entries in our data table. We can filter it to work on a subset o
 
 In addition to the simple text filtering we used above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. You will see the `include` or `exclude` options if you hover over the name in the facet window.
 
-If you still have your facet for `mouse line`, you can use it, or use drop-down menu > `Facet` > `Text facet` to create a new facet. Only the entries with names that agree with your `Text filter` will be included in this facet. If you used the filter to select one of the mouse lines, reset it to `alk`.
+If you still have your facet for `host disease outcome`, you can use it. If not, use drop-down menu > `Facet` > `Text facet` to create a new facet.
 
 Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all of the data that
 is currently selected, while filtering allows you to select a subset of your data for analysis.
 
-
 > ## Exercise 2.2
 >
-> Use `include / exclude` to select only entries from one of these mouse lines.
+> Use `include / exclude` to make the same combination of `host disease outcome` and `host sex` as in the previous exercise.
 >
 > > ## Solution
 > >
-> > 1. In the facet (left margin), hover on one of the names, such as `Alk3`. Notice that there are entries to the right for `edit` and `include`.
+> > 1. In the facet (left margin), hover on `healthy`. Notice that there are entries to the right for `edit` and `include`.
 > > 2. Click `include`. This will explicitly include this mouse line, and exclude others that are not explicitly included. Notice that the
 > option now changes to `exclude`.
 > > 3. Another way to include entries is to click the name directly.
-> > 4. Click `include` and `exclude` to notice how the two entries appear and disappear
-> >  from the table.
+> > 4. Do the same thing with `host sex` to limit your selection to a combination of the two states.
+> > 4. Click `include` and `exclude` in both facets and notice how the selection in the data changes.
+> >  
 > >
 > {: .solution}
 {: .challenge}
 
-Remove the filter before moving on so that you again have the full dataset of 100 records.
+Remove the filter before moving on so that you again have the full dataset of 91 records.
 
 ## Sort
 
@@ -75,9 +74,9 @@ If this is your first time sorting this table, then the drop-down menu for the s
 
 > ## Exercise 2.3
 >
-> Sort by month. How can you ensure that months are in order?
+> Sort all samples by host age. How can you ensure that ages are in numerical order?
 > > ## Solution
-> > 1. Press the down arrow in the `month` column, select `Sort...`
+> > 1. Press the down arrow in the `host age` column, select `Sort...`
 > > 2. In the pop-up that appears, tick `numbers` and select `smallest first`.
 > >
 > {: .solution}
@@ -91,12 +90,12 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 > ## Exercise 2.4
 >
-> Sort the data by `date`. What is the animal ID recorded on the most recent date in this dataset?
+> Sort the data by `geographic location city`. What is the age of the youngest sampled individual in `Madonna di Campagna`?
 >
 > > ## Solution
-> > In the `date` column, select `Sort...` > `text` and select `z-a`.
+> > In the `geographic location city` column, select `Sort...` > `text` and select `a-z`. Scroll down to `Madonna di Campagna`. 
 > >
-> > The animal ID for 2020-10-08 is 957895.
+> > The age of the youngest individual from `Madonna di Campagna` is 19 years old. 
 > >
 > {: .solution}
 {: .challenge}
@@ -106,29 +105,4 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 You can sort by multiple columns by performing sort on additional columns. The sort will depend on the order in which you select columns to sort. To restart the sorting process with a particular column, check the `sort by this column alone` box in the `Sort` pop-up menu.
 
-> ## Exercise 2.5
->
-> You might like to look for trends in your data by month of collection across years.     
-> 1. How do you sort your data by month?   
-> 2. How would you do this differently if you were instead trying to see all of your entries in chronological order?  
->
-> > ## Solution
-> >
-> > 1. For the `month` column, click on `Sort...` and then `numbers`. This will group all entries made in, for example, January,
-> > together, regardless of the year that entry was collected.  
-> > 2. For the `year` column, click on `Sort` > `Sort...` > `numbers` and select `sort by this column alone`. This will undo the
-> > sorting by month step. Once you've sorted by `year` you can then apply another sorting step to sort by month within year. To do this
-> > for the `month` column, click on `Sort` > `numbers` but do not select `sort by this column alone`. To ensure that all entries are shown
-> > chronologically, you will need to add a third sorting step by day within month.
-> >
-> {: .solution}  
-{: .challenge}
-
 If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sort. If it is the only column sorted, then data reverts to its original order.
-
-> ## Exercise 2.6 (optional)
->
-> Sort by `year`, `month` and `day` in some order. Be creative: try sorting as `numbers` or `text`, and in reverse order (`largest to smallest` or `z to a`).
->
-> Use > `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
-{: .challenge}
