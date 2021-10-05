@@ -16,11 +16,7 @@ title: Setup
 >
 >
 > **Download**  
-> The folder containing the entire dataset for the Introduction to Data Management practices Workshop
->from [this page](https://doi.org/10.17044/scilifelab.14301317). Direct link : [https://doi.org/10.17044/scilifelab.14301317](https://doi.org/10.17044/scilifelab.14301317)  
->The three files needed for this lesson is found in dm-practices/6-openrefine  
-**or**  
->The files for this lesson only
+> The following files:
 > - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
 > - [data_cleaning_script_openrefine_lesson.txt](data/data_cleaning_script_openrefine_lesson.txt)
 > - [ENA_sample_metadata_script.txt](data/ENA_sample_metadata_script.txt)
