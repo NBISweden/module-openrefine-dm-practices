@@ -33,8 +33,7 @@ OpenRefine can import a variety of file types, including tab separated (`tsv`), 
 
 In this first step, we'll browse our computer to the sample data file for this lesson.
 In this case, we will be using the same data set, obtained from a covid-19 study, as we used in the previos metadata module.
-Instructions on downloading the data are available.
-[here]({{site.baseurl}}/setup.html).
+Instructions on downloading the data are available [here]({{site.baseurl}}/setup.html).
 
 Once OpenRefine is launched in your browser, the left margin has options to `Create Project`, `Open Project`, or `Import Project`. Here we will create a new project:
 
@@ -165,9 +164,7 @@ If data in a column needs to be split into multiple columns, and the parts are s
 3. In the pop-up, in the `Separator` box, make sure the separator is a comma.
 4. Check the box that says `Remove this column`.
 5. Click `OK`. You'll get some new columns called `geographic location 1`, `geographic location 2`, and `geographic location 3`.
-6. Note that the character on which the split is performed could be anything. The default is a comma, and you changed
-that to a slash in this case, but you could make it any letter, number or special character.  The only requirements
-are that it A) appears in every row of the column, and B) appears consistently in the place where you want the column
+6. Note that the character on which the split is performed could be anything. The default is a comma, but you could make it any letter, number or special character. The only requirements are that it A) appears in every row of the column, and B) appears consistently in the place where you want the column
 to be split.
 
 
