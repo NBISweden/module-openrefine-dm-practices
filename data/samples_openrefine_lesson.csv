@@ -1,101 +1,92 @@
-animal ID,researcher,experiment reference,sample,genotype,tax_id,date,mouse line,strain,age,developmental stage,sex,organism part,experiment type
-834217,Kim,up_235_1,A,Kdr Y949F/Y949F,10900,2020-02-18,Alk3,BALB/cJ,4,adult,male,lung,sequencing assay
-836507,Sam,up_201_4,D_hom,Kdr Y949F/Y949F,10900,2020-02-23,Kdr,C57BL/6,9,adult,male,lung,sequencing assay
-842068,Sam,Feb2720_IHC,C,KdrY949F/Y949F,10900,2020-02-27,Kdr,C57BL/6,P9,pup,female,lung,IHC
-843132,Sam,Mar0418_IHC,D,KdrY949F/Y949F,10900,2018-03-04,Kdr,C57BL/6,P9,pup,female,lung,IHC
-845290,Kim,up_235_2,B,Kdr Y949F/Y949F,10900,2019-03-07,Alk3,BALB/cJ,8,adult,male,lung,sequencing assay
-856721,Kim,up_235_3,C,Kdr Y949F/Y949F,10900,2020-03-09,Alk3,BALB/cJ,8,adult,male,lung,sequencing assay
-893257,Alex,up_432_4,D,Kdr Y949F/Y949F,10900,2020-05-03,Kdr,C57BL/6,9,adult,male,lung,sequencing assay
-896197,Sam,May0918_IHC,13,KdrY949F/Y949F,10900,2018-05-09,Kdr,C57BL/6,P9,pup,female,lung,IHC
-898035,Alex,May1520_IHC,,Kdr Y949F/Y949F,10900,2020-05-15,Kdr,C57BL/6,P9,pup,female,lung,IHC
-905633,Sam,up_201_6,F_hom,Kdr Y949F/Y949F,10900,2018-06-04,Kdr,C57BL/6,8,adult,male,lung,sequencing assay
-932353,Sam,Jul2619_C,12,KdrY949F/Y949F,10900,2019-07-26,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
-934662,Sam,up_201_5,E_hom,Kdr Y949F/Y949F,10900,2018-07-27,Kdr,C57BL/6,7,adult,female,lung,sequencing assay
-979356,Kim,up_235_7,G,Kdr Y949F/Y949F,10900,2019-11-03,Kdr,C57BL/6,5,adult,female,lung,sequencing assay
-810875,Jo,Jan1619_C,Jan1619_C_KO,KO,10900,2019-01-16,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-893290,Jo,May0818_C,May0818_C_KO,KO,10900,2018-05-08,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-903535,Jo,May2519_C,May2519_C_KO,KO,10900,2019-05-25,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-909250,Jo,Jun0420_C,Jun0420_C_KO,KO,10900,2020-06-04,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-909687,Jo,Jun0620_C,Jun0620_C_KO,KO,10900,2020-06-06,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-910503,Jo,Jun0719_C,Jun0719_C_KO,KO,10900,2019-06-07,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-910988,Jo,Jun0719_C,Jun0719_C_KO,KO,10900,2019-06-07,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-917874,Jo,Jun1520_C,Jun1520_C_KO,KO,10900,2020-06-15,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-918189,Jo,Jun2220_C,Jun2220_C_KO,KO,10900,2020-06-22,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-919295,Jo,Jul0319_C,Jul0319_C_KO,KO,10900,2019-07-03,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-920470,Jo,Jul0419_C,Jul0419_C_KO,KO,10900,2019-07-04,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-924436,Jo,Jul1218_C,Jul1218_C_KO,KO,10900,2018-07-12,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-941458,Jo,Aug1120_C,Aug1120_C_KO,KO,10900,2020-08-11,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-980584,Jo,Nov0918_C,Nov0918_C_KO,KO,10900,2018-11-09,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-983907,Jo,Nov1419_C,Nov1419_C_KO,KO,10900,2019-11-14,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-985570,Jo,Dec1818_C,Dec1818_C_KO,KO,10900,2018-12-18,alk6,C57BL/6,E16,embryo,N/A,brain,culture
-865149,Kim,Mar3019_B,,mt,10900,2019-03-30,Alk3,BALB/cJ,12,adult,M,,behaviour
-867794,Kim,Apr1020_B,,mt,10900,2020-04-10,Alk3,BALB/cJ,11,adult,F,,behaviour
-916800,Kim,Jun0720_B,,mt,10900,2020-06-07,Alk3,BALB/cJ,11,adult,M,,behaviour
-918674,Kim,Jun2820_B,,mt,10900,2020-06-28,Alk3,BALB/cJ,12,adult,F,,behaviour
-935401,Kim,Aug319_B,,mt,10900,2019-08-03,Alk3,BALB/cJ,11,adult,F,,behaviour
-935845,Kim,Aug1018_B,,mt,10900,2018-08-10,Alk3,BALB/cJ,11,adult,F,,behaviour
-951520,Kim,Sep2719_B,,mt,10900,2019-09-27,Alk3,BALB/cJ,11,adult,M,,behaviour
-957895,Kim,Oct0820_B,,mt,10900,2020-10-08,Alk3,BALB/cJ,10,adult,f,,behaviour
-971991,Kim,Nov0119_B,,mt,10900,2019-11-01,Alk3,BALB/cJ,12,adult,M,,behaviour
-977235,Kim,Nov0219_B,,mt,10900,2019-11-02,Alk3,BALB/cJ,12,adult,F,,behaviour
-985280,Kim,Nov2119_B,,mt,10900,2019-11-21,Alk3,BALB/cJ,10,adult,F,,behaviour
-986267,Kim,Dec2019_B,,mt,10900,2019-12-20,Alk3,BALB/cJ,10,adult,F,,behaviour
-996829,Kim,Dec2019_B,,mt,10900,2019-12-20,Alk3,BALB/cJ,10,adult,M,,behaviour
-804396,Sam,up_201_2,B_wt,wild type genotype,10900,2019-01-07,Kdr,C57BL/6,6,adult,Male,lung,sequencing assay
-805431,Sam,Jan1218_IHC,A,wt,10900,2018-01-12,Kdr,C57BL/6,P9,pup,female,lung,IHC
-805992,Sam,Jan1319_IHC,B,wt,10900,2019-01-13,Kdr,C57BL/6,P10,pup,mael,lung,IHC
-814334,Sam,Jan1919_IHC,C,wt,10900,2019-01-19,Kdr,C57BL/6,P9,pup,mael,lung,IHC
-816649,Sam,Jan2018_IHC,D,wt,10900,2018-01-20,Kdr,C57BL/6,P10,pup,female,lung,IHC
-819947,Alex,up_432_1,A,wild type genotype,10900,2019-01-24,Kdr,C57BL/6,6,adult,male,lung,sequencing assay
-820421,Sam,Jan3119_IHC,E,wt,10900,2019-01-31,Kdr,C57BL/6,P9,pup,female,lung,IHC
-821756,Alex,Feb0418_IHC,,wild type genotype,10900,2018-02-04,Kdr,C57BL/6,P9,pup,male,lung,IHC
-877817,Alex,up_432_2,B,wild type genotype,10900,2019-04-13,Kdr,C57BL/6,6,adult,male,lung,sequencing assay
-821844,Sam,Feb0718_IHC,F,wt,10900,2018-02-07,Kdr,C57BL/6,P10,pup,female,lung,IHC
-826176,Sam,Feb1419_IHC,G,wt,10900,2019-02-14,Kdr,C57BL/6,P10,pup,male,lung,IHC
-832626,Sam,Feb1620_IHC,H,wt,10900,2020-02-16,Kdr,C57BL/6,P9,pup,Male,lugn,IHC
-835936,Sam,up_201_1,A_wt,wild type genotype,10900,2020-02-18,Kdr,C57BL/6,8,adult,female,lung,sequencing assay
-837913,Sam,up_201_3,C_wt,wild type genotype,10900,2020-02-27,Kdr,C57BL/6,6,adult,Male,lung,sequencing assay
-844834,Kim,Mar0718_IHC,,wild type genotype,10900,2018-03-07,Alk3,BALB/cJ,P9,pup,Female,lung,IHC
-862100,Kim,Mar1718_IHC,,wild type genotype,10900,2018-03-17,Alk3,BALB/cJ,P10,pup,male,lung,IHC
-863932,Sam,Mar2118_C,1,wt,10900,2018-03-21,Kdr,C57BL/6,E16,embryo,N/A,lung,culture
-864387,Kim,Mar2318_C,,wild type genotype,10900,2018-03-23,Alk3,BALB/cJ,E16,embryo,N/A,lung,culture
-890389,Alex,Apr2220_IHC,,wild type genotype,10900,2020-04-22,Kdr,C57BL/6,P9,pup,male,lung,IHC
-886043,Alex,Apr1719_IHC,,wild type genotype,10900,2019-04-17,Kdr,C57BL/6,P9,pup,female,lung,IHC
-821080,Alex,Feb0319_IHC,,wild type genotype,10900,2019-02-03,Kdr,C57BL/6,P10,pup,male,lung,IHC
-889891,Alex,Apr2118_IHC,,wild type genotype,10900,2018-04-21,Kdr,C57BL/6,P10,pup,male,lung,IHC
-890412,Alex,Apr2220_IHC,,wild type genotype,10900,2020-04-22,Kdr,C57BL/6,P10,pup,female,lung,IHC
-891135,Alex,Apr2520_IHC,,wild type genotype,10900,2020-04-25,Kdr,C57BL/6,P10,pup,male,lung,IHC
-891731,Alex,Apr3020_IHC,,wild type genotype,10900,2020-04-30,Kdr,C57BL/6,P9,pup,Male,lung,IHC
-892354,Kim,up_235_4,D,wild type genotype,10900,2019-05-01,Alk3,BALB/cJ,4,adult,male,lung,sequencing assay
-893041,Alex,up_432_3,C,wild type genotype,10900,2019-05-03,Kdr,C57BL/6,10,adult,female,lung,sequencing assay
-899372,Alex,May1818_IHC,,wild type genotype,10900,2018-05-18,Kdr,C57BL/6,P9,pup,Female,lung,IHC
-904417,Kim,up_235_6,F,wild type genotype,10900,2019-05-28,Alk3,BALB/cJ,5,adult,female,lung,sequencing assay
-920574,Sam,Jul0720_IHC,2,wt,10900,2020-07-07,Kdr,C57BL/6,P10,pup,male,lung,IHC
-925791,Sam,Jul1518_C,3,wt,10900,2018-07-15,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
-928254,Sam,Jul2320_C,4,wt,10900,2020-07-23,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
-928944,Sam,Jul2519_C,5,wt,10900,2019-07-25,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
-939519,Sam,Aug1020_C,6,wt,10900,2020-08-10,Kdr,C57BL/6,E16,embryo,N/A,brain,culture
-941646,Alex,Aug2320_IHC,,wild type genotype,10900,2020-08-23,Kdr,C57BL/6,P9,pup,female,lung,IHC
-942097,Sam,Aug2420_IHC,7,wt,10900,2020-08-24,Kdr,C57BL/6,P10,pup,male,lung,IHC
-942925,Sam,Aug3120_IHC,8,wt,10900,2020-08-31,Kdr,C57BL/6,P9,pup,mael,lung,IHC
-943018,Sam,Sep0219_IHC,9,wt,10900,2019-09-02,Kdr,C57BL/6,P10,pup,female,lung,IHC
-944091,Sam,Sep1019_IHC,10,wt,10900,2019-09-10,Kdr,C57BL/6,P10,pup,male,lung,IHC
-945336,Kim,Sep1518_IHC,,wild type genotype,10900,2018-09-15,Alk3,BALB/cJ,P9,pup,Male,lung,IHC
-958342,Alex,Oct1318_IHC,,wild type genotype,10900,2018-10-13,Kdr,C57BL/6,P9,pup,Male,lung,IHC
-996946,Alex,Dec2319_IHC,,wild type genotype,10900,2019-12-23,Kdr,C57BL/6,P10,pup,male,lung,IHC
-999154,Sam,Dec2518_IHC,11,wt,10900,2018-12-25,Kdr,C57BL/6,P9,pup,Male,lung,IHC
-999979,Alex,Dec2918_IHC,,wild type genotype,10900,2018-12-29,Kdr,C57BL/6,P10,pup,male,lung,IHC
-855000,Kim,up_235_5,E,wild-type genotype,10900,2019-03-09,Alk3,BALB/cJ,5,adult,female,lung,sequencing assay
-800793,Kim,Jan0618_B,,wt,10900,2018-01-06,Alk3,BALB/cJ,10,adult,F,,behaviour
-808935,Kim,Jan1420_B,,wt,10900,2020-01-14,Alk3,BALB/cJ,12,adult,M,,behaviour
-812308,Kim,Jan1918_B,,wt,10900,2018-01-19,Alk3,BALB/cJ,12,adult,F,,behaviour
-865043,Kim,Mar2919_B,,wt,10900,2019-03-29,Alk3,BALB/cJ,12,adult,F,,behaviour
-866205,Kim,Apr0118_B,,wt,10900,2018-04-01,Alk3,BALB/cJ,10,adult,M,,behaviour
-867481,Kim,Apr1018_B,,wt,10900,2018-04-10,Alk3,BALB/cJ,10,adult,F,,behaviour
-875004,Kim,Apr1119_B,,wt,10900,2019-04-11,Alk3,BALB/cJ,10,adult,F,,behaviour
-876139,Kim,Apr1318_B,,wt,10900,2018-04-13,Alk3,BALB/cJ,12,adult,M,,behaviour
-946315,Kim,Sep1618_B,,wt,10900,2018-09-16,Alk3,BALB/cJ,11,adult,M,,behaviour
-951658,Kim,Oct0319_B,,wt,10900,2019-10-03,Alk3,BALB/cJ,11,adult,F,,behaviour
-958065,Kim,Oct1119_B,,wt,10900,2019-10-11,Alk3,BALB/cJ,10,adult,F,,behaviour
-959920,Kim,Oct2518_B,,wt,10900,2018-10-25,Alk3,BALB/cJ,12,adult,F,,behaviour
-969452,Kim,Oct2919_B,,wt,10900,2019-10-29,Alk3,BALB/cJ,12,adult,M,,behaviour
+date,DESCRIPTION,tissue,ENA-CHECKLIST,location,age,health state,symptoms,disease outcome,sex,host common name,tax_id,scientific_name,virus_identifier,configuration,host subject id
+31 March,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Nizza Millefonti",48,ill,"fever, sore throat",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-1
+32 March,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Nizza Millefonti",48,ill,"fever, sore throat",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-1
+33 March,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Nizza Millefonti",48,ill,"fever, sore throat",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-1
+2020-03-31,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",35,,,,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-10
+2020-03-31,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",35,,,,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-10
+2020-03-31,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",35,,,,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-10
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Piemonte",59,healthy,,recovered,Male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-11
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Piemonte",59,healthy,,recovered,Male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-11
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Piemonte",59,healthy,,recovered,Male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-11
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",60,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-12
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",60,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-12
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",60,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-12
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Torino",83,ill,"fatigue, loss of taste",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-13
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Torino",83,ill,"fatigue, loss of taste",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-13
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Torino",83,ill,"fatigue, loss of taste",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-13
+4/1/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Campidoglio",21,ill,fever,dead,M,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-14
+4/1/2021,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Campidoglio",21,ill,fever,dead,M,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-14
+4/1/2022,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Campidoglio",21,ill,fever,dead,M,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-14
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",44,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-15
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",44,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-15
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",44,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-15
+2020-04-01,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Campidoglio",55,healthy,,recovered,mail,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-16
+2020-04-01,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Campidoglio",55,healthy,,recovered,mail,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-16
+2020-04-01,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Campidoglio",55,healthy,,recovered,mail,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-16
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Torino",81,ill,"loss of taste, sore throt",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-17
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Torino",81,ill,"loss of taste, sore throt",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-17
+2020-03-31,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Torino",81,ill,"loss of taste, sore throt",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-17
+1/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",63,healthy,,recovered,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-18
+1/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",63,healthy,,recovered,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-18
+1/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",63,healthy,,recovered,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-18
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",78,ill,"fatigue, fever",dead,F,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-19
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",78,ill,"fatigue, fever",dead,F,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-19
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",78,ill,"fatigue, fever",dead,F,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-19
+31/3/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Mirafiori Sud",24,ill,tired,dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-2
+31/3/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Mirafiori Sud",24,ill,tired,dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-2
+31/3/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Mirafiori Sud",24,ill,tired,dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-2
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Piemonte",74,,,,m,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-20
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Piemonte",74,,,,m,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-20
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Piemonte",74,,,,m,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-20
+8/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",76,healthy,fever,recovered,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-21
+8/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",76,healthy,fever,recovered,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-21
+8/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",76,healthy,fever,recovered,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-21
+4/8/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",56,healthy,,recovered,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-22
+4/8/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",56,healthy,,recovered,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-22
+4/8/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",56,healthy,,recovered,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-22
+2020-4-8,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Mirafiori Sud",44,healthy,,recovered,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-23
+2020-4-8,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Mirafiori Sud",44,healthy,,recovered,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-23
+2020-4-8,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Mirafiori Sud",44,healthy,,recovered,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-23
+8/4/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Torino",96,ill,"fever, sore throat",dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-24
+8/4/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Torino",96,ill,"fever, sore throat",dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-24
+8/4/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Torino",96,ill,"fever, sore throat",dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-24
+8/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",80,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-25
+8/4/2021,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",80,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-25
+8/4/2022,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",80,healthy,,recovered,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-25
+8/4/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Madonna di Campagna",19,,,,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-26
+8/4/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Madonna di Campagna",19,,,,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-26
+8/4/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Madonna di Campagna",19,,,,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-26
+8/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",68,ill,no taste,dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-27
+8/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",68,ill,no taste,dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-27
+8/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",68,ill,no taste,dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-27
+7 April,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Torino",30,healthy,,recovered,F,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-28
+7 April,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Torino",30,healthy,,recovered,F,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-28
+7 April,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Torino",30,healthy,,recovered,F,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-28
+7/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",56,healthy,,recovered,Male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-29
+7/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",56,healthy,,recovered,Male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-29
+7/4/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",56,healthy,,recovered,Male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-29
+31/3/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",41,ill,"sore throat, fatigue, fever",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-3
+31/3/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",41,ill,"sore throat, fatigue, fever",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-3
+31/3/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Turin",41,ill,"sore throat, fatigue, fever",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-3
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Nizza Millefonti",0.4,ill,fever,dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-4
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Nizza Millefonti",0.4,ill,fever,dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-4
+1/4/2020,Original sequences from lung tissue,lung,ERC000033,"Italy, Turin, Nizza Millefonti",0.4,ill,fever,dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-4
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",23,ill,"fatigue, loss of taste",dead,M,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-5
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",23,ill,"fatigue, loss of taste",dead,M,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-5
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",23,ill,"fatigue, loss of taste",dead,M,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-5
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",59,ill,"fever, sore throat",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-6
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",59,ill,"fever, sore throat",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-6
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",59,ill,"fever, sore throat",dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-6
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",45,ill,"fever, throat ache, loss of taste, tired",dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-7
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",45,ill,"fever, throat ache, loss of taste, tired",dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-7
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Turin",45,ill,"fever, throat ache, loss of taste, tired",dead,male,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-7
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Madonna di Campagna",76,ill,fever,dead,f,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-8
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Madonna di Campagna",76,ill,fever,dead,f,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-8
+31/3/2020,Original sequences from nasopharyingeal swab,nasopharynx,ERC000033,"Italy, Turin, Madonna di Campagna",76,ill,fever,dead,f,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-8
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",49,ill,fatigue,dead,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE300_COVseq,OAS-9
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",49,ill,fatigue,dead,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,OAS-9
+31/3/2020,Original sequences from laryngopharynx swab,laryngopharynx,ERC000033,"Italy, Turin, Turin",49,ill,fatigue,dead,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,NEBNext,OAS-9
+31/3/2020,Vero cell culture,,ERC000033,"Italy, Turin, Turin",48,ill,not applicable,dead,Female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,supernatant-1
+31/3/2020,Vero cell culture,,ERC000033,"Italy, Turin, Turin",48,ill,not applicable,dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,supernatant-1
+31/3/2020,Vero cell culture,,ERC000033,"Italy, Turin, Turin",48,ill,not applicable,dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,supernatant-1
+31/3/2020,Vero cell culture,,ERC000033,"Italy, Turin, Turin",48,ill,not applicable,dead,female,human,2697049,Severe acute respiratory syndrome coronavirus 2,SARS-CoV-2,PE150_COVseq,supernatant-1
