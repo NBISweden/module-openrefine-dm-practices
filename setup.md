@@ -17,7 +17,7 @@ title: Setup
 >
 > **Download**  
 > The following file:
-> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv))
+> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
 {: .prereq}
 
 
