@@ -63,7 +63,7 @@ One type of Facet is called a 'Text facet'. This groups all the identical text v
 
 Here we will use faceting to begin looking for potential errors in data entries in the `sex` column.
 
-1. Scroll over to the `sex` column.
+1. Scroll over to the `host sex` column.
 2. Click the down arrow and choose `Facet` > `Text facet`.
 3. In the left panel, you'll now see a box containing every unique value in the `sex` column along with a number representing how many times that value occurs in the column.
 4. Try sorting this facet by name and by count. Do you notice any problems with the data? What are they?
