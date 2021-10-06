@@ -62,7 +62,7 @@ One type of Facet is called a 'Text facet'. This groups all the identical text v
 
 Here we will use faceting to begin looking for potential errors in data entries in the `sex` column.
 
-1. Scroll over to the `host sex` column.
+1. Scroll over to the `sex` column.
 2. Click the down arrow and choose `Facet` > `Text facet`.
 3. In the left panel, you'll now see a box containing every unique value in the `sex` column along with a number representing how many times that value occurs in the column.
 4. Try sorting this facet by name and by count. Do you notice any problems with the data? What are they?
@@ -70,18 +70,17 @@ Here we will use faceting to begin looking for potential errors in data entries 
 6. You could use this to fix an error immediately, and OpenRefine will ask whether you want to make the same correction to every value it finds like that one. But OpenRefine offers even better ways to find and fix these errors, which we'll use instead. We'll learn about these when we talk about clustering.
 
 > ## Solution
-> - Of 91 rows, none contain missing data.
 > - `mail` is likely a mis-entry of `male`.
 > - `F`, `f`, `female` and `Female` refer to the same sex, as do `M`, `m`, `Male` and `male`. We will see how to correct these misspelled and mistyped entries in a later exercise.
 {: .solution}
 
 > ## Exercise 1.1
 >
-> 1. Using faceting, find out how many values the dataset contain in the column `geographic location`.
+> 1. Using faceting, find out how many values the dataset contain in the column `location`.
 >
 > 2. What is the column format (text, date, or numbers)?
 >
-> 3. In the column `date`, use `Text Facet` to identify how many formats are used for dates.
+> 3. In the column `date`, use `Text Facet` to identify how many unique entries there are.
 >
 > 4. Use faceting to produce a timeline display for the column `date`. You will need to use `Edit cells` > `Common transforms` > `To date` to convert this column to dates.
 >
@@ -89,14 +88,14 @@ Here we will use faceting to begin looking for potential errors in data entries 
 >
 > > ## Solution
 > >
-> > For the column `date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 17 unique entries in
+> > 1. For the column `location` do `Facet` > `Text facet`. A box will appear in the left panel showing 
+> > that there are 7 unique entries in this column.
+> > 2. The format is text, which is the default, otherwise `Text facet` would not have displayed any entries. If you want to check the format, click `edit` in a cell, the data type will show the current format. 
+> > 3. For the column `date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 17 unique entries in
 > > this column.
-> > By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
+> > 4. By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
 > > `To date`.  Notice that the values in the columns possible to transform to a correct date format turn green, and also adds a timestamp after each date. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date. If we do not want the timestamp in the date format, we can edit it out, but more on that later.
-> >
-> > - Six dates had more than one registered sample.
-> > - The `collection date` column was formatted as Text.
-> > - Most of the samples (43) were registered for the date `2020-03-31`. Notice how four dates refuse to transform (`7 April`, `31 March`, `32 March` and `33 March`)
+> > 5. Most of the samples (43) were registered for the date `2020-03-31`. The  four dates that couldn't be transformed (`7 April`, `31 March`, `32 March` and `33 March`) are noted as Non-Time in the timeline histogram.
 > {: .solution}
 {: .challenge}
 
@@ -129,9 +128,8 @@ It's common while exploring and cleaning a dataset to discover after you've made
 > 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
 > 2. Click on the step that you want to go back to, in this case go back one step to before you had done the text to date transformation.
 > 3. Visually confirm that the date column now only contains the original dates without timestamps.
-> 3. Notice that you can still click on the later steps to `Redo` the actions.
+> 3. Notice that you can still click on the later steps to `Redo` the actions. Redo the date transformation by clicking on this step.
 {: .challenge}
-
 
 ## Using clustering to detect possible typing errors
 
@@ -143,8 +141,8 @@ In OpenRefine, clustering means "finding groups of different values that might b
 3. Select the `key collision` method and `metaphone3` keying function. It should identify four clusters.
 4. Tick the `Merge?` box beside each cluster, then click `Merge Selected and Re-cluster` to apply the corrections to the dataset.
 4. Try selecting different `Methods` and `Keying Functions` again, to see if new merges are suggested.
-5. You should find that using the default settings, no more clusters are found. (Note that the `key collision` method with `ngram-fingerprint` keying function will suggest to merge `f` and `M`, which is not desired.)
-6. To merge the remaning values we would like to merge, we will hover over them in the `sex` text facet, select edit, and manually change the names. In a previous lesson we had identified `male` and `female` as allowed values. Change `M` to `male` and `f` to `female`. The Text Facet on the left should now show 2 clusters corresponding to the allowed values.
+5. You should find that using the default settings, no more clusters are found. (Note that the `key collision` method with `ngram-fingerprint` keying function will suggest to merge `F` and `M`, which is not desired.)
+6. To merge the remaning values we would like to merge, we will hover over them in the `sex` text facet, select edit, and manually change the names. In a previous lesson we had identified `male` and `female` as allowed values. Change `M` to `male` and `F` to `female`. The Text Facet on the left should now show 2 clusters corresponding to the allowed values.
 
 Important: If you `Merge` using a different method or keying function, or more times than described in the instructions above,
 your solutions for later exercises might not be the same as shown in those exercise solutions.
@@ -155,9 +153,7 @@ The technical details of how the different clustering algorithms work can be fou
 
 ## Split
 
-
-If data in a column needs to be split into multiple columns, and the parts are separated by a common separator (say a comma, or a space), you can use that separator to divide up the pieces into their own columns.
-
+If data in a column needs to be split into multiple columns, and the parts are separated by a common separator (say a comma, or a space), you can use that separator to divide the pieces into their own columns.
 
 1. Let us suppose we want to split the `location` column into separate columns for country, region, and city.
 2. Click the down arrow at the top of the `location` column. Choose `Edit Column` > `Split into several columns...`
@@ -195,26 +191,22 @@ If you unchecked that box when importing data, or if leading or trailing whitesp
 2. To remove the whitespace, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
 4. You should now see one less category in your text facet, along with normalised names.
 
-> {: .solution}
-{: .challenge}
-
 ## Manual input to correct incorrect values
 
-Remember the conversion of `date` from text nu date format? If we take a closer look we notice some rather questionable cell values. First of all we want to remove the timestamp from the dates. We do this by selecting `edit` next to a date in one of the cells, select `text`in the drop down menu, and remove the `T00:00:00Z` segment from the text string. Then select `Apply To All Identical Cells`. By repeating this for all dates we now get all dates in the standard `YYYY-MM-DD` format.
+Remember the conversion of `date` from text to date format? If we take a closer look we notice some rather questionable cell values. First of all we want to remove the timestamp from the dates. We do this by selecting `edit` next to a date in one of the cells, select `text` in the drop down menu, and remove the `T00:00:00Z` segment from the text string. Then select `Apply To All Identical Cells`. By repeating this for all dates we now get all dates in the standard `YYYY-MM-DD` format.
 
-Next we turn our attention to `7 April`, `31 March`, `32 March` and `33 March`. To make correct modifications we need reliable information about the data. In this case, the data stems from a study conducted in the first half of 2020. We can therefore safely assume that dates beginning with `2021` and `2022` are typos of `2020`. Correcting these by cell `edit` in the `Text Facet`, we arrive at six valid dates, while four are still invalid.
+Next, we take a look at the years, there are `2020`, `2021` and `2022`. However, the data stems from a study conducted during 2020. We can therefore safely assume that dates beginning with `2021` and `2022` are typos of `2020`. Correct these via `edit` in the `Text Facet` in the left panel.
 
-For the remaining dates we lack information on year, but have both month and day. Knowing the study is from `2020` we can safely `edit` the `7 April` to the correct format `YYYY-MM-DD`. Doing so we arrive at `2020-04-07`. For the remaining three dates, we can safely assume the dates `32 March` and `33 March` to be artefacts from the drag-to-copy function in Excel. We can safely assume these to all be `2020-03-31`. Use the `edit`function to adjust the format.
+Last, we turn our attention to `7 April`, `31 March`, `32 March` and `33 March`. We lack information on year, but knowing that the study is from `2020` we can safely `edit` the `7 April` to the correct format `YYYY-MM-DD`. Doing so we arrive at `2020-04-07`. For the remaining three dates, we can assume that the dates `32 March` and `33 March` are artefacts from the drag-to-copy function in Excel. Hence, using the `edit` function, change all three to `2020-03-31`.
 
 > ## Exercise 1.4
 >
-> Did you notice some of the dates in the `date` column looks eerily related? In the list we have both `2020-04-01` and > `2020-01-04`, `2020-04-07` and `2020-07-04`, and `2020-04-08` and `2020-08-04`. These might be correct, or they may be an artefact of when data was typed in, depending on which date format was used. 
+> Did you notice that some of the dates in the `date` column looks eerily related? In the list we have both `2020-04-01` and > `2020-01-04`, `2020-04-07` and `2020-07-04`, and `2020-04-08` and `2020-08-04`. These might be correct, or they may be an artefact of when data was typed in, depending on which date format was used. 
 > 
 > Discuss when this could happen in a dataset, and what practises we can use to avoid such problems, particulary in larger research groups where members from different parts of the world collaborate. 
 >
 > > ## Solution
-> >Before starting a project, make sure all collaborators have agreed to conform to an agreed standard. In particular, atypical date formats in spreadsheets can cause severe issues in downstream analyses. 
-> >
+> > Before starting a project, make sure all collaborators have agreed to conform to a common standard. In particular, atypical date formats in spreadsheets can cause severe issues in downstream analyses. 
 > >
 > {: .solution}
 {: .challenge}
