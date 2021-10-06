@@ -18,12 +18,10 @@ title: Setup
 > **Download**  
 > The folder containing the entire dataset for the Introduction to Data Management practices Workshop
 >from [this page](https://doi.org/10.17044/scilifelab.14301317). Direct link : [https://doi.org/10.17044/scilifelab.14301317](https://doi.org/10.17044/scilifelab.14301317)  
->The three files needed for this lesson is found in dm-practices/6-openrefine  
+>The file needed for this lesson is found in dm-practices/6-openrefine  
 **or**  
 >The files for this lesson only
-> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
-> - [data_cleaning_script_openrefine_lesson.txt](data/data_cleaning_script_openrefine_lesson.txt)
-> - [ENA_sample_metadata_script.txt](data/ENA_sample_metadata_script.txt)
+> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv))
 {: .prereq}
 
 
@@ -32,7 +30,7 @@ title: Setup
 > For this lesson you will need **OpenRefine** and a web browser.  
 > Note: this is a Java program that runs on your machine (not in the cloud). It runs inside your browser, but no web connection is needed.
 >
-> A text editor (like NotePad or TextEdit) is also needed.
+> A text editor (like NotePad or TextEdit) is also required.
 {: .prereq}
 
 > ## Presentation
@@ -44,7 +42,7 @@ title: Setup
 
 - Check that you have Firefox or Chrome browsers installed and set as your
 default browser. OpenRefine runs in your default browser. It will not run correctly in Internet Explorer.
-- Download software from [http://openrefine.org](http://openrefine.org)
+- Download software from [https://openrefine.org/download.html](https://openrefine.org/download.html)
 - Unzip the downloaded file into a directory by right-clicking and
 selecting “Extract…”. Name that directory something like OpenRefine.
 - Go to your newly created OpenRefine directory.
@@ -58,7 +56,7 @@ selecting “Extract…”. Name that directory something like OpenRefine.
 
 - Check that you have Firefox or Chrome browsers installed and set as your
 default browser. OpenRefine runs in your default browser. It will not run correctly in Internet Explorer.
-- Download software from [http://openrefine.org](http://openrefine.org)
+- Download software from [https://openrefine.org/download.html](https://openrefine.org/download.html)
 - Unzip the downloaded file into a directory by double-clicking it. Name
 that directory something like OpenRefine.
 - Go to your newly created OpenRefine directory.
@@ -70,7 +68,7 @@ that directory something like OpenRefine.
 
 - Check that you have Firefox or Chrome browsers installed and set as your
 default browser. OpenRefine runs in your default browser. It will not run correctly in Internet Explorer.
-- Download software from [http://openrefine.org](http://openrefine.org)
+- Download software from [https://openrefine.org/download.html](https://openrefine.org/download.html)
 - Unzip the downloaded file into a directory. Name
 that directory something like OpenRefine.
 - Go to your newly created OpenRefine directory.
