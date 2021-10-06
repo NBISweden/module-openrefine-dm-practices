@@ -19,7 +19,7 @@ keypoints:
 
 There are many entries in our data table. We can filter it to work on a subset of the data in the list for the next set of operations. Please ensure you perform this step to save time during the class.
 
-1. Click the down arrow next to `host disease outcome` > `Text filter`. A `host disease outcome` facet will appear on the left margin.
+1. Click the down arrow next to `disease outcome` > `Text filter`. A `disease outcome` facet will appear on the left margin.
 2. Type in `recovered`. There are 33 matching rows of the original 91 rows (and these rows are selected for the subsequent steps).
 3. At the top, change the view to `Show` 50 rows. This way you will see all of the matching.
 
@@ -29,8 +29,8 @@ There are many entries in our data table. We can filter it to work on a subset o
 > 2. How would you further restrict this to only include females or males?  
 >
 > > ## Solution
-> > 1. Do `Facet` > `Text filter` on the `host disease outcome` column after filtering. Type `dead` to limit your selection to a single category.   
-> > 2. To restrict to only one of the sexes, in the `host sex` column, run another `Text Filter`and type either `male` or `female`.
+> > 1. Do `Facet` > `Text filter` on the `disease outcome` column after filtering. Type `dead` to limit your selection to a single category.   
+> > 2. To restrict to only one of the sexes, in the `sex` column, run another `Text Filter`and type either `male` or `female`.
 > >
 > {: .solution}
 {: .challenge}
@@ -40,22 +40,22 @@ There are many entries in our data table. We can filter it to work on a subset o
 
 In addition to the simple text filtering we used above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. You will see the `include` or `exclude` options if you hover over the name in the facet window.
 
-If you still have your facet for `host disease outcome`, you can use it. If not, use drop-down menu > `Facet` > `Text facet` to create a new facet.
+If you still have your facet for `disease outcome`, you can use it. If not, use drop-down menu > `Facet` > `Text facet` to create a new facet.
 
 Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all of the data that
 is currently selected, while filtering allows you to select a subset of your data for analysis.
 
 > ## Exercise 2.2
 >
-> Use `include / exclude` to make the same combination of `host disease outcome` and `host sex` as in the previous exercise.
+> Use `include / exclude` in a `Text Facet` to make the same combination of `disease outcome` and `sex` as in the previous exercise.
 >
 > > ## Solution
 > >
-> > 1. In the facet (left margin), hover on `healthy`. Notice that there are entries to the right for `edit` and `include`.
+> > 1. In the facet (left margin), hover on `recovered`. Notice that there are entries to the right for `edit` and `include`.
 > > 2. Click `include`. This will explicitly include this mouse line, and exclude others that are not explicitly included. Notice that the
 > option now changes to `exclude`.
 > > 3. Another way to include entries is to click the name directly.
-> > 4. Do the same thing with `host sex` to limit your selection to a combination of the two states.
+> > 4. Do the same thing with `sex` to limit your selection to a combination of the two states.
 > > 4. Click `include` and `exclude` in both facets and notice how the selection in the data changes.
 > >  
 > >
@@ -76,7 +76,7 @@ If this is your first time sorting this table, then the drop-down menu for the s
 >
 > Sort all samples by host age. How can you ensure that ages are in numerical order?
 > > ## Solution
-> > 1. Press the down arrow in the `host age` column, select `Sort...`
+> > 1. Press the down arrow in the `age` column, select `Sort...`
 > > 2. In the pop-up that appears, tick `numbers` and select `smallest first`.
 > >
 > {: .solution}
@@ -90,10 +90,10 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 > ## Exercise 2.4
 >
-> Sort the data by `geographic location city`. What is the age of the youngest sampled individual in `Madonna di Campagna`?
+> Sort the data by `geographic location (city)`. What is the age of the youngest sampled individual in `Madonna di Campagna`?
 >
 > > ## Solution
-> > In the `geographic location city` column, select `Sort...` > `text` and select `a-z`. Scroll down to `Madonna di Campagna`. 
+> > In the `geographic location (city)` column, select `Sort...` > `text` and select `a-z`. Scroll down to `Madonna di Campagna`. 
 > >
 > > The age of the youngest individual from `Madonna di Campagna` is 19 years old. 
 > >

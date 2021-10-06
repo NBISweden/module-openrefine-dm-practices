@@ -16,10 +16,8 @@ title: Setup
 >
 >
 > **Download**  
-> The following files:
-> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
-> - [data_cleaning_script_openrefine_lesson.txt](data/data_cleaning_script_openrefine_lesson.txt)
-> - [ENA_sample_metadata_script.txt](data/ENA_sample_metadata_script.txt)
+> The following file:
+> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv))
 {: .prereq}
 
 
@@ -40,7 +38,7 @@ title: Setup
 
 - Check that you have Firefox or Chrome browsers installed and set as your
 default browser. OpenRefine runs in your default browser. It will not run correctly in Internet Explorer.
-- Download software from [http://openrefine.org](http://openrefine.org)
+- Download software from [https://openrefine.org/download.html](https://openrefine.org/download.html)
 - Unzip the downloaded file into a directory by right-clicking and
 selecting “Extract…”. Name that directory something like OpenRefine.
 - Go to your newly created OpenRefine directory.
@@ -54,7 +52,7 @@ selecting “Extract…”. Name that directory something like OpenRefine.
 
 - Check that you have Firefox or Chrome browsers installed and set as your
 default browser. OpenRefine runs in your default browser. It will not run correctly in Internet Explorer.
-- Download software from [http://openrefine.org](http://openrefine.org)
+- Download software from [https://openrefine.org/download.html](https://openrefine.org/download.html)
 - Unzip the downloaded file into a directory by double-clicking it. Name
 that directory something like OpenRefine.
 - Go to your newly created OpenRefine directory.
@@ -66,7 +64,7 @@ that directory something like OpenRefine.
 
 - Check that you have Firefox or Chrome browsers installed and set as your
 default browser. OpenRefine runs in your default browser. It will not run correctly in Internet Explorer.
-- Download software from [http://openrefine.org](http://openrefine.org)
+- Download software from [https://openrefine.org/download.html](https://openrefine.org/download.html)
 - Unzip the downloaded file into a directory. Name
 that directory something like OpenRefine.
 - Go to your newly created OpenRefine directory.

@@ -37,7 +37,7 @@ The downloaded `tar.gz` file is actually a folder of files which have been compr
 
 > ## Solution
 > You should see:
-> - a  `history` folder which contains a collection of  `zip` files. Each of these files itself contains a `change.txt` file.
+> - a  `history` folder which contains a collection of `zip` files. Each of these files itself contains a `change.txt` file.
 > These `change.txt` files are the records of each individual transformation that you did to your data.
 > - a `data.zip` file. When expanded, this `zip` file includes a file called `data.txt` which is a copy of your raw data.
 > You may also see other files.
