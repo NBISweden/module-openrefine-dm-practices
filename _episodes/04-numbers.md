@@ -55,7 +55,7 @@ More than often we lack certain data for a variable. It may be an unknown origin
 
 A rule of thumb is to never replace missing values with a zero (0). Even if a zero may be a representation of something not present, it is per definition not a missing value, but a zero value. Using zero for missing value may cause severe issues and should be avoided.
 
-Different software may be equipped with different interpretors for missing values. For example, valid input in R include `NULL`, `NA`, `NaN`, `Inf` and `-Inf`, while MatLab uses more context dependent options, e.g. `missing`, or `NaN`. The main point is that you need to consider how to code missing values in your data depending on what kind of software you plan on using further downstream. Also, for projects where more than one person is involved in managing the data, make sure you agree on a single format and stick to it.
+Different software may be equipped with different interpretors for missing values. For example, valid input in R include `NULL`, `NA`, `NaN`, `Inf` and `-Inf`, while MatLab uses more context dependent options, e.g. `missing`, or `NaN`. The main point is that you need to consider how to code missing values in your data depending on what kind of software you plan on using. Also, for projects where more than one person is involved in managing the data, make sure you agree on a single format and stick to it.
 
 > ## Exercise 3.3
 >
