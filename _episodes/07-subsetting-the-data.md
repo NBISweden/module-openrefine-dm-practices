@@ -26,11 +26,11 @@ We need to consider the following questions:
 - **Are there additional columns that need to be added?**
 
 <BR>
-First, we know the data contain three samples per individual, i.e. every individual are represented by three rows in the data. Now, we might want to extract one of those samples for submission, namely the ones produced by the Illumina NEBNext prep kit. We identify these as "NebNext" in the column `configuration`. 
+First, we know the data contain three samples per individual, i.e. every individual are represented by three rows in the data. Now, we might want to extract one of those samples for submission, namely the ones produced by the Illumina NEBNext prep kit. We identify these as "NEBNext" in the column `configuration`. 
 
 1. Create a filter for the column `configuration` by clicking the down arrow in the column header and select `Text filter`.
 2. A filter box will appear to the on the left side. Type `NEB` in the text field and press return. 29 matching rows will be displayed.
-3. In the same box, press `invert` in the top right to select all the rows from researchers other than Sam. Note that the box header will turn orange to indicate inverted results.
+3. In the same box, press `invert` in the top right to select all the rows which *do not* have the configuration NEBNext. Note that the box header will turn orange to indicate inverted results.
 4. Confirm that there are 62 matching rows.
 5. Click the down arrow next to `All` in the left-most column header > `Edit rows` > `Remove matching rows`
 6. Remove or reset the filter. Now, all remaining 29 rows should be `NEBNext` samples. This subsection of the data can be saved using the `Export` drop down menu as `comma-separated values`, to be imported into other software like `R`. 
@@ -48,7 +48,7 @@ In a previous lesson in this workshop around [metadata](https://nbisweden.github
 Some metadata are mandatory for all samples submitted to ENA regardless of the checklist chosen. We will try to map the existing columns to these variables.
 
 **Basic details**  
-sample_alias - _The unique name is a submitter provided unique identifier. (This will be created further down)_  
+sample_alias - _The unique name is a submitter provided unique identifier_  
 
 **Organism details**  
 tax_id - _The NCBI taxonomy id_  
@@ -56,7 +56,7 @@ scientific_name - _based on tax_id_
 
 
 > ## Exercise
->Can any of the existing columns be used as `sample_alias`, `tax_id` and `scientific_name`?
+> Can any of the existing columns be used as `sample_alias`, `tax_id` and `scientific_name`?
 >
 > > ## Solution
 > > 1. `sample_alias` needs to be created. We will do that under the header "Join columns". 
@@ -68,9 +68,9 @@ scientific_name - _based on tax_id_
 <BR>
 ## Creating new columns
 
-Sometimes a new variable needs to be added to a dataset, a new set of data input, or a transfer of information from another data source. So far we have only covered editing already existant columns and cells, but how do we create space for new data in an already open project?
+Sometimes a new variable needs to be added to a dataset, a new set of data input, or a transfer of information from another data source. So far we have only covered editing already existing columns and cells, but how do we create space for new data in an already open project?
 
-For example, in our opened dataset we are missing a column for naming the institute responsible for collecting the listed samples. To create such a column, we select a column to the left of where we want to create a new, and in that column select `Edit column` > `Add column based on this column...`. In the new window, in `New column name`, type `collector name`, and enter `null` as `value`. Clicking `OK` now creates a new column to the right of the one we just used, without cell values. Repeating what we did earlier in the lesson, `edit` the contents to the input `Valeria Ghiselli` and select `Apply to All Identical Cells`.     
+For example, in our dataset we are missing a column for naming the institute responsible for collecting the listed samples. To create such a column, we select a column to the left of where we want to create a new, and in that column select `Edit column` > `Add column based on this column...`. In the new window, in `New column name`, type `collector name`, and enter `null` as `value`. Clicking `OK` now creates a new column to the right of the one we just used, without cell values. Repeating what we did earlier in the lesson, `edit` the contents to the input `Valeria Ghiselli` and select `Apply to All Identical Cells`.     
 <BR>
 
 > ## Exercise 6.1
@@ -105,7 +105,7 @@ To the right, there are several options for the join.
 3. In the separator field, enter an underscore `_`.
 4. Click ` Write result in new column named… ` and enter `sample_alias`.
 5. If ticked, untick the option `Delete joined columns.` (we wish to keep the originating columns) and click `OK`.
-6. Move the column to the beginning by selecting `Edit column` > `Move column to beginning`.
+6. Move the new `sample_alias` column to the beginning by selecting `Edit column` > `Move column to beginning`.
 <BR>
 
 #### Generate infomation by joining multiple columns
@@ -113,7 +113,7 @@ Our dataset still lack information for the mandatory ENA checklist field `isolat
 
 > ## Exercise 6.2
 >
-> Create a new column called `isolate`, and populate the cells with information for **[organism/host/location/isolate/date]** as defined by the ENA checklist. Notice that our column names are not (yet) aligned with the onthology of the checklist.
+> Create a new column called `isolate`, and populate the cells with information for **[organism/host/location/isolate/date]** as defined by the ENA checklist. Notice that our column names are not (yet) aligned with the ontology of the checklist.
 > > ## Solution
 > >
 > > 1. In the `virus_identifier` column, select `Edit column` > `Join columns...`.
@@ -152,7 +152,7 @@ Now let's have a look at the data dictionary from the metadata lesson. Which var
 > >
 > > Renaming columns:
 > > 1. Click the down arrow next to a column titel to rename > `Edit column` > `Rename this column`. A pop-up window will appear on top.
-> > 2. Type in the ENA checklist name above and press return.  
+> > 2. Type in the ENA variable name from the Data dictionary above and press return.  
 > > 3. Repeat the steps to rename all columns mentioned in the list above.
 > {: .solution}
 {: .challenge}
