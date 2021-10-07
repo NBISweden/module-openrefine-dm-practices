@@ -16,12 +16,8 @@ title: Setup
 >
 >
 > **Download**  
-> The folder containing the entire dataset for the Introduction to Data Management practices Workshop
->from [this page](https://doi.org/10.17044/scilifelab.14301317). Direct link : [https://doi.org/10.17044/scilifelab.14301317](https://doi.org/10.17044/scilifelab.14301317)  
->The file needed for this lesson is found in dm-practices/6-openrefine  
-**or**  
->The files for this lesson only
-> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv))
+> The following file:
+> - [samples_openrefine_lesson.csv](data/samples_openrefine_lesson.csv)
 {: .prereq}
 
 
