@@ -175,7 +175,7 @@ to be split.
 > > 1. On the `location 1` column, click the down arrow and then `Edit column` > `Rename this column`.
 > > 2. Type `geographic location (country)` into the box that appears. If you type anything that is already used as a column name elsewhere, a pop-up will appear that says `Another column already named [name]`. Note that column names are case sensitive. If you capitalize the initial (or any) letter, it will be recognized as a unique name.
 > > You should now have three new columns called `geographic location (country)`, `geographic location (region and locality)`, and `geographic location (city)` 
-> > 3. Hover the mouse over a cell in `geographic location (city)` named `Torino`. Notice the `edit` function becoming available. Click on `edit`, type in `Turin` and select `Apply to All Identical Cells`. All occurences of `Torino` are now replaced with `Turin`. Also notice there might be leading whitespaces in most of the names for `geographic location (city)`. We will deal with those in the next section. 
+> > 3. Hover the mouse over a cell in `geographic location (city)` named `Torino`. Notice the `edit` function becoming available. Click on `edit`, type in `Turin` and select `Apply to All Identical Cells`. All occurrences of `Torino` are now replaced with `Turin`. Also notice there might be leading whitespaces in most of the names for `geographic location (city)`. We will deal with those in the next section. 
 > >
 > {: .solution}
 {: .challenge}
