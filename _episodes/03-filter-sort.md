@@ -17,30 +17,30 @@ keypoints:
 
 ## Filtering
 
-There are many entries in our data table. We can filter it to work on a subset of the data in the list for the next set of operations. Please ensure you perform this step to save time during the class.
+There are many entries in our data table, we can filter it to work on a subset of the data:
 
-1. Click the down arrow next to `disease outcome` > `Text filter`. A `disease outcome` facet will appear on the left margin.
+1. Click the down arrow next to `disease outcome` and select `Text filter`. A `disease outcome` filter will appear on the left margin.
 2. Type in `recovered`. There are 33 matching rows of the original 91 rows (and these rows are selected for the subsequent steps).
-3. At the top, change the view to `Show` 50 rows. This way you will see all of the matching.
+3. At the top, change the view to `Show` 50 rows. This way you will see all of the matching rows.
 
 > ## Exercise 2.1
 >
-> 1. How can you filter the data to only include persons with state `dead`?
+> 1. How can you filter the data to instead only include persons with state `dead`?
 > 2. How would you further restrict this to only include females or males?  
 >
 > > ## Solution
-> > 1. Do `Facet` > `Text filter` on the `disease outcome` column after filtering. Type `dead` to limit your selection to a single category.   
-> > 2. To restrict to only one of the sexes, in the `sex` column, run another `Text Filter`and type either `male` or `female`.
+> > 1. In the `disease outcome` filter, type `dead` instead of recovered.   
+> > 2. To restrict to only one of the sexes, in the `sex` column, run another `Text Filter`and type `female`. Notice that if you type `male` we also capture all expressions containing `male`, such as `female`. To filter only `male`, run the filter for `female` and then use the `invert` function.
 > >
 > {: .solution}
 {: .challenge}
 
+Remove the filters before moving on so that you again have the full dataset of 91 records.
+
 ### Excluding entries
 
+In addition to the simple text filtering we used above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. If you still have your facet for `disease outcome`, you can use it. If not, use drop-down menu > `Facet` > `Text facet` to create a new facet. You will see the `include` or `exclude` options if you hover over the name in the facet window.
 
-In addition to the simple text filtering we used above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. You will see the `include` or `exclude` options if you hover over the name in the facet window.
-
-If you still have your facet for `disease outcome`, you can use it. If not, use drop-down menu > `Facet` > `Text facet` to create a new facet.
 
 Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all of the data that
 is currently selected, while filtering allows you to select a subset of your data for analysis.
@@ -52,7 +52,7 @@ is currently selected, while filtering allows you to select a subset of your dat
 > > ## Solution
 > >
 > > 1. In the facet (left margin), hover on `recovered`. Notice that there are entries to the right for `edit` and `include`.
-> > 2. Click `include`. This will explicitly include this mouse line, and exclude others that are not explicitly included. Notice that the
+> > 2. Click `include`. This will explicitly include those recovered, and exclude others that are not explicitly included. Notice that the
 > option now changes to `exclude`.
 > > 3. Another way to include entries is to click the name directly.
 > > 4. Do the same thing with `sex` to limit your selection to a combination of the two states.
@@ -62,7 +62,7 @@ is currently selected, while filtering allows you to select a subset of your dat
 > {: .solution}
 {: .challenge}
 
-Remove the filter before moving on so that you again have the full dataset of 91 records.
+Remove the selections before moving on, so that you again have the full dataset of 91 records, either by closing all facets or press `Reset All` button in top of the left margin.
 
 ## Sort
 
@@ -82,24 +82,11 @@ If this is your first time sorting this table, then the drop-down menu for the s
 > {: .solution}
 {: .challenge}
 
-If you try to re-sort a column that you have already used, the drop-down menu changes slightly, to > `Sort` without the `...`, to remind you that you have already used this column. It will give you additional options:
+If you try to re-sort a column that you have already used, the drop-down menu changes slightly, to > `Sort` without the `...`, to remind you that you have already sorted this column. It will give you additional options:
 
 * > `Sort` > `Sort...` - This option enables you to modify your original sort.
 * > `Sort` > `Reverse` - This option allows you to reverse the order of the sort.
 * > `Sort` > `Remove sort` - This option allows you to undo your sort.
-
-> ## Exercise 2.4
->
-> Sort the data by `geographic location (city)`. What is the age of the youngest sampled individual in `Madonna di Campagna`?
->
-> > ## Solution
-> > In the `geographic location (city)` column, select `Sort...` > `text` and select `a-z`. Scroll down to `Madonna di Campagna`. 
-> >
-> > The age of the youngest individual from `Madonna di Campagna` is 19 years old. 
-> >
-> {: .solution}
-{: .challenge}
-
 
 ### Sorting by multiple columns
 
