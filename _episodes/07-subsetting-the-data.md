@@ -14,7 +14,7 @@ keypoints:
 
 Sometimes you would like to export a file that only contains a subset of the data in your project that conforms to a specific standard.  
 
-In the next lesson of the _Introduction to Data Management Practices Workshop_ we will 
+In the this lesson of the _Introduction to Data Management Practices Workshop_ we will 
 act as a researcher who wants to submit a subset of the data to the repository [ENA](https://www.ebi.ac.uk/ena/browser/home) (European Nucleotide Archive).
 To do so we need to prepare sample metadata to conform to the metadata standards
 of the repository.
@@ -26,7 +26,7 @@ We need to consider the following questions:
 - **Are there additional columns that need to be added?**
 
 <BR>
-First, we know the data contain three samples per individual, i.e. every individual are represented by three rows in the data. Now, we might want to extract one of those samples for submission, namely the ones produced by the Illumina NEBNext prep kit. We identify these as "NEBNext" in the column `configuration`. 
+First, we know the data contain three samples per individual, i.e. every individual is represented by three rows in the data. Now, we might want to extract one of those samples for submission, namely the ones produced by the Illumina NEBNext prep kit. We identify these as "NEBNext" in the column `configuration`. 
 
 1. Create a filter for the column `configuration` by clicking the down arrow in the column header and select `Text filter`.
 2. A filter box will appear to the on the left side. Type `NEB` in the text field and press return. 29 matching rows will be displayed.

@@ -17,7 +17,7 @@ keypoints:
 ## Saving and Exporting a Project
 
 In OpenRefine you can save or export the project. This means you're saving the data and all the
-information about the cleaning and data transformation steps you've done. Once you've saved a project, you can
+information about the cleaning and data transformation steps you've done locally on your computer. Once you've saved a project, you can
 open it up again and be just where you stopped before.
 
 ### Saving
