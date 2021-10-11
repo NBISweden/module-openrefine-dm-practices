@@ -14,7 +14,7 @@ keypoints:
 
 Sometimes you would like to export a file that only contains a subset of the data in your project that conforms to a specific standard.  
 
-In the this lesson of the _Introduction to Data Management Practices Workshop_ we will 
+In this lesson of the _Introduction to Data Management Practices Workshop_ we will 
 act as a researcher who wants to submit a subset of the data to the repository [ENA](https://www.ebi.ac.uk/ena/browser/home) (European Nucleotide Archive).
 To do so we need to prepare sample metadata to conform to the metadata standards
 of the repository.
@@ -210,7 +210,5 @@ the column header > `Text filter`
 
 - #checklist_accession  ERC000033  
 - #unique_name_prefix
-
-
 
 {% include links.md %}
