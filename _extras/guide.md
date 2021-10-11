@@ -14,12 +14,10 @@ This time allotted for the teaching and exercises in lessons one through eight i
 ([setup](../setup.html)).
 - If Internet Explorer is the default browser for participants, OpenRefine may have trouble opening. The URL can be copied and pasted into a Google Chrome or Firefox browser. Or, participants can be encouraged in advance of the workshop to set one of these two browsers as their default.
 
-## The datasets used
+## The dataset used
 
-- The dataset used in this lesson can be downloaded from Figshare through
- the link on the ([setup page](../setup.html)).
+- A link to the dataset used in this lesson, including a description, can be found on the [setup page](../setup.html).
 - It will need to be downloaded to the local machine before it can be loaded into OpenRefine.
-- A general description of the dataset used in the can be found [in the setup page](../setup.html)
 
 ## The Lessons
 
@@ -53,6 +51,10 @@ This time allotted for the teaching and exercises in lessons one through eight i
 - Covers the overall format of a project 'file' and how the components can be viewed.
 - This may require installing additional software on Windows machine (e.g. 7-zip) as the built-in un-zipping facility does not work with tar.gz files.
 
-[Other resources in OpenRefine](../07-resources/)
+[Select subsets](../07-subsetting-the-data/)
+
+- Covers how to export a file that only contains a subset of the data.
+
+[Other resources in OpenRefine](../08-resources/)
 
 - Just a list of various OpenRefine resources available on-line (taken from the Ecology lessons)
