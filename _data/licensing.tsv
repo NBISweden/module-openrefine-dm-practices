@@ -1,4 +1,4 @@
 contentUrl	license
 fig/OR_01_parse.png	OpenRefine interface screenshot used to teach about OpenRefine, https://openrefine.org/
 fig/OR_history.png	OpenRefine interface screenshot used to teach about OpenRefine, https://openrefine.org/
-data/samples_openrefine_lesson.csv	Artificial data derived from original data made available through the study "COVseq is a cost-effective workflow for mass-scale SARS-CoV-2 genomic surveillance" in Nature Communications 12: 3903 (2021), DOI: https://doi.org/10.1038/s41467-021-24078-9. Original data available under accession number PRJEB42601 at EMBL-EBI (https://identifiers.org/ena.embl:PRJEB42601).
+data/samples_openrefine_lesson.csv	Artificial data derived from original data made available through the study “COVseq is a cost-effective workflow for mass-scale SARS-CoV-2 genomic surveillance” in Nature Communications 12: 3903 (2021), DOI: https://doi.org/10.1038/s41467-021-24078-9. Original data available under accession number PRJEB42601 at EMBL-EBI (https://identifiers.org/ena.embl:PRJEB42601).
