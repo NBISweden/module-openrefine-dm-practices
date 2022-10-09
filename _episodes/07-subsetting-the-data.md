@@ -55,7 +55,7 @@ tax_id - _The NCBI taxonomy id_
 scientific_name - _based on tax_id_
 
 
-> ## Exercise
+> ## Exercise 6.1
 > Can any of the existing columns be used as `sample_alias`, `tax_id` and `scientific_name`?
 >
 > > ## Solution
@@ -73,7 +73,7 @@ Sometimes a new variable needs to be added to a dataset, a new set of data input
 For example, in our dataset we are missing a column for naming the institute responsible for collecting the listed samples. To create such a column, we select a column to the left of where we want to create a new, and in that column select `Edit column` > `Add column based on this column...`. In the new window, in `New column name`, type `collector name`, and enter `null` as `value`. Clicking `OK` now creates a new column to the right of the one we just used, without cell values. Repeating what we did earlier in the lesson, `edit` the contents to the input `Valeria Ghiselli` and select `Apply to All Identical Cells`.     
 <BR>
 
-> ## Exercise 6.1
+> ## Exercise 6.2
 >
 > Add a new column called `collecting entity`, and fill all cells with the input `Amedeo di Savoia`. Can you generate the column to the right of the column `collector name`?
 >
@@ -111,7 +111,7 @@ To the right, there are several options for the join.
 #### Generate infomation by joining multiple columns
 Our dataset still lack information for the mandatory ENA checklist field `isolate`, which is defined as the "individal isolate from which the sample was obtained". Such information can be generated in a number of formats, but here we will use a combination of [organism/host/location/isolate/date]. 
 
-> ## Exercise 6.2
+> ## Exercise 6.3
 >
 > Create a new column called `isolate`, and populate the cells with information for **[organism/host/location/isolate/date]** as defined by the ENA checklist. Notice that our column names are not (yet) aligned with the ontology of the checklist.
 > > ## Solution
@@ -139,15 +139,19 @@ Now let's have a look at the data dictionary from the metadata lesson. Which var
 > >
 > > | Current variable name | ENA Variable name | Measurement unit | Allowed values | Definition | Description |
 > > |-|-|-|-|-|-|
-> > | sample_alias |  |  |  |  |  |
-> > | date | collection date |  | format: YYYY-MM-DD, >=proj_start_date & <=today | Date of experiment ??? |  |
-> > | tissue | isolation source host-associated |  |  |  |  |
-> > | age | host age | years | | |  |
-> > | health state | host health state |  | diseased, healthy |  |  |
-> > | sex | host sex |  | male, female, unknown |  |  |
-> > | symptoms | illness symptoms |  | fever, soar throat, fatigue, ageusia  |  |  |
-> > | disease outcome | host disease outcome |  | dead, recovered |  |  |
-> > | DESCRIPTION | sample description |  |  |  |  
+> > | sample id |  |  |  |  |  |
+> > | patient id | **host subject id** |  |  |  |  |
+> > | sex | **host sex** |  | male, female, **not collected** | Sex of the individual |  |
+> > | date | **collection date** |  | format: YYYY-MM-DD, >=proj_start_date & <=today | Date of sampling |  |
+> > | location | **geographic location (country and/or sea)** |  | <country> |  |  |
+> > | location | **geographic location (region and locality)** |  | <region>, <city>, ... |  |  |
+> > | age | **host age** | years |  | Age of individual at the time of sampling |  |
+> > | health state | **host health state** |  | **diseased, healthy, not applicable, not collected, not provided, restricted access** | Health state of individual at time of sampling |  |
+> > | symptoms | **illness symptoms** |  | fever, sore throat, fatigue, loss of taste or smell, not applicable | Symptoms experienced in connection with illness |  |
+> > | disease outcome | **host disease outcome** |  | **recovered**, dead | Final outcome of disease |  |
+> > | tissue | **isolation source host-associated** |  |  | Tissue sampled |  |
+> > | **isolate** | **isolate** |  |  | **individual isolate from which the sample was obtained** |  |
+> >
 > >
 > >
 > > Renaming columns:
@@ -161,26 +165,22 @@ With all columns renamed to comply with the ERC000033 checklist, what remains is
 
 First we notice the values for `host health state` is only semi-correct. In our column we have stated the values to `ill` and `healthy`. The correct values should be `diseased` and `healthy`.
 
-Second, we can see some inconsistencies in the `illness symptoms` column. Make sure to correct any mis-spelling (e.g. sore throt), and replace `loss of taste` with the checklist term `ageusia`.
+Second, we can see some inconsistencies in the `illness symptoms` column. Make sure to correct any mis-spelling (e.g. sore throt).
 <BR>
 <BR>
 ### Removing and reordering data
-We have now identified and correctly named the columns we want to include for the ENA submission. The next step is to validate the dataset prior to submission, and that it conforms with a controlled vocabulary (ENA Checklist).
+We have now identified and correctly named the columns we want to include for the ENA submission. The final step is to remove unwanted columns and to make sure it conforms with the controlled vocabulary (ENA Checklist).
 
-> ## Exercise
-> 1. Using your knowledge from the previous exercises, make sure all required variables are in order and all eventual typos are corrected. Also make sure no cells are empty or with incorrect missing values.
-> 2. Export the `NEBNext` subset of data in `csv` format.
+> ## Exercise 6.4
+> 1. Using your knowledge from the previous exercises, make sure all required variables are in order or no extra columns are included in your subset of data.
+> 2. Export the `NEBNext` subset of data in `tsv` format.
 >
 > > ## Solution
-> >To exclude all rows from other experiment types than `NEBNext`
-1. Create a filter for the column `configuration` by clicking the down arrow in
-the column header > `Text filter`
-2. Type `NEBNext` in the text field and press return. 29 matching rows will be displayed.
-3. In the same box, press `invert` in the top right.
-4. Click the down arrow next to `All` in the left-most column header > `Edit rows` > `Remove matching rows`
-5. Remove or reset the filter. Now, all remaining 6 rows should be of experiment type NEBNext.
->>
-6. Remove all but the following columns:
+> >
+Remove all but the following columns and order them according to the liset below by
+1. Click the down arrow in the leftmost column header `All` and select `Edit columns` `Re-order / remove columns…`
+2. In the pop/up, drag and re/order the columns to keep in the left box, and put the columns to remove in the right box
+3. When everything looks good, press `OK`
 - sample_alias  
 - collection date
 - tax_id
@@ -197,18 +197,10 @@ the column header > `Text filter`
 - collector name
 - collecting institute
 - isolate
+- illness symptoms
+4. Click `Export` in the top right and select the file type you want to export the data in. In this case we will choose `Tab-separated values` (`tsv`).
+5. The file will be saved in your default downloads folder. Move the file to your course folder and save it as `ENA_samples_openrefine_lesson.tsv`
 > {: .solution}
 {: .challenge}
-
-<BR>
-### Creating a tsv-file compatible with the ENA
-
-1. Click `Export` in the top right and select the file type you want to export the data in. In this case we will choose `Tab-separated values` (`tsv`).
-2. The file will be saved in your default downloads folder. Move the file to your course folder and save it as `ENA_samples_openrefine_lesson.tsv`
-3. Open the file in a text editor such as NotePad or TextEdit.
-4. Add the two following lines at the beginning of the file and `save`. Make sure that you have a tab between `#checklist_accession` and `ERC000033`
-
-- #checklist_accession  ERC000033  
-- #unique_name_prefix
 
 {% include links.md %}
