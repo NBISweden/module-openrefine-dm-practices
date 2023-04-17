@@ -193,7 +193,7 @@ If you unchecked that box when importing data, or if leading or trailing whitesp
 
 ## Manual input to correct incorrect values
 
-Remember the conversion of `date` from text nu date format? If we take a closer look we notice some rather questionable cell values. First of all we want to remove the timestamp from the dates. We do this by first transformning the cells to text, `Edit cells` > `Common transforms` > `To text`. Next we click `edit` in one of the cells and copy the expression `T00:00:00Z`. Finally we select `Edit cells` > `Replace`, paste the expression into the `Find:` box, leave the box `Replace with:` a blank, and click `OK`. By doing this we now get all dates in the standard `YYYY-MM-DD` format.
+Remember the conversion of `date` from text nu date format? If we take a closer look we notice some rather questionable cell values. First of all we want to remove the timestamp from the dates. We do this by first transformning the cells back to text, `Edit cells` > `Common transforms` > `To text`. Next we click `edit` in one of the cells and copy the expression `T00:00:00Z`. Finally we select `Edit cells` > `Replace`, paste the expression into the `Find:` box, leave the box `Replace with:` a blank, and click `OK`. By doing this we now get all dates in the standard `YYYY-MM-DD` format.
 
 Next, we take a look at the years, there are `2020`, `2021` and `2022`. However, the data stems from a study conducted during 2020. We can therefore safely assume that dates beginning with `2021` and `2022` are typos of `2020`. Correct these via `edit` in the `Text Facet` in the left panel.
 
