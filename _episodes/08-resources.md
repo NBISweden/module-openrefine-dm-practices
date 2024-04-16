@@ -15,9 +15,9 @@ keypoints:
 
 ## Using online resources to get help with OpenRefine
 
-OpenRefine is more than a simple data cleaning tool. People are using it for all sorts of activities. Here are some other resources that might prove useful.
+OpenRefine is more than a simple data-cleaning tool. People are using it for all sorts of activities. Here are some other resources that might prove useful.
 
-OpenRefine has its own web site with documentation and a book:
+OpenRefine has its own website with documentation and a book:
 
 * [OpenRefine web site](http://openrefine.org/)
 * [OpenRefine Documentation for Users](https://docs.openrefine.org/)
