@@ -24,12 +24,12 @@ This gives you a quick way to clean all of your related data.
 
 ## Saving your work as a script
 
-1. In the `Undo / Redo` section, click `Extract...`, and select the steps that you want to apply to other datasets by clicking the check boxes.
+1. In the `Undo / Redo` section, click `Extract...`, and select the steps you want to apply to other datasets by clicking the checkboxes.
 
 ![History](../fig/OR_history.png)
 
-2. Select all the code from the right hand panel to copy and paste it into a text editor (like NotePad on Windows or TextEdit on Mac) or Google Docs. To copy you can right click the selected text or use the shortcuts cmd+c and cmd+v for Mac or ctrl+c and ctrl+v for Windows.
-Make sure it saves as a plain text file and name it `data_cleaning_script.txt`. In TextEdit, do this by selecting `Format` > `Make plain text`. In Google Docs, do this from the `File` menu > `Download` > `Plain Text (.txt)`
+2. Select all the code from the right-hand panel to copy and paste it into a text editor (like NotePad on Windows or TextEdit on Mac) or Google Docs. To copy, you can right-click the selected text or use the shortcuts cmd+c and cmd+v for Mac or ctrl+c and ctrl+v for Windows.
+Make sure it saves as a plain text file and name it `data_cleaning_script.txt`. In TextEdit, select `Format` > `Make plain text`. In Google Docs, do this from the `File` menu > `Download` > `Plain Text (.txt)`
 
 ## Importing a script to use against another dataset
 
@@ -39,6 +39,6 @@ Let's practice running these steps on a new dataset. We'll test this on an uncle
 2. Click the `Undo / Redo` tab > `Apply` and paste in the contents of the `data_cleaning_script.txt` file you just created  with the JSON code.
 3. Click `Perform operations`. The dataset should now be the same as your other cleaned dataset.
 
-For convenience, we used the same dataset. In reality you could use this process to clean related datasets. For example, data that you had collected over different fieldwork periods or data that was collected by different researchers (provided everyone uses the same column headings).
+For convenience, we used the same dataset. In reality, you can use this process to clean related datasets. For example, data that you had collected over different fieldwork periods or data that was collected by other researchers (provided everyone uses the same column headings).
 
 {% include links.md %}
