@@ -32,7 +32,7 @@ In Windows, you can start the OpenRefine program by double-clicking on the openr
 OpenRefine can import a variety of file types, including tab separated (`tsv`), comma separated (`csv`), Excel (`xls`, `xlsx`), JSON, XML, RDF as XML, and Google Spreadsheets. See the [OpenRefine Importers page](https://github.com/OpenRefine/OpenRefine/wiki/Importers) for more information.
 
 In this first step, we'll browse our computer to the sample data file for this lesson.
-In this case, we will be using a very similar data set obtained from a covid-19 study to the one we used in the previous metadata module.
+In this case, we will be using a data set very similar to the one we used in the previous metadata module, obtained from a covid-19 study.
 Instructions on downloading the data are available in [Setup]({{site.baseurl}}/setup.html).
 
 Once OpenRefine is launched in your browser, the left margin has options to `Create Project`, `Open Project`, or `Import Project`. Here, we will create a new project:

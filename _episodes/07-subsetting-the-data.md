@@ -103,7 +103,7 @@ To create aliases for our samples, we can combine cell information from the colu
 2. On the left side, choose which columns to join. Verify that `configuration` is already ticked and tick `host subject id` as well. (Notice that you can change the order of the information to combine by drag-and-drop the order of ticked columns in the list).
 To the right, there are several options for the join.
 3. In the separator field, enter an underscore `_`.
-4. Click ` Write the result in a new column named… ` and enter `sample_alias`.
+4. Click `Write result in new column named… ` and enter `sample_alias`.
 5. If ticked, untick the option `Delete joined columns.` (we wish to keep the originating columns) and click `OK`.
 6. Move the new `sample_alias` column to the beginning by selecting `Edit column` > `Move column to beginning`.
 <BR>
@@ -124,9 +124,9 @@ Our dataset still lacks information for the mandatory ENA checklist field `isola
 - `isolate` -> `sample_alias`
 - `date` -> `collection date`.
 > > 3. Add a slash `/` as `Separator between the content of each column:`
-> > 4. Tick `Write the result in a new column named...` and type `isolate`. This will create a new column named `isolate` populated with the above information. 
+> > 4. Tick `Write result in new column named...` and type `isolate`. This will create a new column named `isolate` populated with the above information. 
 > > 5. Make sure the box for `Delete joined columns` is not ticked. Once you are confident your selection is correct, make sure to drag-and-drop the columns to appear in the desired order.
-> > 6. Select `OK`. All cells should now be populated with isolated information. 
+> > 6. Select `OK`. All cells should now be populated with isolate information. 
 > {: .solution}
 {: .challenge}
 <BR>
@@ -163,9 +163,9 @@ Now, let's have a look at the data dictionary from the metadata lesson. Which va
 
 With all columns renamed to comply with the ERC000033 checklist, what remains is to check if the entered values for the field name also correspond with the correct field restrictions. 
 
-First, we notice the values for `host health state` are only semi-correct. In our column we have stated the values of `ill` and `healthy`. The correct values should be `diseased` and `healthy`.
+First, we notice the values for `host health state` are only semi-correct. In our column we have stated the values `ill` and `healthy`. The correct values should be `diseased` and `healthy`.
 
-Second, we can see some inconsistencies in the `illness symptoms` column. Make sure to correct any mis-spelling (e.g. sore throat).
+Second, we can see some inconsistencies in the `illness symptoms` column. Make sure to correct any mis-spelling (e.g. sore throt).
 <BR>
 <BR>
 ### Removing and reordering data

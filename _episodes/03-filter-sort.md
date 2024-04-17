@@ -92,4 +92,4 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 You can sort by multiple columns by performing sort on additional columns. The sort will depend on the order in which you select columns to sort. To restart the sorting process with a particular column, check the `sort by this column alone` box in the `Sort` pop-up menu.
 
-If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sorts. If it is the only column sorted, then the data reverts to its original order.
+If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sort. If this is the only column sorted, the data reverts to its original order.
