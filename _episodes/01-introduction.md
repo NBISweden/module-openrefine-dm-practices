@@ -11,7 +11,7 @@ objectives:
 - "Locate helpful resources to learn more about OpenRefine."
 keypoints:
 - "OpenRefine is a powerful, free and open source tool that can be used for data cleaning."
-- "OpenRefine will automatically track any steps allowing you to backtrack as needed and providing a record of all work done"
+- "OpenRefine will automatically track any steps allowing you to backtrack as needed and providing a record of all work done."
 ---
 
 # Lesson
@@ -19,10 +19,10 @@ keypoints:
 ## Motivations for the OpenRefine Lesson
 
 * Data is often very messy. OpenRefine provides a set of tools to allow you to identify and amend the messy data.
-* It is important to know what you did to your data. Additionally, journals, granting agencies, and other institutions are requiring documentation of the steps you took when working with your data. With OpenRefine, you can capture all actions applied to your raw data and share them with your publication as supplemental material.
+* It is important to know what you did to your data. Additionally, journals, granting agencies, and other institutions require documentation of the steps you took when working with your data. With OpenRefine, you can capture all actions applied to your raw data and share them with your publication as supplemental material.
 * All actions are easily reversed in OpenRefine.
-* If you save your work it will be to a new file. OpenRefine always uses a copy of your data and _does not_ modify your original dataset.
-* Data cleaning steps often need repeating with multiple files. OpenRefine keeps track of all of your actions and allows them to be applied to different datasets.
+* If you save your work it will be added to a new file. OpenRefine always uses a copy of your data and _does not_ modify your original dataset.
+* Data cleaning steps often need repeating with multiple files. OpenRefine keeps track of your actions and allows them to be applied to different datasets.
 * Some concepts such as clustering algorithms are quite complex, but OpenRefine makes it easy to introduce them, use them, and show their power.
 
 ## Features
@@ -30,9 +30,9 @@ keypoints:
 * Open source ([source on GitHub](https://github.com/OpenRefine/OpenRefine)).
 * A large growing community, from novice to expert, ready to help. See Getting
   Help section below.
-* Works with large-ish datasets (100,000 rows). Can adjust memory allocation to
+* Works with large-ish datasets (100,000 rows). Memory allocation can be adjusted to
   accommodate larger datasets.
-* OpenRefine always keeps your data private on your own computer until you choose to share it. It works by running a small server on your computer and using your web browser to interact with it, but your private data never leaves your computer unless you want it to.
+* OpenRefine always keeps your data private on your computer until you choose to share it. It works by running a small server on your computer and using your web browser to interact with it, but your private data never leaves your computer unless you want it to.
 
 ## Before we get started
 
@@ -45,6 +45,6 @@ If after installation and running OpenRefine, it does not automatically open for
 
 ## Getting help for OpenRefine.
 
-You can find out a lot more about OpenRefine at [http://openrefine.org](http://openrefine.org) and check out some great introductory videos. These videos and other on OpenRefine can also be found on YouTube, search with 'OpenRefine'. There is a [Google Group](https://groups.google.com/forum/?hl=en#!forum/openrefine) that can answer a lot of beginner questions and problems. Information can also be found on [StackOverflow](https://stackoverflow.com/questions/tagged/openrefine) where you can find a lot of help. As with other programs of this type, OpenRefine libraries are available too, where you can find a script you need and copy it into your OpenRefine instance to run it on your dataset.
+You can find out a lot more about OpenRefine at [http://openrefine.org](http://openrefine.org) and check out some great introductory videos. These videos and other on OpenRefine can also be found on YouTube, search with 'OpenRefine'. There is a [Google Group](https://groups.google.com/forum/?hl=en#!forum/openrefine) that can answer a lot of beginner questions and problems. Information can also be found on [StackOverflow](https://stackoverflow.com/questions/tagged/openrefine), where you can get a lot of help. As with other programs of this type, OpenRefine libraries are available, too, where you can find a script you need and copy it into your OpenRefine instance to run it on your dataset.
 
 {% include links.md %}

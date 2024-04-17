@@ -17,7 +17,7 @@ keypoints:
 
 ## Filtering
 
-There are many entries in our data table, we can filter it to work on a subset of the data:
+There are many entries in our data table; we can filter it to work on a subset of the data:
 
 1. Click the down arrow next to `disease outcome` and select `Text filter`. A `disease outcome` filter will appear on the left margin.
 2. Type in `recovered`. There are 33 matching rows of the original 91 rows (and these rows are selected for the subsequent steps).
@@ -39,7 +39,7 @@ Remove the filters before moving on so that you again have the full dataset of 9
 
 ### Excluding entries
 
-In addition to the simple text filtering we used above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. If you still have your facet for `disease outcome`, you can use it. If not, use drop-down menu > `Facet` > `Text facet` to create a new facet. You will see the `include` or `exclude` options if you hover over the name in the facet window.
+In addition to the simple text filtering we used above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. If you still have your facet for `disease outcome`, you can use it. If not, use the drop-down menu > `Facet` > `Text facet` to create a new facet. If you hover over the name in the facet window, you will see the `include` or `exclude` options.
 
 
 Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all of the data that
@@ -47,13 +47,13 @@ is currently selected, while filtering allows you to select a subset of your dat
 
 > ## Exercise 2.2
 >
-> Use `include / exclude` in a `Text Facet` to make the same combination of `disease outcome` and `sex` as in the previous exercise.
+> Use `include/exclude` in a `Text Facet` to make the same combination of `disease outcome` and `sex` as in the previous exercise.
 >
 > > ## Solution
 > >
 > > 1. In the facet (left margin), hover on `recovered`. Notice that there are entries to the right for `edit` and `include`.
 > > 2. Click `include`. This will explicitly include those recovered, and exclude others that are not explicitly included. Notice that the
-> option now changes to `exclude`.
+> option has now been changed to `exclude`.
 > > 3. Another way to include entries is to click the name directly.
 > > 4. Do the same thing with `sex` to limit your selection to a combination of the two states.
 > > 4. Click `include` and `exclude` in both facets and notice how the selection in the data changes.
@@ -62,12 +62,12 @@ is currently selected, while filtering allows you to select a subset of your dat
 > {: .solution}
 {: .challenge}
 
-Remove the selections before moving on, so that you again have the full dataset of 91 records, either by closing all facets or press `Reset All` button in top of the left margin.
+Remove the selections before moving on, so that you again have the full dataset of 91 records, either by closing all facets or pressing the `Reset All` button in the top of the left margin.
 
 ## Sort
 
 You can sort the data in a column by using the drop-down menu available in that column.
-There you can sort by `text`, `numbers`, `dates` or `booleans` (`TRUE` or `FALSE` values). You can also specify what order to put `Blanks` and `Errors` in the sorted results.
+You can sort by `text`, `numbers`, `dates` or `booleans` (`TRUE` or `FALSE` values). You can also specify in which order to put `Blanks` and `Errors` in the sorted results.
 
 If this is your first time sorting this table, then the drop-down menu for the selected column shows `Sort...`. Select what you would like to sort by (such as `numbers`). Additional options will then appear for you to fine-tune your sorting.
 
@@ -92,4 +92,4 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 
 You can sort by multiple columns by performing sort on additional columns. The sort will depend on the order in which you select columns to sort. To restart the sorting process with a particular column, check the `sort by this column alone` box in the `Sort` pop-up menu.
 
-If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sort. If it is the only column sorted, then data reverts to its original order.
+If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from your multiple sort. If this is the only column sorted, the data reverts to its original order.
