@@ -1,6 +1,6 @@
 channels:
   - conda-forge
-  - defaults
+  - nodefaults
 dependencies:
   #- git
   - ruby>=2.7.1
