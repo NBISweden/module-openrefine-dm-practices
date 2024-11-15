@@ -24,7 +24,7 @@ edits by hand.
 >
 > **Prerequisites:**  
 >This lesson requires a working copy of OpenRefine.  
-> To get started, follow the directions in the "[Setup](setup.html)" tab to
+> To get started, follow the directions in the "[Setup]({% link setup.md %})" tab to
 > download data to your computer and follow any installation instructions. To most effectively use these materials, please make sure to install
 > everything **_before_** working through this lesson.
 {: .prereq}
