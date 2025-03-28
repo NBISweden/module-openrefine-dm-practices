@@ -3,9 +3,10 @@ channels:
   - nodefaults
 dependencies:
   #- git
-  - ruby>=2.7.1
+  - ruby=3.3
   - c-compiler
   - cxx-compiler
+  - make
   #- rb-bundler # This and *many* other ruby gems are out of date, use gem install bundler
   #- rb-github-pages # This and *many* other ruby gems are out of date, use bundle install
 #Run:
