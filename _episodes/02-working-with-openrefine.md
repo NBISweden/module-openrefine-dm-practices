@@ -40,7 +40,7 @@ Once OpenRefine is launched in your browser, the left margin has options to `Cre
 1. Click `Create Project` and select `Get data from` `This Computer`.
 2. Click `Choose Files`, or `Browse...` and select the file `samples_openrefine_lesson.csv` that you downloaded in the [setup step]({{site.baseurl}}/setup.html). Click `Open` or double-click on the filename.
 3. Click `Next>>` under the browse button to upload the data into OpenRefine.
-4. OpenRefine gives you a preview - A chance to show you it understands the file. If, for example, your file was really tab-delimited, the preview might look strange. You would then choose the correct separator in the box shown and click `Update Preview` (middle right). If this is the wrong file, click `<<Start Over` (upper left).  There are also options to indicate whether the dataset has column headers included and whether OpenRefine should skip a number of rows before reading the data.
+4. OpenRefine gives you a preview - A chance to show you it understands the file. If, for example, your file was really tab-delimited, the preview might look strange. You would then choose the correct separator in the box shown and click `Update Preview` (middle right). If this is the wrong file, click `<<Start Over` (upper left).  There are also options to indicate whether the dataset includes column headers and whether OpenRefine should skip a specified number of rows before reading the data.
 ![Parse Options](../fig/OR_01_parse.png)
 
 5. If all looks good, click `Create Project>>` (upper right). You will now enter edit mode for the project you just created.
@@ -51,7 +51,7 @@ Note that at step 1, you could upload data in a standard form from a web address
 
 *Exploring data by applying multiple filters*
 
-Facets are one of the most useful features of OpenRefine and can help both to get an overview of the data in a project as well as helping you bring more consistency to the data. OpenRefine supports faceted browsing as a mechanism for
+Facets are one of the most useful features of OpenRefine and can help you get an overview of the data in a project as well as bring more consistency to it. OpenRefine supports faceted browsing as a mechanism for
 
 * seeing a big picture of your data, and
 * filtering down to just the subset of rows that you want to change in bulk.
@@ -60,7 +60,7 @@ A 'Facet' groups all the like values that appear in a column, and then allow you
 
 One type of Facet is called a 'Text facet'. This groups all the identical text values in a column and lists each value with the number of records it appears in. The facet information always appears in the left-hand panel of the OpenRefine interface.
 
-Here we will use faceting to begin looking for potential errors in data entries in the `sex` column.
+Here, we will use faceting to begin looking for potential errors in data entries in the `sex` column.
 
 1. Scroll over to the `sex` column.
 2. Click the down arrow and choose `Facet` > `Text facet`.
@@ -90,11 +90,11 @@ Here we will use faceting to begin looking for potential errors in data entries 
 > >
 > > 1. For the column `location` do `Facet` > `Text facet`. A box will appear in the left panel showing 
 > > that there are 7 unique entries in this column.
-> > 2. The format is text, which is the default, otherwise `Text facet` would not have displayed any entries. If you want to check the format, click `edit` in a cell, the data type will show the current format. 
+> > 2. The format is text, which is the default, otherwise `Text facet` would not have displayed any entries. If you want to check the format, click `edit` in a cell, and the data type will show the current format. 
 > > 3. For the column `date` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 17 unique entries in
 > > this column.
 > > 4. By default, the column `date` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` >
-> > `To date`.  Notice that the values in the columns possible to transform to a correct date format turn green, and also add a timestamp after each date. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date. If we do not want the timestamp in the date format, we can edit it out, but more on that later.
+> > `To date`.  Notice that the values in the columns possible to transform to a correct date format turn green, and also add a timestamp after each date. Doing `Facet` > `Timeline facet` creates a box in the left panel that shows a histogram of the number of entries for each date. If we do not want the timestamp in the date format, we can remove it, but more on that later.
 > > 5. Most of the samples (43) were registered for the date `2020-03-31`. The  four dates that couldn't be transformed (`7 April`, `31 March`, `32 March` and `33 March`) are noted as Non-Time in the timeline histogram.
 > {: .solution}
 {: .challenge}
@@ -121,13 +121,13 @@ Here we will use faceting to begin looking for potential errors in data entries 
 
 ## Using undo and redo
 
-It's common while exploring and cleaning a dataset to discover after you've made a change that you really should have done something else first. OpenRefine provides `Undo` and `Redo` operations to make this easy.
+It's common while exploring and cleaning a dataset to discover that, after you've made a change, you really should have done something else first. OpenRefine provides `Undo` and `Redo` operations to make this easy.
 
 > ## Exercise 1.2
 >
 > 1. Click where it says `Undo / Redo` on the left side of the screen. All the changes you have made so far are listed here.
-> 2. Click on the step that you want to go back to, in this case go back one step to before you had done the text to date transformation.
-> 3. Visually confirm that the date column now only contains the original dates without timestamps.
+> 2. Click on the step that you want to go back to, in this case, go back one step to before you had done the text-to-date transformation.
+> 3. Visually confirm that the date column now contains only the original dates, without timestamps.
 > 3. Notice that you can still click on the later steps to `Redo` the actions. Redo the date transformation by clicking on this step.
 {: .challenge}
 
@@ -142,7 +142,7 @@ In OpenRefine, clustering means "finding groups of different values that might b
 4. Tick the `Merge?` box beside each cluster, then click `Merge Selected and Re-cluster` to apply the corrections to the dataset.
 4. Try selecting different `Methods` and `Keying Functions` again, to see if new merges are suggested.
 5. You should find that using the default settings, no more clusters are found. (Note that the `key collision` method with `ngram-fingerprint` keying function will suggest to merge `F` and `M`, which is not desired.)
-6. To merge the remaining values we would like to merge, we will hover over them in the `sex` text facet, select edit, and manually change the names. In a previous lesson we had identified `male` and `female` as allowed values. Change `M` to `male` and `F` to `female`. The Text Facet on the left should now show 2 clusters corresponding to the allowed values.
+6. To merge the remaining values we would like to merge, we will hover over them in the `sex` text facet, select edit, and manually change the names. In a previous lesson, we had identified `male` and `female` as allowed values. Change `M` to `male` and `F` to `female`. The Text Facet on the left should now show 2 clusters corresponding to the allowed values.
 
 Important: If you `Merge` using a different method or keying function, or more times than described in the instructions above,
 your solutions for later exercises might not be the same as shown in those exercise solutions.
@@ -168,14 +168,14 @@ to be split.
 >
 > Try to change the name of the column `location 1` to `location 2`. Are you able to do this, or do you encounter a problem?
 >
-> Change the name of the first new column to `geographic location (country)`, the second to `geographic location (region and locality)` and the third to `geographic location (city)`. Then change all occurrences of the city name `Turin` to `Torino`.
+> Change the name of the first new column to `geographic location (country)`, the second to `geographic location (region and locality)`, and the third to `geographic location (city)`. Then change all occurrences of the city name `Turin` to `Torino`.
 >
 > > ## Solution
 > >
 > > 1. On the `location 1` column, click the down arrow and then `Edit column` > `Rename this column`.
 > > 2. Type `geographic location (country)` into the box that appears. If you type anything that is already used as a column name elsewhere, a pop-up will appear that says `Another column already named [name]`. Note that column names are case-sensitive. If you capitalize the initial (or any) letter, it will be recognized as a unique name.
 > > You should now have three new columns called `geographic location (country)`, `geographic location (region and locality)`, and `geographic location (city)` 
-> > 3. Hover the mouse over a cell in `geographic location (city)` named `Turin`. Notice the `edit` function becoming available. Click on `edit`, type in `Torino` and select `Apply to All Identical Cells`. All occurrences of `Turin` are now replaced with `Torino`. Also notice there might be leading whitespaces in most of the names for `geographic location (city)`. We will deal with those in the next section. 
+> > 3. Hover the mouse over a cell in `geographic location (city)` named `Turin`. Notice the `edit` function becoming available. Click on `edit`, type in `Torino` and select `Apply to All Identical Cells`. All occurrences of `Turin` are now replaced with `Torino`. Also, notice there might be leading whitespaces in most of the names for `geographic location (city)`. We will deal with those in the next section. 
 > >
 > {: .solution}
 {: .challenge}
@@ -183,27 +183,27 @@ to be split.
 
 ## Trim Leading and Trailing Whitespace
 
-Words with spaces at the beginning or end are particularly hard for us humans to tell from strings without, but the blank characters will make a difference to the computer. We usually want to remove these. As of version 3.4 of OpenRefine, the option to trim leading and trailing whitespaces is present at the moment of importing the data (see image at the top of this page).
+Words with spaces at the beginning or end are particularly hard for us humans to tell apart from strings without them, but blank characters will make a difference to the computer. We usually want to remove these. As of version 3.4 of OpenRefine, the option to trim leading and trailing whitespace is available when importing data (see the image at the top of this page).
 
 If you unchecked that box when importing data, or if leading or trailing whitespaces were introduced while splitting columns, or other operations, OpenRefine also provides a tool to remove blank characters from the beginning and end of any entries that have them.
 
-1. In the `geographic location (city)` there seem to be leading whitespaces in most columns. These are most likely an artefact from the splitting of the initial geographic column. 
+1. In the `geographic location (city)`, there seem to be leading whitespaces in most columns. These are most likely an artefact of the splitting of the initial geographic column. 
 2. To remove the whitespace, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
 4. You should now see one less category in your text facet, along with normalised names.
 
 ## Manual input to correct incorrect values
 
-Remember the conversion of `date` from text nu date format? If we take a closer look we notice some rather questionable cell values. First of all we want to remove the timestamp from the dates. We do this by first transforming the cells to text, `Edit cells` > `Common transforms` > `To text`. Next we click `edit` in one of the cells and copy the expression `T00:00:00Z`. Finally we select `Edit cells` > `Replace`, paste the expression into the `Find:` box, leave the box `Replace with:` a blank, and click `OK`. By doing this we now get all dates in the standard `YYYY-MM-DD` format.
+Remember the conversion of `date` from text nu date format? If we take a closer look, we notice some rather questionable cell values. First of all, we want to remove the timestamp from the dates. We do this by first transforming the cells to text, `Edit cells` > `Common transforms` > `To text`. Next we click `edit` in one of the cells and copy the expression `T00:00:00Z`. Finally, we select `Edit cells` > `Replace`, paste the expression into the `Find:` box, leave the box `Replace with:` blank, and click `OK`. By doing this, we now get all dates in the standard `YYYY-MM-DD` format.
 
 Next, we take a look at the years, there are `2020`, `2021` and `2022`. However, the data stems from a study conducted during 2020. We can therefore safely assume that dates beginning with `2021` and `2022` are typos of `2020`. Correct these via `edit` in the `Text Facet` in the left panel.
 
-Last, we turn our attention to `7 April`, `31 March`, `32 March` and `33 March`. We lack information on the year, but knowing that the study is from `2020` we can safely `edit` the `7 April` to the correct format `YYYY-MM-DD`. Doing so we arrive at `2020-04-07`. For the remaining three dates, we can assume that the dates `32 March` and `33 March` are artefacts from the drag-to-copy function in Excel. Hence, using the `edit` function, change all three to `2020-03-31`.
+Last, we turn our attention to `7 April`, `31 March`, `32 March` and `33 March`. We lack information on the year, but knowing that the study is from `2020`, we can safely `edit` the `7 April` to the correct format `YYYY-MM-DD`. Doing so we arrive at `2020-04-07`. For the remaining three dates, we can assume that the dates `32 March` and `33 March` are artefacts from the drag-to-copy function in Excel. Hence, use the `edit` function to change all three to `2020-03-31`.
 
 > ## Exercise 1.4
 >
-> Did you notice that some of the dates in the `date` column look eerily related? In the list we have both `2020-04-01` and > `2020-01-04`, `2020-04-07` and `2020-07-04`, and `2020-04-08` and `2020-08-04`. These might be correct, or they may be an artefact of when data was typed in, depending on which date format was used. 
+> Did you notice that some of the dates in the `date` column look eerily related? In the list we have both `2020-04-01` and > `2020-01-04`, `2020-04-07` and `2020-07-04`, and `2020-04-08` and `2020-08-04`. These might be correct, or they may be an artefact of when the data was entered, depending on the date format used. 
 > 
-> Discuss when this could happen in a dataset and what practises we can use to avoid such problems, particularly in larger research groups where members from different parts of the world collaborate. 
+> Discuss when this could happen in a dataset, and what practices we can use to avoid such problems, particularly in larger research groups where members from different parts of the world collaborate. 
 >
 > > ## Solution
 > > Before starting a project, make sure all collaborators have agreed to conform to a common standard. In particular, atypical date formats in spreadsheets can cause severe issues in downstream analyses. 
