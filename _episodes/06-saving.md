@@ -22,8 +22,8 @@ open it up again and be just where you stopped before.
 
 ### Saving
 
-By default, OpenRefine is saving your project continuously. If you close OpenRefine and open it up again,
-you'll see a list of your projects. You can click on any one of them to open it up again.
+By default, OpenRefine saves your project continuously. If you close OpenRefine and open it up again,
+you'll see a list of your projects. You can click any of them to reopen it.
 
 ### Exporting
 
@@ -32,7 +32,7 @@ or share this information as a supplement to a publication.
 
 1. Click the `Export` button in the top right and select `OpenRefine project archive to file`.
 2. A `tar.gz` file will download to your default `Download` directory. Depending on your browser, you may have to confirm that you want to save the file. The `tar.gz` extension tells you that this is a compressed file.
-The downloaded `tar.gz` file is actually a folder of files which have been compressed. Linux and Mac machines will have software installed to automatically expand this type of file when you double-click on it. For Windows-based machines, you may have to install a utility like '7-zip' in order to expand the file and see the files in the folder (this step is optional).
+The downloaded `tar.gz` file is actually a folder containing compressed files. Linux and Mac machines will have software installed to automatically expand this type of file when you double-click on it. For Windows-based machines, you may have to install a utility like '7-zip' in order to expand the file and see the files in the folder (this step is optional).
 3. Optional: After you have expanded the file, look at the files that appear in this folder. What files are here? What information do you think these files contain?
 
 > ## Solution
@@ -44,7 +44,7 @@ The downloaded `tar.gz` file is actually a folder of files which have been compr
 {: .solution}
 
 You can import an existing project into OpenRefine by clicking `Open...` in the upper right > `Import Project` and selecting the `tar.gz`
-project file. This project will include all of the raw data and cleaning steps that were part of the original project.
+project file. This project will include all the raw data and cleaning steps from the original project.
 
 ## Exporting Cleaned Data
 
@@ -54,6 +54,6 @@ You can also export just your cleaned data, rather than the entire project.
 2. The file will be exported to your default `Download` directory. That file can then be opened in a spreadsheet program or imported
 into programs like RStudio, which we'll discuss later in our workshop.
 
-Remember from our lesson on data organisation practices that using widely-supported, non-proprietary file formats like `tsv` or `csv` improves the ability for yourself and others to use your data.
+Remember from our lesson on data organisation practices that using widely supported, non-proprietary file formats like `tsv` or `csv` improves your and others' ability to use your data.
 
 {% include links.md %}
