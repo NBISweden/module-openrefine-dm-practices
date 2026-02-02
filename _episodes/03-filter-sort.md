@@ -21,16 +21,16 @@ There are many entries in our data table; we can filter it to work on a subset o
 
 1. Click the down arrow next to `disease outcome` and select `Text filter`. A `disease outcome` filter will appear on the left margin.
 2. Type in `recovered`. There are 33 matching rows of the original 91 rows (and these rows are selected for the subsequent steps).
-3. At the top, change the view to `Show` 50 rows. This way you will see all of the matching rows.
+3. At the top, change the view to `Show` 50 rows. This way, you will see all matching rows.
 
 > ## Exercise 2.1
 >
-> 1. How can you filter the data to instead only include persons with state `dead`?
-> 2. How would you further restrict this to only include females or males?  
+> 1. How can you filter the data to only include persons with the state `dead`?
+> 2. How would you further restrict it to include only females or males?  
 >
 > > ## Solution
 > > 1. In the `disease outcome` filter, type `dead` instead of recovered.   
-> > 2. To restrict to only one of the sexes, in the `sex` column, run another `Text Filter`and type `female`. Notice that if you type `male` we also capture all expressions containing `male`, such as `female`. To filter only `male`, run the filter for `female` and then use the `invert` function.
+> > 2. To restrict to only one of the sexes, in the `sex` column, run another `Text Filter`and type `female`. Notice that if you type `male`, we also capture all expressions containing `male`, such as `female`. To filter only `male`, run the filter for `female` and then use the `invert` function.
 > >
 > {: .solution}
 {: .challenge}
@@ -52,7 +52,7 @@ is currently selected, while filtering allows you to select a subset of your dat
 > > ## Solution
 > >
 > > 1. In the facet (left margin), hover on `recovered`. Notice that there are entries to the right for `edit` and `include`.
-> > 2. Click `include`. This will explicitly include those recovered, and exclude others that are not explicitly included. Notice that the
+> > 2. Click `include`. This will explicitly include those recovered and exclude others that are not explicitly included. Notice that the
 > option has now been changed to `exclude`.
 > > 3. Another way to include entries is to click the name directly.
 > > 4. Do the same thing with `sex` to limit your selection to a combination of the two states.
