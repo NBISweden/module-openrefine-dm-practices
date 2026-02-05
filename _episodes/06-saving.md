@@ -32,15 +32,15 @@ or share this information as a supplement to a publication.
 
 1. Click the `Export` button in the top right and select `OpenRefine project archive to file`.
 2. A `tar.gz` file will download to your default `Download` directory. Depending on your browser, you may have to confirm that you want to save the file. The `tar.gz` extension tells you that this is a compressed file.
-The downloaded `tar.gz` file is actually a folder containing compressed files. Linux and Mac machines will have software installed to automatically expand this type of file when you double-click on it. For Windows-based machines, you may have to install a utility like '7-zip' in order to extract the file and see the files in the folder (this step, to extract the file, is optional).
+The downloaded `tar.gz` file is actually a folder containing compressed files. Linux and Mac machines will have software installed to automatically extract this type of file when you double-click on it. For Windows-based machines, you may have to install a utility like '7-zip' in order to extract the file and see the files in the folder (this step, to extract the file, is optional).
 
-Exercise:  If you extracted the zipped file, look at the files in this folder. What files are here? What information do you think these files contain?
+Note: If you extracted the compressed file `tar.gz` , look at the files in this folder. What files are here? What information do you think these files contain?
 
 > ## Solution
 > You should see:
 > - a  `history` folder which contains a collection of `zip` files. Each of these files itself contains a `change.txt` file.
 > These `change.txt` files are the records of each individual transformation that you did to your data.
-> - a `data.zip` file. When expanded, this `zip` file includes a file called `data.txt` which is a copy of your raw data.
+> - a `data.zip` file. When extracted, this `zip` file includes a file called `data.txt` which is a copy of your raw data.
 > You may also see other files.
 {: .solution}
 
