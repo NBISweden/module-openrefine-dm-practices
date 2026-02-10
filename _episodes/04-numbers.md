@@ -59,7 +59,7 @@ Different software may use different interpreters for missing values. For exampl
 
 > ## Exercise 3.3
 >
-> Find, identify and transform missing data in all columns of the dataset. Which missing-data formats are appropriate for this dataset?
+> Find, identify and transform missing data in all columns of the dataset. Which formats for missing data are appropriate for this dataset?
 >
 > > ## Solution
 > >
