@@ -16,7 +16,7 @@ Sometimes you would like to export a file that only contains a subset of the dat
 
 In this lesson of the _Introduction to Data Management Practices Workshop_ we will 
 act as a researcher who wants to submit a subset of the data to the repository [ENA](https://www.ebi.ac.uk/ena/browser/home) (European Nucleotide Archive).
-To do so we need to prepare sample metadata to conform to the metadata standards
+To do so, we need to prepare sample metadata to conform to the metadata standards
 of the repository.
 
 We need to consider the following questions:
@@ -26,14 +26,14 @@ We need to consider the following questions:
 - **Are there additional columns that need to be added?**
 
 <BR>
-First, we know the data contain three samples per individual, i.e. every individual is represented by three rows in the data. Now, we might want to extract one of those samples for submission, namely the ones produced by the Illumina NEBNext prep kit. We identify these as "NEBNext" in the column `configuration`. 
+First, we know the data contains three samples per individual, i.e. every individual is represented by three rows in the data. Now, we might want to extract one of those samples for submission, namely the ones produced by the Illumina NEBNext prep kit. We identify these as "NEBNext" in the column `configuration`. 
 
 1. Create a filter for the column `configuration` by clicking the down arrow in the column header and selecting `Text filter`.
 2. A filter box will appear on the left side. Type `NEB` in the text field and press return. 29 matching rows will be displayed.
 3. In the same box, press `invert` in the top right to select all the rows which *do not* have the configuration NEBNext. Note that the box header will turn orange to indicate inverted results.
 4. Confirm that there are 62 matching rows.
 5. Click the down arrow next to `All` in the left-most column header > `Edit rows` > `Remove matching rows`
-6. Remove or reset the filter. Now, all remaining 29 rows should be `NEBNext` samples. This subsection of the data can be saved using the `Export` drop down menu as `comma-separated values`, to be imported into other software like `R`. 
+6. Remove or reset the filter. Now, all remaining 29 rows should be `NEBNext` samples. This subsection of the data can be saved using the `Export` drop-down menu as `comma-separated values`, to be imported into other software like `R`. 
 <BR>
 
 ## ENA sample metadata
@@ -42,7 +42,7 @@ ENA sample metadata can be divided into three groups.
 - Checklist-based metadata
 - User-defined metadata
 
-In a previous lesson in this workshop around [metadata](https://nbisweden.github.io/module-metadata-dm-practices/05-finding-ontologies/index.html) you already came across the ENA checklists. When creating a data dictionary you identified ENA variables based on the default checklist and ontologies to identify allowed values. We will return to these in a while, but first, we will look at the mandatory fields.
+In a previous lesson in this workshop around [metadata](https://nbisweden.github.io/module-metadata-dm-practices/05-finding-ontologies/index.html) you already came across the ENA checklists. When creating a data dictionary, you identified ENA variables based on the default checklist and ontologies to identify allowed values. We will return to these in a while, but first, we will look at the mandatory fields.
 
 ### Mandatory fields
 Some metadata are mandatory for all samples submitted to ENA regardless of the checklist chosen. We will try to map the existing columns to these variables.
@@ -68,14 +68,14 @@ scientific_name - _based on tax_id_
 <BR>
 ## Creating new columns
 
-Sometimes a new variable needs to be added to a dataset, a new set of data input, or a transfer of information from another data source. So far, we have only covered editing already existing columns and cells, but how do we create space for new data in an already open project?
+Sometimes a new variable needs to be added to a dataset, a new set of data needs to be entered, or information needs to be transferred from another data source. So far, we have only covered editing existing columns and cells; how do we create space for new data in an open project?
 
 For example, in our dataset we are missing a column for naming the institute responsible for collecting the listed samples. To create such a column, we select a column to the left of where we want to create a new one, and in that column select `Edit column` > `Add column based on this column...`. In the new window, in `New column name`, type `collector name`, and enter `null` as `value`. Clicking `OK` now creates a new column to the right of the one we just used, without cell values. Repeating what we did earlier in the lesson, `edit` the contents to the input `Valeria Ghiselli` and select `Apply to All Identical Cells`.     
 <BR>
 
 > ## Exercise 6.2
 >
-> Add a new column called `collecting entity`, and fill all cells with the input `Amedeo di Savoia`. Can you generate the column to the right of the column `collector name`?
+> Add a new column called `collecting entity`, and fill all cells with the input `Amedeo di Savoia`. Can you generate a column to the right of the `collector name` column?
 >
 > > ## Solution
 > >
@@ -87,7 +87,7 @@ For example, in our dataset we are missing a column for naming the institute res
 <BR>
 
 **We made a mistake!** 
-The column name `collecting entity` was an incorrect input. The ENA checklist suggests it is better named `collecting institution`. We need to rename the column, but how do we do it? 
+The column name `collecting entity` was incorrect. The ENA checklist suggests it is better named `collecting institution`. We need to rename the column, but how do we do it? 
 
 To rename the column `collecting institution`
 1. Click the down arrow next to `collecting entity` > `Edit column` > `Rename this column`. A pop-up window will appear on top.
@@ -95,7 +95,7 @@ To rename the column `collecting institution`
 <BR>
 
 ## Join columns
-As we noted in the metadata module, there was a column in the data for `sample_alias`. In this dataset, we have lost that information and need to re-enter it. Aliases are only used as communicative references in a project but can help in identifying, separating, and clustering individual samples in downstream analyses.
+As we noted in the metadata module, there was a column in the data for `sample_alias`. In this dataset, we have lost that information and need to re-enter it. Aliases are used only for communication within a project but can help identify, separate, and cluster individual samples in downstream analyses.
 
 To create aliases for our samples, we can combine cell information from the columns `configuration` and `host subject id` to create unique combinations.
 
@@ -126,7 +126,7 @@ Our dataset still lacks information for the mandatory ENA checklist field `isola
 > > 3. Add a slash `/` as `Separator between the content of each column:`
 > > 4. Tick `Write result in new column named...` and type `isolate`. This will create a new column named `isolate` populated with the above information. 
 > > 5. Make sure the box for `Delete joined columns` is not ticked. Once you are confident your selection is correct, make sure to drag-and-drop the columns to appear in the desired order.
-> > 6. Select `OK`. All cells should now be populated with isolate information. 
+> > 6. Select `OK`. All cells should now contain isolate information. 
 > {: .solution}
 {: .challenge}
 <BR>
