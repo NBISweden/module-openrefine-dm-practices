@@ -23,7 +23,7 @@ open it up again and be just where you stopped before.
 ### Saving
 
 By default, OpenRefine saves your project continuously. If you close OpenRefine and open it up again,
-you'll see a list of your projects. You can click any of them to reopen it.
+you'll see a list of your projects. You can click any of them to re-open it.
 
 ### Exporting
 
