@@ -3,6 +3,10 @@ layout: page
 title: Setup
 ---
 
+> ## Presentation slides
+> 
+> * Download the [presentation slides](Presentation/Module-openrefine-dm-practice.pdf)
+> 
 > ## Data
 >
 > The data for this lesson is part of the Introduction to Data Management
